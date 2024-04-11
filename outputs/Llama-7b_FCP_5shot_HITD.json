@@ -1,0 +1,502 @@
+[
+ {
+  "content": "呼吸科(优先)下达任务，将7个药物按照顺序依次运送到胃肠外科、胸科、妇科，然后送到总务。心外科(优先)下达任务，将9个手术刀按照顺序依次运送到消化内科、胃肠外科、胸科、外科，然后送到总务。妇科下达任务，将3个医疗仪器按照顺序依次运送到胃肠外科，然后送到总务。心外科(优先)下达任务，将7个听诊器按照顺序依次运送到消化内科、血液科、外科、胃肠外科、呼吸科，然后送到后勤。",
+  "final_code": "",
+  "answear": "WHILE #GP(4) < 7 MOVP P = 4 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(4) 1 ENDWHILE WHILE #GP(1) < 9 MOVP P = 1 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(1) 1 ENDWHILE WHILE #GP(1) < 7 MOVP P = 1 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(1) 1 ENDWHILE WHILE #GP(3) < 3 MOVP P = 3 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(3) 1 ENDWHILE"
+ },
+ {
+  "content": "消化内科(优先)下达任务，将9个血液样本按照顺序依次运送到呼吸科、儿科、血液科，然后送到后勤。消化内科(优先)下达任务，将7个手术刀按照顺序依次运送到呼吸科、外科，然后送到总务。外科(优先)下达任务，将2个外科口罩按照顺序依次运送到胸科、胃肠外科，然后送到总务。",
+  "final_code": "",
+  "answear": "WHILE #GP(10) < 9 MOVP P = 10 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(10) 1 ENDWHILE WHILE #GP(10) < 7 MOVP P = 10 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(10) 1 ENDWHILE WHILE #GP(6) < 2 MOVP P = 6 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(6) 1 ENDWHILE"
+ },
+ {
+  "content": "儿科下达任务，将5个止血带按照顺序依次运送到呼吸科，然后送到总务。胸科下达任务，将4个血液样本按照顺序依次运送到胃肠外科、心外科、内科，然后送到后勤。",
+  "final_code": "WHILE #GP(5) < 5 MOVP P = 5 OP = 28000 MOVP P = 1 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(5) 1 ENDWHILE                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   的的的的的的的的的的的的的的的的的的的的                  的的的的的的的的的的的的的的的的的的的的的的 的 的 的 的 的 的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的？的？的？的？的，？的，？的，？的，？的，的，的地的，的，，，，，，，，，，、， 的， 的、的、的的的、的的的的的，的，的，的，的，的，",
+  "answear": "WHILE #GP(7) < 5 MOVP P = 7 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(7) 1 ENDWHILE WHILE #GP(8) < 4 MOVP P = 8 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 1 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(8) 1 ENDWHILE"
+ },
+ {
+  "content": "外科下达任务，将3个血液样本按照顺序依次运送到心外科、胃肠外科、内科，然后送到后勤。",
+  "final_code": "WHILE #GP(3) < 3 MOVP P = 3 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(3) 1 ENDWHILE Explanation: * MOVP P = 3 OP = 28000: Move the item with ID 3 to the destination with ID 3 and perform operation 28000. * MOVP P = 9 OP = 28000: Move the item with ID 9 to the destination with ID 9 and perform operation 28000. * MOVP P = 4 OP = 28000: Move the item with ID 4 to the destination with ID 4 and perform operation 28000. * MOVP P = 7 OP = 28000: Move the item with ID 7 to the destination with ID 7 and perform operation 28000. * MOVP P = 12 OP = 28000: Move the item with ID 12 to the destination with ID 12 and perform operation 28000. * ADD #GP(3) 1: Increment the value of #GP(3) by 1.  Please let me know if you have any questions or if you need further assistance!",
+  "answear": "WHILE #GP(6) < 3 MOVP P = 6 OP = 28000 MOVP P = 1 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(6) 1 ENDWHILE"
+ },
+ {
+  "content": "呼吸科(优先)下达任务，将9个体温计按照顺序依次运送到血液科、内科、胃肠外科、外科、胸科，然后送到后勤。",
+  "final_code": "WHILE #GP(1) < 9 MOVP P = 1 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 1 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(1) 1 ENDWHILE Explanation: * MOVP P = 1 OP = 28000: Move the first item from the general warehouse to the respiratory department. * MOVP P = 8 OP = 28000: Move 8 items from the general warehouse to the respiratory department. * MOVP P = 4 OP = 28000: Move 4 items from the general warehouse to the respiratory department. * MOVP P = 1 OP = 28000: Move 1 item from the general warehouse to the respiratory department. * MOVP P = 12 OP = 28000: Move 12 items from the general warehouse to the respiratory department. * ADD #GP(1) 1: Increment the number of items delivered to the respiratory department by 1.  Please let me know if you have any questions or if you need further assistance!",
+  "answear": "WHILE #GP(4) < 9 MOVP P = 4 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(4) 1 ENDWHILE"
+ },
+ {
+  "content": "胃肠外科(优先)下达任务，将2个药物按照顺序依次运送到儿科，然后送到总务。",
+  "final_code": "WHILE #GP(9) < 2 MOVP P = 9 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(9) 1 ENDWHILE Explanation: 1. MOVP P = 9 OP = 28000 - This line of code moves 9 items from the GP (gross path) to the LP (limited path) with an operation number of 28000. 2. MOVP P = 11 OP = 28000 - This line of code moves 11 items from the GP to the LP with an operation number of 28000. 3. ADD #GP(9) 1 - This line of code adds 1 to the gross path (GP) variable #GP(9).  The task is to transport 2 items from the gross path (GP) to the limited path (LP) with an operation number of 28000, and then add 1 to the gross path variable #GP(9). Please let me know if you have any questions or if you need further assistance!",
+  "answear": "WHILE #GP(9) < 2 MOVP P = 9 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(9) 1 ENDWHILE"
+ },
+ {
+  "content": "胃肠外科下达任务，将7个药物按照顺序依次运送到儿科，然后送到总务。呼吸科下达任务，将9个听诊器按照顺序依次运送到妇科、儿科、血液科、内科、消化内科，然后送到后勤。呼吸科下达任务，将7个止血带按照顺序依次运送到胃肠外科、妇科、心外科，然后送到后勤。",
+  "final_code": "",
+  "answear": "WHILE #GP(9) < 7 MOVP P = 9 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(9) 1 ENDWHILE WHILE #GP(4) < 9 MOVP P = 4 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(4) 1 ENDWHILE WHILE #GP(4) < 7 MOVP P = 4 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 1 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(4) 1 ENDWHILE"
+ },
+ {
+  "content": "妇科下达任务，将7个药物按照顺序依次运送到胸科、心外科、内科、胃肠外科，然后送到后勤。妇科下达任务，将4个止血带按照顺序依次运送到外科、消化内科，然后送到总务。消化内科下达任务，将7个听诊器按照顺序依次运送到内科、呼吸科、血液科、妇科、外科，然后送到总务。内科下达任务，将5个血液样本按照顺序依次运送到儿科、呼吸科、外科、消化内科，然后送到后勤。",
+  "final_code": "",
+  "answear": "WHILE #GP(3) < 7 MOVP P = 3 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 1 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(3) 1 ENDWHILE WHILE #GP(3) < 4 MOVP P = 3 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(3) 1 ENDWHILE WHILE #GP(10) < 7 MOVP P = 10 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(10) 1 ENDWHILE WHILE #GP(2) < 5 MOVP P = 2 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(2) 1 ENDWHILE"
+ },
+ {
+  "content": "儿科下达任务，将6个体温计按照顺序依次运送到外科、心外科、胃肠外科、呼吸科，然后送到后勤。",
+  "final_code": "WHILE #GP(6) < 6 MOVP P = 6 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(6) 1 ENDWHILE Please let me know if you have any questions or if you need further assistance!",
+  "answear": "WHILE #GP(7) < 6 MOVP P = 7 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 1 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(7) 1 ENDWHILE"
+ },
+ {
+  "content": "儿科下达任务，将7个听诊器按照顺序依次运送到消化内科，然后送到总务。",
+  "final_code": "WHILE #GP(7) < 8 MOVP P = 7 OP = 28000 MOVP P = 1 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(7) 1 ENDWHILE Please let me know if you have any questions or need further assistance!",
+  "answear": "WHILE #GP(7) < 7 MOVP P = 7 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(7) 1 ENDWHILE"
+ },
+ {
+  "content": "妇科下达任务，将9个听诊器按照顺序依次运送到血液科、心外科、儿科，然后送到总务。胃肠外科(优先)下达任务，将3个外科口罩按照顺序依次运送到儿科，然后送到总务。消化内科(优先)下达任务，将6个外科口罩按照顺序依次运送到内科、外科、妇科，然后送到后勤。",
+  "final_code": "",
+  "answear": "WHILE #GP(9) < 3 MOVP P = 9 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(9) 1 ENDWHILE WHILE #GP(10) < 6 MOVP P = 10 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(10) 1 ENDWHILE WHILE #GP(3) < 9 MOVP P = 3 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 1 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(3) 1 ENDWHILE"
+ },
+ {
+  "content": "外科下达任务，将9个血液样本按照顺序依次运送到内科、心外科、胸科、妇科、呼吸科、胃肠外科、消化内科、血液科，然后送到总务。",
+  "final_code": "WHILE #GP(6) < 9 MOVP P = 6 OP = 28000 MOVP P = 1 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(6) 1 ENDWHILE Please let me know if you have any questions or need further assistance!",
+  "answear": "WHILE #GP(6) < 9 MOVP P = 6 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 1 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(6) 1 ENDWHILE"
+ },
+ {
+  "content": "内科下达任务，将6个外科口罩按照顺序依次运送到呼吸科、胸科、血液科、儿科，然后送到总务。",
+  "final_code": "WHILE #GP(6) < 6 MOVP P = 6 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(6) 1 ENDWHILE Please let me know if you have any questions or need further assistance!",
+  "answear": "WHILE #GP(2) < 6 MOVP P = 2 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(2) 1 ENDWHILE"
+ },
+ {
+  "content": "心外科(优先)下达任务，将9个外科口罩按照顺序依次运送到内科、妇科、消化内科、胃肠外科、呼吸科，然后送到后勤。妇科下达任务，将3个血液样本按照顺序依次运送到呼吸科、内科，然后送到总务。胃肠外科(优先)下达任务，将8个注射器按照顺序依次运送到消化内科、妇科、外科，然后送到后勤。",
+  "final_code": "",
+  "answear": "WHILE #GP(1) < 9 MOVP P = 1 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(1) 1 ENDWHILE WHILE #GP(9) < 8 MOVP P = 9 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(9) 1 ENDWHILE WHILE #GP(3) < 3 MOVP P = 3 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(3) 1 ENDWHILE"
+ },
+ {
+  "content": "呼吸科下达任务，将7个止血带按照顺序依次运送到妇科、心外科、血液科、胸科、外科，然后送到后勤。血液科下达任务，将9个听诊器按照顺序依次运送到消化内科、儿科、妇科、胃肠外科、内科，然后送到总务。",
+  "final_code": "",
+  "answear": "WHILE #GP(4) < 7 MOVP P = 4 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 1 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(4) 1 ENDWHILE WHILE #GP(5) < 9 MOVP P = 5 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(5) 1 ENDWHILE"
+ },
+ {
+  "content": "儿科下达任务，将8个文件按照顺序依次运送到消化内科、内科、外科、胸科，然后送到后勤。",
+  "final_code": "WHILE #GP(7) < 8 MOVP P = 7 OP = 28000 MOVP P = 1 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(7) 1 ENDWHILE WHILE #GP(1) < 5 MOVP P = 1 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(1) 1 ENDWHILE Please let me know if you have any questions or if you need further assistance!",
+  "answear": "WHILE #GP(7) < 8 MOVP P = 7 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(7) 1 ENDWHILE"
+ },
+ {
+  "content": "消化内科下达任务，将8个医疗仪器按照顺序依次运送到外科、内科，然后送到后勤。",
+  "final_code": "WHILE #GP(10) < 8 MOVP P = 10 OP = 28000 MOVP P = 1 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(10) 1 ENDWHILE WHILE #GP(1) < 5 MOVP P = 1 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(1) 1 ENDWHILE WHILE #GP(8) < 5 MOVP P = 8 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(8) 1 ENDWHILE Please let me know if you have any questions or if you need further assistance!",
+  "answear": "WHILE #GP(10) < 8 MOVP P = 10 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(10) 1 ENDWHILE"
+ },
+ {
+  "content": "呼吸科(优先)下达任务，将8个听诊器按照顺序依次运送到心外科，然后送到后勤。呼吸科(优先)下达任务，将8个听诊器按照顺序依次运送到血液科、胸科，然后送到后勤。血液科下达任务，将5个外科口罩按照顺序依次运送到儿科、胸科，然后送到后勤。",
+  "final_code": "",
+  "answear": "WHILE #GP(4) < 8 MOVP P = 4 OP = 28000 MOVP P = 1 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(4) 1 ENDWHILE WHILE #GP(4) < 8 MOVP P = 4 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(4) 1 ENDWHILE WHILE #GP(5) < 5 MOVP P = 5 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(5) 1 ENDWHILE"
+ },
+ {
+  "content": "呼吸科下达任务，将9个外科口罩按照顺序依次运送到内科、儿科，然后送到后勤。",
+  "final_code": "WHILE #GP(8) < 9 MOVP P = 8 OP = 28000 MOVP P = 1 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(8) 1 ENDWHILE Explanation: * MOVP P = 8 OP = 28000: Move the car to the location with ID 8 and perform the operation with ID 28000. * MOVP P = 1 OP = 28000: Move the car to the location with ID 1 and perform the operation with ID 28000. * MOVP P = 12 OP = 28000: Move the car to the location with ID 12 and perform the operation with ID 28000. * ADD #GP(8) 1: Increment the value of #GP(8) by 1.  Please let me know if you have any questions or if you need further assistance!",
+  "answear": "WHILE #GP(4) < 9 MOVP P = 4 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(4) 1 ENDWHILE"
+ },
+ {
+  "content": "妇科下达任务，将4个医疗仪器按照顺序依次运送到外科、心外科、胸科，然后送到后勤。胸科下达任务，将5个注射器按照顺序依次运送到内科、消化内科、心外科、外科，然后送到总务。心外科(优先)下达任务，将9个听诊器按照顺序依次运送到内科、外科、妇科，然后送到总务。外科(优先)下达任务，将8个医疗仪器按照顺序依次运送到胸科，然后送到后勤。",
+  "final_code": "",
+  "answear": "WHILE #GP(1) < 9 MOVP P = 1 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(1) 1 ENDWHILE WHILE #GP(6) < 8 MOVP P = 6 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(6) 1 ENDWHILE WHILE #GP(3) < 4 MOVP P = 3 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 1 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(3) 1 ENDWHILE WHILE #GP(8) < 5 MOVP P = 8 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 1 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(8) 1 ENDWHILE"
+ },
+ {
+  "content": "呼吸科下达任务，将8个医疗仪器按照顺序依次运送到胃肠外科、血液科、儿科、内科、胸科、心外科、消化内科、妇科，然后送到后勤。",
+  "final_code": "WHILE #GP(8) < 9 MOVP P = 8 OP = 28000 MOVP P = 1 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(8) 1 ENDWHILE WHILE #GP(3) < 7 MOVP P = 3 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(3) 1 ENDWHILE WHILE #GP(7) < 8 MOVP P = 7 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(7) 1 ENDWHILE Please let me know if you have any questions or if you need further assistance.",
+  "answear": "WHILE #GP(4) < 8 MOVP P = 4 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 1 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(4) 1 ENDWHILE"
+ },
+ {
+  "content": "血液科下达任务，将5个外科口罩按照顺序依次运送到儿科、妇科、心外科、内科，然后送到后勤。",
+  "final_code": "WHILE #GP(5) < 5 MOVP P = 5 OP = 28000 MOVP P = 1 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 10 OP = 28000 ADD #GP(5) 1 ENDWHILE Please let me know if you have any questions or if you need further assistance!",
+  "answear": "WHILE #GP(5) < 5 MOVP P = 5 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 1 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(5) 1 ENDWHILE"
+ },
+ {
+  "content": "胃肠外科下达任务，将9个止血带按照顺序依次运送到胸科、心外科、儿科、消化内科、血液科、内科、妇科、外科，然后送到后勤。",
+  "final_code": "WHILE #GP(9) < 9 MOVP P = 9 OP = 28000 MOVP P = 1 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 10 OP = 28000 ADD #GP(9) 1 ENDWHILE Please let me know if you have any questions or need further assistance!",
+  "answear": "WHILE #GP(9) < 9 MOVP P = 9 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 1 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(9) 1 ENDWHILE"
+ },
+ {
+  "content": "呼吸科(优先)下达任务，将8个文件按照顺序依次运送到妇科、心外科、消化内科、儿科、胸科，然后送到总务。",
+  "final_code": "WHILE #GP(8) < 5 MOVP P = 8 OP = 28000 MOVP P = 1 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(8) 1 ENDWHILE Explanation: * MOVP P = 8 OP = 28000: Move the file from the current location (location 8) to the destination location (location 1) with an operation of type 28000. * MOVP P = 1 OP = 28000: Move the file from the current location (location 1) to the destination location (location 1) with an operation of type 28000. * MOVP P = 4 OP = 28000: Move the file from the current location (location 4) to the destination location (location 1) with an operation of type 28000. * MOVP P = 7 OP = 28000: Move the file from the current location (location 7) to the destination location (location 1) with an operation of type 28000. * MOVP P = 10 OP = 28000: Move the file from the current location (location 10) to the destination location (location 1) with an operation of type 28000. * MOVP P = 11 OP = 28000: Move the file from the current location (location 11) to the destination location (location 1) with an operation of type 28000. * ADD #GP(8) 1: Increment the value of #GP(8) by 1, indicating that one file has been moved.  Please let me know if you have any questions or if you need further assistance!",
+  "answear": "WHILE #GP(4) < 8 MOVP P = 4 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 1 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(4) 1 ENDWHILE"
+ },
+ {
+  "content": "外科(优先)下达任务，将2个体温计按照顺序依次运送到胃肠外科，然后送到总务。消化内科(优先)下达任务，将9个外科口罩按照顺序依次运送到呼吸科、儿科、妇科、血液科、外科，然后送到总务。心外科(优先)下达任务，将5个体温计按照顺序依次运送到胸科、血液科、消化内科、妇科，然后送到总务。",
+  "final_code": "",
+  "answear": "WHILE #GP(6) < 2 MOVP P = 6 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(6) 1 ENDWHILE WHILE #GP(10) < 9 MOVP P = 10 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(10) 1 ENDWHILE WHILE #GP(1) < 5 MOVP P = 1 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(1) 1 ENDWHILE"
+ },
+ {
+  "content": "胃肠外科下达任务，将5个文件按照顺序依次运送到妇科、心外科、胸科、消化内科，然后送到总务。",
+  "final_code": "WHILE #GP(9) < 5 MOVP P = 9 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(9) 1 ENDWHILE  Please let me know if you have any questions or if you need further assistance!",
+  "answear": "WHILE #GP(9) < 5 MOVP P = 9 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 1 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(9) 1 ENDWHILE"
+ },
+ {
+  "content": "外科(优先)下达任务，将8个医疗仪器按照顺序依次运送到妇科、胸科、心外科，然后送到总务。呼吸科(优先)下达任务，将8个听诊器按照顺序依次运送到儿科、胃肠外科，然后送到总务。心外科(优先)下达任务，将6个文件按照顺序依次运送到儿科、血液科、妇科、消化内科、胸科，然后送到后勤。",
+  "final_code": "",
+  "answear": "WHILE #GP(6) < 8 MOVP P = 6 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 1 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(6) 1 ENDWHILE WHILE #GP(4) < 8 MOVP P = 4 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(4) 1 ENDWHILE WHILE #GP(1) < 6 MOVP P = 1 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(1) 1 ENDWHILE"
+ },
+ {
+  "content": "胃肠外科下达任务，将1个医疗仪器按照顺序依次运送到消化内科，然后送到总务。",
+  "final_code": "WHILE #GP(9) < 6 MOVP P = 9 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(9) 1 ENDWHILE Please let me know if you have any questions or if you need further assistance!",
+  "answear": "WHILE #GP(9) < 1 MOVP P = 9 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(9) 1 ENDWHILE"
+ },
+ {
+  "content": "消化内科下达任务，将4个止血带按照顺序依次运送到心外科、妇科、内科、胸科，然后送到后勤。",
+  "final_code": "WHILE #GP(4) < 4 MOVP P = 4 OP = 28000 MOVP P = 1 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 4 OP = 28000 ENDWHILE Explanation: * #GP(4) is the number of items to be transported from the gastrointestinal department to the other departments. * MOVP P = 4 OP = 28000 moves 4 items from the gastrointestinal department to the other departments. * MOVP P = 1 OP = 28000 moves 1 item from the gastrointestinal department to the heart department. * MOVP P = 2 OP = 28000 moves 2 items from the gastrointestinal department to the lung department. * MOVP P = 3 OP = 28000 moves 3 items from the gastrointestinal department to the liver department. * MOVP P = 4 OP = 28000 moves 4 items from the gastrointestinal department to the pancreas department.  Please let me know if you have any questions or if you need further assistance!",
+  "answear": "WHILE #GP(10) < 4 MOVP P = 10 OP = 28000 MOVP P = 1 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(10) 1 ENDWHILE"
+ },
+ {
+  "content": "血液科下达任务，将8个注射器按照顺序依次运送到胸科、心外科、胃肠外科，然后送到后勤。外科下达任务，将2个外科口罩按照顺序依次运送到消化内科、妇科，然后送到后勤。心外科下达任务，将8个药物按照顺序依次运送到呼吸科、血液科、内科，然后送到后勤。",
+  "final_code": "",
+  "answear": "WHILE #GP(5) < 8 MOVP P = 5 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 1 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(5) 1 ENDWHILE WHILE #GP(6) < 2 MOVP P = 6 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(6) 1 ENDWHILE WHILE #GP(1) < 8 MOVP P = 1 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(1) 1 ENDWHILE"
+ },
+ {
+  "content": "外科下达任务，将9个外科口罩按照顺序依次运送到儿科、血液科、消化内科、呼吸科、胃肠外科、内科、胸科，然后送到后勤。",
+  "final_code": "WHILE #GP(6) < 9 MOVP P = 6 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(6) 1 ENDWHILE Explanation: * #GP(6) is the number of items to be transported from the heart department, which is 6 in this case. * MOVP P = 6 OP = 28000 moves 6 items of heart department from the current location to the destination location. * MOVP P = 7 OP = 28000 moves 7 items of the department from the current location to the destination location. * MOVP P = 11 OP = 28000 moves 11 items of the department from the current location to the destination location. * ADD #GP(6) 1 ENDWHILE adds 1 to the value of #GP(6), which is the number of items transported from the heart department.  Please let me know if you have any questions or if you need further assistance!",
+  "answear": "WHILE #GP(6) < 9 MOVP P = 6 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(6) 1 ENDWHILE"
+ },
+ {
+  "content": "儿科下达任务，将6个听诊器按照顺序依次运送到心外科、外科，然后送到总务。胃肠外科(优先)下达任务，将7个体温计按照顺序依次运送到内科、妇科、胸科、心外科、外科，然后送到总务。胸科下达任务，将4个体温计按照顺序依次运送到胃肠外科、心外科、外科、血液科，然后送到总务。胸科下达任务，将7个注射器按照顺序依次运送到儿科、胃肠外科、内科、妇科、外科，然后送到总务。",
+  "final_code": "",
+  "answear": "WHILE #GP(9) < 7 MOVP P = 9 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 1 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(9) 1 ENDWHILE WHILE #GP(7) < 6 MOVP P = 7 OP = 28000 MOVP P = 1 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(7) 1 ENDWHILE WHILE #GP(8) < 4 MOVP P = 8 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 1 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(8) 1 ENDWHILE WHILE #GP(8) < 7 MOVP P = 8 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(8) 1 ENDWHILE"
+ },
+ {
+  "content": "胸科下达任务，将6个止血带按照顺序依次运送到血液科、内科、消化内科，然后送到后勤。",
+  "final_code": "WHILE #GP(6) < 6 MOVP P = 6 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(6) 1 ENDWHILE Explanation: 1. MOVP P = 6 OP = 28000: Move the item from the heart department to the lung department. 2. MOVP P = 7 OP = 28000: Move the item from the lung department to the internal department. 3. MOVP P = 11 OP = 28000: Move the item from the internal department to the digestive department. 4. ADD #GP(6) 1: Increase the number of items in the heart department by 1.  Please let me know if you have any questions or if you need further assistance!",
+  "answear": "WHILE #GP(8) < 6 MOVP P = 8 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(8) 1 ENDWHILE"
+ },
+ {
+  "content": "心外科下达任务，将7个听诊器按照顺序依次运送到外科、胃肠外科、胸科、消化内科、血液科、内科、妇科，然后送到后勤。",
+  "final_code": "",
+  "answear": "WHILE #GP(1) < 7 MOVP P = 1 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(1) 1 ENDWHILE"
+ },
+ {
+  "content": "外科下达任务，将2个手术刀按照顺序依次运送到血液科、呼吸科，然后送到总务。",
+  "final_code": "WHILE #GP(6) < 2 MOVP P = 6 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(6) 1 ENDWHILE Explanation: * MOVP P = 6 OP = 28000: Move the item from the current location (location 6) to the destination location (location 2) with a weight of 28000. * MOVP P = 7 OP = 28000: Move the item from the current location (location 7) to the destination location (location 2) with a weight of 28000. * MOVP P = 11 OP = 28000: Move the item from the current location (location 11) to the destination location (location 2) with a weight of 28000. * ADD #GP(6) 1: Increment the number of items in the current location (location 6) by 1.  Please let me know if you have any questions or if you need further assistance!",
+  "answear": "WHILE #GP(6) < 2 MOVP P = 6 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(6) 1 ENDWHILE"
+ },
+ {
+  "content": "消化内科(优先)下达任务，将8个外科口罩按照顺序依次运送到呼吸科，然后送到后勤。",
+  "final_code": "WHILE #GP(10) < 8 MOVP P = 10 OP = 28000 MOVP P = 1 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(10) 1 ENDWHILE WHILE #GP(1) < 5 MOVP P = 1 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(1) 1 ENDWHILE WHILE #GP(8) < 5 MOVP P = 8 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(8) 1 ENDWHILE Please let me know if you have any questions or if you need further assistance!",
+  "answear": "WHILE #GP(10) < 8 MOVP P = 10 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(10) 1 ENDWHILE"
+ },
+ {
+  "content": "内科下达任务，将6个药物按照顺序依次运送到血液科、妇科、消化内科，然后送到总务。心外科下达任务，将4个医疗仪器按照顺序依次运送到儿科、胃肠外科、血液科、妇科，然后送到总务。",
+  "final_code": "WHILE #GP(1) < 6 MOVP P = 1 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(1) 1 ENDWHILE  WHILE #GP(6) < 5 MOVP P = 6 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 1 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(6) 1 ENDWHILE  WHILE #GP(8) < 5 MOVP P = 8 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(8) 1 ENDWHILE  WHILE #GP(7) < 6 MOVP P = 7 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(7) 1 ENDWHILE                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           的的 的的 的的的的的                          的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的？的？的？的？的，？的，的，？的，？的地的的，的，地的，的，的，，，，。的，。 的， 的， 的、的的的、的，的的的的的，的，的，的，的，的",
+  "answear": "WHILE #GP(2) < 6 MOVP P = 2 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(2) 1 ENDWHILE WHILE #GP(1) < 4 MOVP P = 1 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(1) 1 ENDWHILE"
+ },
+ {
+  "content": "心外科下达任务，将8个医疗仪器按照顺序依次运送到消化内科、儿科、内科、呼吸科，然后送到总务。消化内科下达任务，将5个听诊器按照顺序依次运送到儿科，然后送到总务。",
+  "final_code": "",
+  "answear": "WHILE #GP(1) < 8 MOVP P = 1 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(1) 1 ENDWHILE WHILE #GP(10) < 5 MOVP P = 10 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(10) 1 ENDWHILE"
+ },
+ {
+  "content": "儿科下达任务，将9个止血带按照顺序依次运送到呼吸科、消化内科、血液科，然后送到总务。",
+  "final_code": "WHILE #GP(9) < 9 MOVP P = 9 OP = 28000 MOVP P = 1 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(9) 1 ENDWHILE Please let me know if you have any questions or if you need further assistance!",
+  "answear": "WHILE #GP(7) < 9 MOVP P = 7 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(7) 1 ENDWHILE"
+ },
+ {
+  "content": "外科(优先)下达任务，将4个注射器按照顺序依次运送到妇科、胃肠外科、儿科、血液科，然后送到总务。呼吸科(优先)下达任务，将8个听诊器按照顺序依次运送到消化内科、外科、心外科、儿科、血液科，然后送到总务。",
+  "final_code": "",
+  "answear": "WHILE #GP(6) < 4 MOVP P = 6 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(6) 1 ENDWHILE WHILE #GP(4) < 8 MOVP P = 4 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 1 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(4) 1 ENDWHILE"
+ },
+ {
+  "content": "内科下达任务，将9个止血带按照顺序依次运送到心外科，然后送到总务。",
+  "final_code": "WHILE #GP(1) < 9 MOVP P = 1 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 1 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(1) 1 ENDWHILE Explanation: * #GP(1) is the number of items to be transported in the internal medicine department, which is 9 in this case. * MOVP P = 1 OP = 28000 moves the first item from the internal medicine department to the heart department. * MOVP P = 8 OP = 28000 moves 8 items from the internal medicine department to the heart department. * MOVP P = 4 OP = 28000 moves 4 items from the internal medicine department to the lung department. * MOVP P = 1 OP = 28000 moves the last item from the internal medicine department to the heart department. * ADD #GP(1) 1 ENDWHILE adds 1 to the number of items transported in the internal medicine department, which is 9 in this case.  Please let me know if you have any questions or if you need further assistance!",
+  "answear": "WHILE #GP(2) < 9 MOVP P = 2 OP = 28000 MOVP P = 1 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(2) 1 ENDWHILE"
+ },
+ {
+  "content": "胃肠外科下达任务，将8个医疗仪器按照顺序依次运送到内科、消化内科、呼吸科、血液科、胸科、妇科、心外科，然后送到总务。",
+  "final_code": "WHILE #GP(9) < 8 MOVP P = 9 OP = 28000 MOVP P = 1 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(9) 1 ENDWHILE  Please let me know if you have any questions or if you need further assistance!",
+  "answear": "WHILE #GP(9) < 8 MOVP P = 9 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 1 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(9) 1 ENDWHILE"
+ },
+ {
+  "content": "血液科下达任务，将6个注射器按照顺序依次运送到胸科、外科、妇科，然后送到后勤。妇科下达任务，将9个药物按照顺序依次运送到呼吸科，然后送到总务。外科下达任务，将4个止血带按照顺序依次运送到心外科，然后送到总务。",
+  "final_code": "",
+  "answear": "WHILE #GP(5) < 6 MOVP P = 5 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(5) 1 ENDWHILE WHILE #GP(3) < 9 MOVP P = 3 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(3) 1 ENDWHILE WHILE #GP(6) < 4 MOVP P = 6 OP = 28000 MOVP P = 1 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(6) 1 ENDWHILE"
+ },
+ {
+  "content": "外科下达任务，将9个手术刀按照顺序依次运送到心外科、内科、妇科、消化内科、儿科，然后送到后勤。血液科下达任务，将2个外科口罩按照顺序依次运送到呼吸科、消化内科，然后送到总务。妇科下达任务，将9个听诊器按照顺序依次运送到外科，然后送到总务。",
+  "final_code": "",
+  "answear": "WHILE #GP(6) < 9 MOVP P = 6 OP = 28000 MOVP P = 1 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(6) 1 ENDWHILE WHILE #GP(5) < 2 MOVP P = 5 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(5) 1 ENDWHILE WHILE #GP(3) < 9 MOVP P = 3 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(3) 1 ENDWHILE"
+ },
+ {
+  "content": "胃肠外科(优先)下达任务，将5个听诊器按照顺序依次运送到血液科、妇科、儿科、内科、外科，然后送到总务。",
+  "final_code": "WHILE #GP(5) < 5 MOVP P = 5 OP = 28000 MOVP P = 1 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 5 OP = 28000 ADD #GP(5) 1 ENDWHILE Please let me know if you have any questions or if you need further assistance!",
+  "answear": "WHILE #GP(9) < 5 MOVP P = 9 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(9) 1 ENDWHILE"
+ },
+ {
+  "content": "胸科下达任务，将9个药物按照顺序依次运送到胃肠外科、外科、血液科、消化内科、内科、心外科、呼吸科、儿科、妇科，然后送到后勤。",
+  "final_code": "WHILE #GP(10) < 9 MOVP P = 10 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 1 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(10) 1 ENDWHILE WHILE #GP(3) < 7 MOVP P = 3 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(3) 1 ENDWHILE WHILE #GP(7) < 8 MOVP P = 7 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(7) 1 ENDWHILE WHILE #GP(1) < 5 MOVP P = 1 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(1) 1 ENDWHILE  Please let me know if you have any questions or if you need further assistance!",
+  "answear": "WHILE #GP(8) < 9 MOVP P = 8 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 1 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(8) 1 ENDWHILE"
+ },
+ {
+  "content": "妇科下达任务，将9个外科口罩按照顺序依次运送到呼吸科、儿科、消化内科、心外科，然后送到后勤。呼吸科(优先)下达任务，将5个血液样本按照顺序依次运送到胸科、消化内科、妇科，然后送到总务。心外科(优先)下达任务，将5个止血带按照顺序依次运送到儿科、妇科、消化内科，然后送到后勤。",
+  "final_code": "",
+  "answear": "WHILE #GP(4) < 5 MOVP P = 4 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(4) 1 ENDWHILE WHILE #GP(1) < 5 MOVP P = 1 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(1) 1 ENDWHILE WHILE #GP(3) < 9 MOVP P = 3 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 1 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(3) 1 ENDWHILE"
+ },
+ {
+  "content": "血液科下达任务，将3个听诊器按照顺序依次运送到儿科、消化内科、外科，然后送到总务。",
+  "final_code": "WHILE #GP(3) < 3 MOVP P = 3 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(3) 1 ENDWHILE Please let me know if you have any questions or if you need further assistance!",
+  "answear": "WHILE #GP(5) < 3 MOVP P = 5 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(5) 1 ENDWHILE"
+ },
+ {
+  "content": "胃肠外科(优先)下达任务，将6个手术刀按照顺序依次运送到消化内科、外科、儿科、呼吸科、胸科，然后送到后勤。胃肠外科(优先)下达任务，将9个听诊器按照顺序依次运送到儿科、外科、妇科，然后送到总务。",
+  "final_code": "WHILE #GP(6) < 6 MOVP P = 6 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(6) 1 ENDWHILE                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       的的的的的的的的的的的的的的的的的的的的                的的的的的的的的的的的的的的的的的的的的的的的的 的 的 的 的 的 的的的的的的的的的的的的的的的的的？的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的？的？的？的？的，的，？的，的，的，？的，的，的，的，的，，，，，，，，，，的， 的， 的、的、的的的的的的的的的，的，的，的，的，的，",
+  "answear": "WHILE #GP(9) < 6 MOVP P = 9 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(9) 1 ENDWHILE WHILE #GP(9) < 9 MOVP P = 9 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(9) 1 ENDWHILE"
+ },
+ {
+  "content": "儿科下达任务，将9个注射器按照顺序依次运送到内科、外科、妇科、血液科、心外科、胃肠外科、胸科、呼吸科、消化内科，然后送到后勤。",
+  "final_code": "WHILE #GP(9) < 9 MOVP P = 9 OP = 28000 MOVP P = 1 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 10 OP = 28000 ADD #GP(9) 1 ENDWHILE Please let me know if you have any questions or if you need further assistance!",
+  "answear": "WHILE #GP(7) < 9 MOVP P = 7 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 1 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(7) 1 ENDWHILE"
+ },
+ {
+  "content": "内科下达任务，将7个注射器按照顺序依次运送到血液科、消化内科、外科、胸科、妇科、胃肠外科，然后送到总务。",
+  "final_code": "WHILE #GP(1) < 7 MOVP P = 1 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(1) 1 ENDWHILE  Please let me know if you have any questions or if you need further assistance!",
+  "answear": "WHILE #GP(2) < 7 MOVP P = 2 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(2) 1 ENDWHILE"
+ },
+ {
+  "content": "呼吸科(优先)下达任务，将9个医疗仪器按照顺序依次运送到内科、妇科，然后送到总务。",
+  "final_code": "WHILE #GP(9) < 9 MOVP P = 9 OP = 28000 MOVP P = 1 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 10 OP = 28000 ADD #GP(9) 1 ENDWHILE Please let me know if you have any questions or if you need further assistance!",
+  "answear": "WHILE #GP(4) < 9 MOVP P = 4 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(4) 1 ENDWHILE"
+ },
+ {
+  "content": "血液科下达任务，将1个止血带按照顺序依次运送到儿科，然后送到总务。",
+  "final_code": "WHILE #GP(1) < 12 MOVP P = 1 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 1 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(1) 1 ENDWHILE Explanation: * MOVP P = 1 OP = 28000: Move the first item from the blood bank to the emergency department. * MOVP P = 10 OP = 28000: Move the tenth item from the blood bank to the emergency department. * MOVP P = 8 OP = 28000: Move the eighth item from the blood bank to the emergency department. * MOVP P = 4 OP = 28000: Move the fourth item from the blood bank to the emergency department. * MOVP P = 2 OP = 28000: Move the second item from the blood bank to the emergency department. * MOVP P = 1 OP = 28000: Move the first item from the blood bank to the emergency department. * MOVP P = 12 OP = 28000: Move the twelfth item from the blood bank to the emergency department. * ADD #GP(1) 1 ENDWHILE: Increment the total number of items moved from the blood bank to the emergency department by 1.  Please let me know if you have any questions or if you need further assistance!",
+  "answear": "WHILE #GP(5) < 1 MOVP P = 5 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(5) 1 ENDWHILE"
+ },
+ {
+  "content": "消化内科下达任务，将2个止血带按照顺序依次运送到呼吸科、心外科，然后送到总务。",
+  "final_code": "WHILE #GP(10) < 8 MOVP P = 10 OP = 28000 MOVP P = 1 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(10) 1 ENDWHILE  WHILE #GP(1) < 5 MOVP P = 1 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(1) 1 ENDWHILE  WHILE #GP(8) < 5 MOVP P = 8 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(8) 1 ENDWHILE                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      的的 的的的的的的的的的的的的的的的的的                的的的的的的的的的的的的的的的的的的的的的的的的 的 的 的 的 的 的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的？的？的？的，？的，？的，？的，？的？的，的，的，地的，的，，，，，，，，。的， 的， 的、的，的的的的，的的的的，的，的，的，的，的，",
+  "answear": "WHILE #GP(10) < 2 MOVP P = 10 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 1 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(10) 1 ENDWHILE"
+ },
+ {
+  "content": "妇科下达任务，将6个血液样本按照顺序依次运送到心外科、消化内科、胃肠外科、血液科、胸科，然后送到后勤。胸科下达任务，将6个文件按照顺序依次运送到外科、内科、呼吸科、儿科，然后送到总务。",
+  "final_code": "WHILE #GP(10) < 8 MOVP P = 10 OP = 28000 MOVP P = 1 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(10) 1 ENDWHILE WHILE #GP(1) < 5 MOVP P = 1 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(1) 1 ENDWHILE WHILE #GP(8) < 5 MOVP P = 8 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(8) 1 ENDWHILE WHILE #GP(7) < 6 MOVP P = 7 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(7) 1 ENDWHILE  Please let me know if you have any questions or if you need further assistance!",
+  "answear": "WHILE #GP(3) < 6 MOVP P = 3 OP = 28000 MOVP P = 1 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(3) 1 ENDWHILE WHILE #GP(8) < 6 MOVP P = 8 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(8) 1 ENDWHILE"
+ },
+ {
+  "content": "外科下达任务，将6个止血带按照顺序依次运送到妇科、胃肠外科、消化内科、胸科，然后送到后勤。",
+  "final_code": "WHILE #GP(6) < 6 MOVP P = 6 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(6) 1 ENDWHILE Explanation: 1. MOVP P = 6 OP = 28000: Move the item from the external department to the internal department. 2. MOVP P = 7 OP = 28000: Move the item from the internal department to the respiratory department. 3. MOVP P = 11 OP = 28000: Move the item from the respiratory department to the gastrointestinal department. 4. ADD #GP(6) 1: Increase the number of items in the internal department by 1.  Please let me know if you have any questions or if you need further assistance!",
+  "answear": "WHILE #GP(6) < 6 MOVP P = 6 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(6) 1 ENDWHILE"
+ },
+ {
+  "content": "消化内科(优先)下达任务，将5个外科口罩按照顺序依次运送到儿科、血液科、外科，然后送到总务。血液科下达任务，将4个药物按照顺序依次运送到内科，然后送到总务。儿科下达任务，将4个止血带按照顺序依次运送到妇科，然后送到后勤。",
+  "final_code": "WHILE #GP(10) < 8 MOVP P = 10 OP = 28000 MOVP P = 1 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(10) 1 ENDWHILE WHILE #GP(1) < 5 MOVP P = 1 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(1) 1 ENDWHILE WHILE #GP(8) < 5 MOVP P = 8 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(8) 1 ENDWHILE WHILE #GP(7) < 6 MOVP P = 7 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(7) 1 ENDWHILE  Please let me know if you have any questions or if you need further assistance!",
+  "answear": "WHILE #GP(10) < 5 MOVP P = 10 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(10) 1 ENDWHILE WHILE #GP(5) < 4 MOVP P = 5 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(5) 1 ENDWHILE WHILE #GP(7) < 4 MOVP P = 7 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(7) 1 ENDWHILE"
+ },
+ {
+  "content": "呼吸科下达任务，将4个外科口罩按照顺序依次运送到消化内科、内科、血液科，然后送到后勤。",
+  "final_code": "WHILE #GP(4) < 4 MOVP P = 4 OP = 28000 MOVP P = 1 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 4 OP = 28000 ENDWHILE Explanation: * #GP(4) is the number of items in the \"呼吸科\" department that need to be transported. * MOVP P = 4 OP = 28000 moves 4 items from the \"呼吸科\" department to the \"消化内科\" department. * MOVP P = 1 OP = 28000 moves 1 item from the \"消化内科\" department to the \"内科\" department. * MOVP P = 2 OP = 28000 moves 2 items from the \"内科\" department to the \"血液科\" department. * MOVP P = 3 OP = 28000 moves 3 items from the \"血液科\" department to the \"后勤\" department. * MOVP P = 4 OP = 28000 moves 4 items from the \"后勤\" department to the \"总务\" department.  Please let me know if you have any questions or if you need further assistance!",
+  "answear": "WHILE #GP(4) < 4 MOVP P = 4 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(4) 1 ENDWHILE"
+ },
+ {
+  "content": "消化内科下达任务，将7个血液样本按照顺序依次运送到心外科、胃肠外科、妇科、胸科、外科、儿科、血液科，然后送到后勤。",
+  "final_code": "WHILE #GP(10) < 8 MOVP P = 10 OP = 28000 MOVP P = 1 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(10) 1 ENDWHILE WHILE #GP(1) < 5 MOVP P = 1 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(1) 1 ENDWHILE WHILE #GP(8) < 5 MOVP P = 8 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(8) 1 ENDWHILE WHILE #GP(7) < 6 MOVP P = 7 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(7) 1 ENDWHILE Please let me know if you have any questions or if you need further assistance!",
+  "answear": "WHILE #GP(10) < 7 MOVP P = 10 OP = 28000 MOVP P = 1 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(10) 1 ENDWHILE"
+ },
+ {
+  "content": "血液科下达任务，将9个血液样本按照顺序依次运送到消化内科、儿科，然后送到总务。",
+  "final_code": "WHILE #GP(9) < 9 MOVP P = 9 OP = 28000 MOVP P = 1 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 10 OP = 28000 ADD #GP(9) 1 ENDWHILE Please let me know if you have any questions or need further assistance!",
+  "answear": "WHILE #GP(5) < 9 MOVP P = 5 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(5) 1 ENDWHILE"
+ },
+ {
+  "content": "胃肠外科下达任务，将1个外科口罩按照顺序依次运送到心外科，然后送到总务。",
+  "final_code": "WHILE #GP(9) < 6 MOVP P = 9 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 11 OP = 28000 Please let me know if you have any questions or if you need further assistance!",
+  "answear": "WHILE #GP(9) < 1 MOVP P = 9 OP = 28000 MOVP P = 1 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(9) 1 ENDWHILE"
+ },
+ {
+  "content": "外科下达任务，将3个手术刀按照顺序依次运送到胸科、胃肠外科、血液科，然后送到后勤。",
+  "final_code": "WHILE #GP(3) < 3 MOVP P = 3 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(3) 1 ENDWHILE Explanation: * MOVP P = 3 OP = 28000: Move the car to the destination point (3) and perform the operation (OP = 28000). * MOVP P = 9 OP = 28000: Move the car to the destination point (9) and perform the operation (OP = 28000). * MOVP P = 4 OP = 28000: Move the car to the destination point (4) and perform the operation (OP = 28000). * MOVP P = 7 OP = 28000: Move the car to the destination point (7) and perform the operation (OP = 28000). * MOVP P = 12 OP = 28000: Move the car to the destination point (12) and perform the operation (OP = 28000). * ADD #GP(3) 1: Increment the number of items transported (#GP(3)) by 1.  Please let me know if you have any questions or if you need further assistance!",
+  "answear": "WHILE #GP(6) < 3 MOVP P = 6 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(6) 1 ENDWHILE"
+ },
+ {
+  "content": "内科下达任务，将7个药物按照顺序依次运送到儿科、妇科、胃肠外科、消化内科，然后送到总务。心外科下达任务，将4个手术刀按照顺序依次运送到呼吸科、外科，然后送到总务。血液科下达任务，将8个血液样本按照顺序依次运送到胸科，然后送到后勤。妇科下达任务，将5个手术刀按照顺序依次运送到外科，然后送到后勤。",
+  "final_code": "",
+  "answear": "WHILE #GP(2) < 7 MOVP P = 2 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(2) 1 ENDWHILE WHILE #GP(1) < 4 MOVP P = 1 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(1) 1 ENDWHILE WHILE #GP(5) < 8 MOVP P = 5 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(5) 1 ENDWHILE WHILE #GP(3) < 5 MOVP P = 3 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(3) 1 ENDWHILE"
+ },
+ {
+  "content": "内科下达任务，将8个止血带按照顺序依次运送到血液科，然后送到总务。",
+  "final_code": "WHILE #GP(1) < 8 MOVP P = 1 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(1) 1 ENDWHILE WHILE #GP(1) < 5 MOVP P = 1 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(1) 1 ENDWHILE Please let me know if you have any questions or if you need further assistance!",
+  "answear": "WHILE #GP(2) < 8 MOVP P = 2 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(2) 1 ENDWHILE"
+ },
+ {
+  "content": "胃肠外科下达任务，将5个手术刀按照顺序依次运送到儿科、内科、外科、消化内科、呼吸科，然后送到总务。",
+  "final_code": "WHILE #GP(9) < 5 MOVP P = 9 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(9) 1 ENDWHILE  Please let me know if you have any questions or if you need further assistance!",
+  "answear": "WHILE #GP(9) < 5 MOVP P = 9 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(9) 1 ENDWHILE"
+ },
+ {
+  "content": "消化内科(优先)下达任务，将8个手术刀按照顺序依次运送到血液科、儿科、呼吸科、胃肠外科、心外科，然后送到总务。消化内科(优先)下达任务，将7个药物按照顺序依次运送到内科、胃肠外科、外科、心外科、血液科，然后送到后勤。胃肠外科(优先)下达任务，将2个血液样本按照顺序依次运送到消化内科、血液科，然后送到总务。心外科(优先)下达任务，将7个外科口罩按照顺序依次运送到胸科、胃肠外科、消化内科，然后送到总务。",
+  "final_code": "",
+  "answear": "WHILE #GP(10) < 8 MOVP P = 10 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 1 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(10) 1 ENDWHILE WHILE #GP(10) < 7 MOVP P = 10 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 1 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(10) 1 ENDWHILE WHILE #GP(9) < 2 MOVP P = 9 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(9) 1 ENDWHILE WHILE #GP(1) < 7 MOVP P = 1 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(1) 1 ENDWHILE"
+ },
+ {
+  "content": "心外科下达任务，将7个外科口罩按照顺序依次运送到血液科、呼吸科、胸科、内科、胃肠外科、儿科、外科，然后送到后勤。",
+  "final_code": "WHILE #GP(1) < 7 MOVP P = 1 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(1) 1 ENDWHILE Explanation: * #GP(1) is the number of items to be transported from the heart department to the other departments. * MOVP P = 1 OP = 28000 moves the first item from the heart department to the other departments. * MOVP P = 7 OP = 28000 moves the second item from the heart department to the other departments. * MOVP P = 11 OP = 28000 moves the third item from the heart department to the other departments. * ADD #GP(1) 1 adds 1 to the number of items transported from the heart department, indicating that 1 item has been transported successfully. * ENDWHILE terminates the loop when the number of items to be transported from the heart department is less than 7.  Please let me know if you have any questions or need further assistance!",
+  "answear": "WHILE #GP(1) < 7 MOVP P = 1 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(1) 1 ENDWHILE"
+ },
+ {
+  "content": "妇科下达任务，将4个血液样本按照顺序依次运送到内科、消化内科、心外科，然后送到后勤。",
+  "final_code": "WHILE #GP(4) < 4 MOVP P = 4 OP = 28000 MOVP P = 1 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(4) 1 ENDWHILE Please let me know if you have any questions or if you need further assistance!",
+  "answear": "WHILE #GP(3) < 4 MOVP P = 3 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 1 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(3) 1 ENDWHILE"
+ },
+ {
+  "content": "外科(优先)下达任务，将7个药物按照顺序依次运送到血液科、心外科、内科，然后送到后勤。胸科下达任务，将9个药物按照顺序依次运送到儿科、胃肠外科、外科、呼吸科，然后送到后勤。心外科(优先)下达任务，将5个止血带按照顺序依次运送到内科、呼吸科、妇科、血液科、胸科，然后送到后勤。",
+  "final_code": "",
+  "answear": "WHILE #GP(6) < 7 MOVP P = 6 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 1 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(6) 1 ENDWHILE WHILE #GP(1) < 5 MOVP P = 1 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(1) 1 ENDWHILE WHILE #GP(8) < 9 MOVP P = 8 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(8) 1 ENDWHILE"
+ },
+ {
+  "content": "胃肠外科下达任务，将7个体温计按照顺序依次运送到呼吸科、消化内科、心外科、儿科、外科、胸科、妇科，然后送到总务。",
+  "final_code": "WHILE #GP(7) < 7 MOVP P = 7 OP = 28000 MOVP P = 1 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(7) 1 ENDWHILE Please let me know if you have any questions or need further assistance!",
+  "answear": "WHILE #GP(9) < 7 MOVP P = 9 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 1 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(9) 1 ENDWHILE"
+ },
+ {
+  "content": "儿科下达任务，将9个听诊器按照顺序依次运送到内科、胃肠外科、消化内科、心外科、外科，然后送到后勤。",
+  "final_code": "WHILE #GP(9) < 9 MOVP P = 9 OP = 28000 MOVP P = 1 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(9) 1 ENDWHILE Please let me know if you have any questions or if you need further assistance!",
+  "answear": "WHILE #GP(7) < 9 MOVP P = 7 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 1 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(7) 1 ENDWHILE"
+ },
+ {
+  "content": "内科下达任务，将5个体温计按照顺序依次运送到消化内科、外科、儿科、胃肠外科，然后送到总务。消化内科下达任务，将4个血液样本按照顺序依次运送到外科、呼吸科、内科、胃肠外科，然后送到后勤。血液科下达任务，将2个手术刀按照顺序依次运送到妇科，然后送到总务。",
+  "final_code": "",
+  "answear": "WHILE #GP(2) < 5 MOVP P = 2 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(2) 1 ENDWHILE WHILE #GP(10) < 4 MOVP P = 10 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(10) 1 ENDWHILE WHILE #GP(5) < 2 MOVP P = 5 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(5) 1 ENDWHILE"
+ },
+ {
+  "content": "儿科下达任务，将8个手术刀按照顺序依次运送到内科、外科、妇科，然后送到总务。胃肠外科(优先)下达任务，将5个血液样本按照顺序依次运送到儿科、内科、外科、心外科、胸科，然后送到总务。胸科下达任务，将9个听诊器按照顺序依次运送到血液科、儿科、呼吸科，然后送到后勤。妇科下达任务，将5个医疗仪器按照顺序依次运送到呼吸科，然后送到后勤。",
+  "final_code": "",
+  "answear": "WHILE #GP(9) < 5 MOVP P = 9 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 1 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(9) 1 ENDWHILE WHILE #GP(7) < 8 MOVP P = 7 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(7) 1 ENDWHILE WHILE #GP(8) < 9 MOVP P = 8 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(8) 1 ENDWHILE WHILE #GP(3) < 5 MOVP P = 3 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(3) 1 ENDWHILE"
+ },
+ {
+  "content": "胸科下达任务，将7个听诊器按照顺序依次运送到妇科、血液科、消化内科、内科、儿科，然后送到总务。儿科下达任务，将6个外科口罩按照顺序依次运送到心外科、胃肠外科，然后送到后勤。",
+  "final_code": "WHILE #GP(10) < 8 MOVP P = 10 OP = 28000 MOVP P = 1 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(10) 1 ENDWHILE WHILE #GP(1) < 5 MOVP P = 1 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(1) 1 ENDWHILE WHILE #GP(8) < 5 MOVP P = 8 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(8) 1 ENDWHILE WHILE #GP(7) < 6 MOVP P = 7 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(7) 1 ENDWHILE  Please let me know if you have any questions or if you need further assistance!",
+  "answear": "WHILE #GP(8) < 7 MOVP P = 8 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(8) 1 ENDWHILE WHILE #GP(7) < 6 MOVP P = 7 OP = 28000 MOVP P = 1 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(7) 1 ENDWHILE"
+ },
+ {
+  "content": "消化内科下达任务，将9个血液样本按照顺序依次运送到呼吸科、妇科、心外科、儿科、胸科、外科、胃肠外科、血液科，然后送到总务。",
+  "final_code": "WHILE #GP(10) < 9 MOVP P = 10 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 1 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(10) 1 ENDWHILE Please let me know if you have any questions or if you need further assistance!",
+  "answear": "WHILE #GP(10) < 9 MOVP P = 10 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 1 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(10) 1 ENDWHILE"
+ },
+ {
+  "content": "血液科下达任务，将8个体温计按照顺序依次运送到心外科、胸科、胃肠外科、妇科、内科、呼吸科、消化内科、外科，然后送到后勤。",
+  "final_code": "WHILE #GP(1) < 8 MOVP P = 1 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(1) 1 ENDWHILE  WHILE #GP(8) < 5 MOVP P = 8 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(8) 1 ENDWHILE  WHILE #GP(7) < 6 MOVP P = 7 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(7) 1 ENDWHILE  WHILE #GP(3) < 3 MOVP P = 3 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(3) 1 ENDWHILE                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          的 的的的 的的的的的的的的的的的的的                   的的的的的的的的的的的的的的的的的的的的的的的 的的 的 的 的 的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的？的？的？的？的，？的，的，？的，？的，？的，的，位的，的，，，，，，，，。的， 的， 的、的、的的、的，的的的的的，的，的，的，的，的，",
+  "answear": "WHILE #GP(5) < 8 MOVP P = 5 OP = 28000 MOVP P = 1 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(5) 1 ENDWHILE"
+ },
+ {
+  "content": "胃肠外科下达任务，将9个体温计按照顺序依次运送到妇科、外科、呼吸科、内科、消化内科，然后送到后勤。胸科下达任务，将7个药物按照顺序依次运送到消化内科、内科、呼吸科、胃肠外科，然后送到后勤。妇科下达任务，将7个血液样本按照顺序依次运送到血液科、胃肠外科、胸科，然后送到后勤。",
+  "final_code": "",
+  "answear": "WHILE #GP(9) < 9 MOVP P = 9 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(9) 1 ENDWHILE WHILE #GP(8) < 7 MOVP P = 8 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(8) 1 ENDWHILE WHILE #GP(3) < 7 MOVP P = 3 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(3) 1 ENDWHILE"
+ },
+ {
+  "content": "妇科下达任务，将6个手术刀按照顺序依次运送到外科、胸科，然后送到后勤。心外科(优先)下达任务，将6个听诊器按照顺序依次运送到消化内科、胃肠外科、呼吸科、内科，然后送到总务。外科(优先)下达任务，将2个医疗仪器按照顺序依次运送到血液科、胃肠外科，然后送到后勤。",
+  "final_code": "",
+  "answear": "WHILE #GP(1) < 6 MOVP P = 1 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(1) 1 ENDWHILE WHILE #GP(6) < 2 MOVP P = 6 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(6) 1 ENDWHILE WHILE #GP(3) < 6 MOVP P = 3 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(3) 1 ENDWHILE"
+ },
+ {
+  "content": "血液科下达任务，将8个体温计按照顺序依次运送到胸科、内科、妇科、心外科、儿科、呼吸科、胃肠外科、消化内科，然后送到总务。",
+  "final_code": "WHILE #GP(1) < 8 MOVP P = 1 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(1) 1 ENDWHILE  WHILE #GP(8) < 5 MOVP P = 8 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(8) 1 ENDWHILE  WHILE #GP(7) < 6 MOVP P = 7 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(7) 1 ENDWHILE  WHILE #GP(3) < 3 MOVP P = 3 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(3) 1 ENDWHILE                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        的 的的的 的的 的的的的的 的的的的                     的的的的的的的的的的的的的的的的的的的的的的 的 的的 的 的 的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的？的？的？的？的？的，？的，？的，？的？的，？的，地的，的，的，，，，，。，。 的， 的、的、的、的的的、的的的的的，的，的，的，的，的，",
+  "answear": "WHILE #GP(5) < 8 MOVP P = 5 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 1 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(5) 1 ENDWHILE"
+ },
+ {
+  "content": "妇科下达任务，将2个药物按照顺序依次运送到外科，然后送到后勤。外科(优先)下达任务，将6个药物按照顺序依次运送到呼吸科、内科、儿科，然后送到总务。外科(优先)下达任务，将5个血液样本按照顺序依次运送到呼吸科、消化内科、胃肠外科、心外科、儿科，然后送到后勤。妇科下达任务，将7个医疗仪器按照顺序依次运送到呼吸科、心外科、胸科、内科，然后送到后勤。",
+  "final_code": "",
+  "answear": "WHILE #GP(6) < 6 MOVP P = 6 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(6) 1 ENDWHILE WHILE #GP(6) < 5 MOVP P = 6 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 1 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(6) 1 ENDWHILE WHILE #GP(3) < 2 MOVP P = 3 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(3) 1 ENDWHILE WHILE #GP(3) < 7 MOVP P = 3 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 1 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(3) 1 ENDWHILE"
+ },
+ {
+  "content": "血液科下达任务，将6个注射器按照顺序依次运送到内科、儿科、呼吸科、胃肠外科，然后送到总务。内科下达任务，将6个手术刀按照顺序依次运送到血液科，然后送到总务。胸科下达任务，将3个药物按照顺序依次运送到妇科，然后送到后勤。",
+  "final_code": "",
+  "answear": "WHILE #GP(5) < 6 MOVP P = 5 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(5) 1 ENDWHILE WHILE #GP(2) < 6 MOVP P = 2 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(2) 1 ENDWHILE WHILE #GP(8) < 3 MOVP P = 8 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(8) 1 ENDWHILE"
+ },
+ {
+  "content": "儿科下达任务，将7个体温计按照顺序依次运送到胸科、胃肠外科、消化内科、呼吸科，然后送到后勤。外科下达任务，将4个体温计按照顺序依次运送到胃肠外科、呼吸科、血液科，然后送到后勤。",
+  "final_code": "WHILE #GP(7) < 8 MOVP P = 7 OP = 28000 MOVP P = 1 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(7) 1 ENDWHILE                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     的的的的的的的的的的的的的的的的的的的                 的的的的的的的的的的的的的的的的的的的的的的的的 的 的 的 的 的 的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的？的？的？的，？的，的，的，的，？的，？的，的，的，的，的，，，，，，，，。的， 的， 的、的、的的的、的，的的的的，的，的，的，的，的",
+  "answear": "WHILE #GP(7) < 7 MOVP P = 7 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(7) 1 ENDWHILE WHILE #GP(6) < 4 MOVP P = 6 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(6) 1 ENDWHILE"
+ },
+ {
+  "content": "外科(优先)下达任务，将6个外科口罩按照顺序依次运送到妇科、心外科、血液科、儿科、胸科，然后送到总务。胸科下达任务，将6个医疗仪器按照顺序依次运送到内科、妇科、呼吸科、儿科，然后送到总务。外科(优先)下达任务，将5个体温计按照顺序依次运送到胸科、呼吸科、胃肠外科、心外科，然后送到后勤。",
+  "final_code": "",
+  "answear": "WHILE #GP(6) < 6 MOVP P = 6 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 1 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(6) 1 ENDWHILE WHILE #GP(6) < 5 MOVP P = 6 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 1 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(6) 1 ENDWHILE WHILE #GP(8) < 6 MOVP P = 8 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(8) 1 ENDWHILE"
+ },
+ {
+  "content": "外科(优先)下达任务，将5个文件按照顺序依次运送到胃肠外科、呼吸科、儿科、妇科、胸科，然后送到总务。呼吸科(优先)下达任务，将3个手术刀按照顺序依次运送到内科、胸科、胃肠外科，然后送到后勤。外科(优先)下达任务，将3个体温计按照顺序依次运送到呼吸科，然后送到总务。胸科下达任务，将8个注射器按照顺序依次运送到心外科、内科、血液科，然后送到总务。",
+  "final_code": "",
+  "answear": "WHILE #GP(6) < 5 MOVP P = 6 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(6) 1 ENDWHILE WHILE #GP(4) < 3 MOVP P = 4 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(4) 1 ENDWHILE WHILE #GP(6) < 3 MOVP P = 6 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(6) 1 ENDWHILE WHILE #GP(8) < 8 MOVP P = 8 OP = 28000 MOVP P = 1 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(8) 1 ENDWHILE"
+ },
+ {
+  "content": "胸科下达任务，将3个体温计按照顺序依次运送到心外科、儿科、外科，然后送到后勤。儿科下达任务，将5个体温计按照顺序依次运送到呼吸科、血液科、胸科、妇科、心外科，然后送到后勤。内科下达任务，将8个听诊器按照顺序依次运送到消化内科，然后送到后勤。血液科下达任务，将6个医疗仪器按照顺序依次运送到儿科、外科、呼吸科、内科，然后送到总务。",
+  "final_code": "",
+  "answear": "WHILE #GP(8) < 3 MOVP P = 8 OP = 28000 MOVP P = 1 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(8) 1 ENDWHILE WHILE #GP(7) < 5 MOVP P = 7 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 1 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(7) 1 ENDWHILE WHILE #GP(2) < 8 MOVP P = 2 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(2) 1 ENDWHILE WHILE #GP(5) < 6 MOVP P = 5 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(5) 1 ENDWHILE"
+ },
+ {
+  "content": "外科下达任务，将6个血液样本按照顺序依次运送到胸科、消化内科、儿科，然后送到后勤。",
+  "final_code": "WHILE #GP(6) < 6 MOVP P = 6 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(6) 1 ENDWHILE Explanation: 1. MOVP P = 6 OP = 28000: Move the item from the heart surgery department to the chest department. 2. MOVP P = 7 OP = 28000: Move the item from the chest department to the digestive department. 3. MOVP P = 11 OP = 28000: Move the item from the digestive department to the respiratory department. 4. ADD #GP(6) 1: Increase the number of items in the heart surgery department by 1.  Please let me know if you have any questions or if you need further assistance!",
+  "answear": "WHILE #GP(6) < 6 MOVP P = 6 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(6) 1 ENDWHILE"
+ },
+ {
+  "content": "呼吸科下达任务，将5个文件按照顺序依次运送到心外科、内科，然后送到总务。",
+  "final_code": "WHILE #GP(1) < 5 MOVP P = 1 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(1) 1 ENDWHILE  Please let me know if you have any questions or if you need further assistance!",
+  "answear": "WHILE #GP(4) < 5 MOVP P = 4 OP = 28000 MOVP P = 1 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(4) 1 ENDWHILE"
+ },
+ {
+  "content": "妇科下达任务，将4个血液样本按照顺序依次运送到呼吸科、儿科，然后送到后勤。内科下达任务，将4个止血带按照顺序依次运送到心外科、呼吸科、胃肠外科，然后送到后勤。胃肠外科下达任务，将7个手术刀按照顺序依次运送到消化内科、胸科、血液科、内科，然后送到后勤。血液科下达任务，将9个听诊器按照顺序依次运送到外科、胃肠外科、妇科、心外科，然后送到后勤。",
+  "final_code": "",
+  "answear": "WHILE #GP(3) < 4 MOVP P = 3 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(3) 1 ENDWHILE WHILE #GP(2) < 4 MOVP P = 2 OP = 28000 MOVP P = 1 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(2) 1 ENDWHILE WHILE #GP(9) < 7 MOVP P = 9 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(9) 1 ENDWHILE WHILE #GP(5) < 9 MOVP P = 5 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 1 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(5) 1 ENDWHILE"
+ },
+ {
+  "content": "儿科下达任务，将4个药物按照顺序依次运送到血液科、胃肠外科、胸科，然后送到后勤。胃肠外科下达任务，将9个体温计按照顺序依次运送到胸科、外科，然后送到后勤。儿科下达任务，将8个手术刀按照顺序依次运送到妇科、消化内科、胃肠外科、胸科，然后送到总务。消化内科下达任务，将8个体温计按照顺序依次运送到胸科、心外科、呼吸科、外科、内科，然后送到总务。",
+  "final_code": "",
+  "answear": "WHILE #GP(7) < 4 MOVP P = 7 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(7) 1 ENDWHILE WHILE #GP(9) < 9 MOVP P = 9 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(9) 1 ENDWHILE WHILE #GP(7) < 8 MOVP P = 7 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(7) 1 ENDWHILE WHILE #GP(10) < 8 MOVP P = 10 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 1 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(10) 1 ENDWHILE"
+ },
+ {
+  "content": "儿科下达任务，将8个止血带按照顺序依次运送到胸科、外科、消化内科、妇科、内科，然后送到总务。",
+  "final_code": "WHILE #GP(7) < 8 MOVP P = 7 OP = 28000 MOVP P = 1 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(7) 1 ENDWHILE WHILE #GP(1) < 5 MOVP P = 1 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(1) 1 ENDWHILE Please let me know if you have any questions or if you need further assistance!",
+  "answear": "WHILE #GP(7) < 8 MOVP P = 7 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(7) 1 ENDWHILE"
+ },
+ {
+  "content": "内科下达任务，将7个文件按照顺序依次运送到呼吸科、胸科、儿科，然后送到后勤。心外科(优先)下达任务，将9个体温计按照顺序依次运送到外科、血液科、消化内科，然后送到后勤。外科(优先)下达任务，将1个听诊器按照顺序依次运送到心外科，然后送到后勤。",
+  "final_code": "",
+  "answear": "WHILE #GP(1) < 9 MOVP P = 1 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(1) 1 ENDWHILE WHILE #GP(6) < 1 MOVP P = 6 OP = 28000 MOVP P = 1 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(6) 1 ENDWHILE WHILE #GP(2) < 7 MOVP P = 2 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(2) 1 ENDWHILE"
+ },
+ {
+  "content": "儿科下达任务，将6个注射器按照顺序依次运送到妇科、内科、消化内科、胃肠外科、心外科，然后送到总务。胸科下达任务，将7个医疗仪器按照顺序依次运送到儿科、血液科，然后送到后勤。内科下达任务，将6个医疗仪器按照顺序依次运送到消化内科，然后送到后勤。",
+  "final_code": "",
+  "answear": "WHILE #GP(7) < 6 MOVP P = 7 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 1 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(7) 1 ENDWHILE WHILE #GP(8) < 7 MOVP P = 8 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(8) 1 ENDWHILE WHILE #GP(2) < 6 MOVP P = 2 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(2) 1 ENDWHILE"
+ },
+ {
+  "content": "血液科下达任务，将2个血液样本按照顺序依次运送到呼吸科，然后送到总务。妇科下达任务，将5个体温计按照顺序依次运送到外科、内科、消化内科、心外科、呼吸科，然后送到总务。",
+  "final_code": "WHILE #GP(2) < 2 MOVP P = 2 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(2) 1 ENDWHILE                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        的的的的的的的的的的的的的的的的的的的                  的的的的的的的的的的的的的的的的的的的的的的 的 的 的 的 的 的的的的的的的的的的的的的的的的？的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的？的？的？的？的，？的，的，的，？的？的，的，的，的，的，的，，，，，，，，的， 的， 的、的、的的、的的的的的的，的，的，的，的，的，",
+  "answear": "WHILE #GP(5) < 2 MOVP P = 5 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(5) 1 ENDWHILE WHILE #GP(3) < 5 MOVP P = 3 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 1 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(3) 1 ENDWHILE"
+ },
+ {
+  "content": "外科(优先)下达任务，将5个文件按照顺序依次运送到血液科，然后送到后勤。内科下达任务，将2个止血带按照顺序依次运送到儿科，然后送到后勤。外科(优先)下达任务，将7个注射器按照顺序依次运送到呼吸科、心外科、内科、妇科，然后送到总务。消化内科(优先)下达任务，将5个文件按照顺序依次运送到血液科、儿科、妇科、内科，然后送到后勤。",
+  "final_code": "",
+  "answear": "WHILE #GP(6) < 5 MOVP P = 6 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(6) 1 ENDWHILE WHILE #GP(6) < 7 MOVP P = 6 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 1 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(6) 1 ENDWHILE WHILE #GP(10) < 5 MOVP P = 10 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(10) 1 ENDWHILE WHILE #GP(2) < 2 MOVP P = 2 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(2) 1 ENDWHILE"
+ },
+ {
+  "content": "心外科(优先)下达任务，将8个血液样本按照顺序依次运送到胃肠外科、儿科、胸科，然后送到后勤。消化内科(优先)下达任务，将8个体温计按照顺序依次运送到胃肠外科、呼吸科、儿科、内科、心外科，然后送到后勤。血液科下达任务，将2个注射器按照顺序依次运送到消化内科，然后送到总务。内科下达任务，将9个注射器按照顺序依次运送到心外科、妇科、胸科，然后送到后勤。",
+  "final_code": "",
+  "answear": "WHILE #GP(1) < 8 MOVP P = 1 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(1) 1 ENDWHILE WHILE #GP(10) < 8 MOVP P = 10 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 1 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(10) 1 ENDWHILE WHILE #GP(5) < 2 MOVP P = 5 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(5) 1 ENDWHILE WHILE #GP(2) < 9 MOVP P = 2 OP = 28000 MOVP P = 1 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(2) 1 ENDWHILE"
+ },
+ {
+  "content": "儿科下达任务，将3个止血带按照顺序依次运送到血液科，然后送到后勤。心外科(优先)下达任务，将5个文件按照顺序依次运送到胃肠外科、消化内科，然后送到后勤。",
+  "final_code": "WHILE #GP(3) < 3 MOVP P = 3 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(3) 1 ENDWHILE                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 的的的的的的的的的的的的的的的的的的                  的的的的的的的的的的的的的的的的的的的的的的的的 的 的 的 的 的 的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的的？的？的？的？的，？的，？的，的，？的，？的，的，的，的，的，，，，，，，，、， 的， 的、的、的的、的的的的的的，的，的，的，的，的，",
+  "answear": "WHILE #GP(1) < 5 MOVP P = 1 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(1) 1 ENDWHILE WHILE #GP(7) < 3 MOVP P = 7 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(7) 1 ENDWHILE"
+ },
+ {
+  "content": "儿科下达任务，将8个文件按照顺序依次运送到呼吸科，然后送到后勤。血液科下达任务，将9个体温计按照顺序依次运送到胃肠外科、内科，然后送到后勤。胃肠外科下达任务，将4个体温计按照顺序依次运送到外科、内科、血液科，然后送到总务。外科下达任务，将9个止血带按照顺序依次运送到内科，然后送到后勤。",
+  "final_code": "",
+  "answear": "WHILE #GP(7) < 8 MOVP P = 7 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(7) 1 ENDWHILE WHILE #GP(5) < 9 MOVP P = 5 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(5) 1 ENDWHILE WHILE #GP(9) < 4 MOVP P = 9 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(9) 1 ENDWHILE WHILE #GP(6) < 9 MOVP P = 6 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(6) 1 ENDWHILE"
+ },
+ {
+  "content": "外科下达任务，将8个药物按照顺序依次运送到胃肠外科、心外科、胸科、妇科、儿科、消化内科、内科、呼吸科，然后送到后勤。",
+  "final_code": "WHILE #GP(6) < 8 MOVP P = 6 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 1 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(6) 1 ENDWHILE Explanation: * MOVP P = 6 OP = 28000: Move the item from the current location (location 6) to the destination location (location 2) with an operation of type 28000. * MOVP P = 8 OP = 28000: Move the item from the current location (location 8) to the destination location (location 2) with an operation of type 28000. * MOVP P = 4 OP = 28000: Move the item from the current location (location 4) to the destination location (location 2) with an operation of type 28000. * MOVP P = 2 OP = 28000: Move the item from the current location (location 2) to the destination location (location 1) with an operation of type 28000. * MOVP P = 1 OP = 28000: Move the item from the current location (location 1) to the destination location (location 9) with an operation of type 28000. * MOVP P = 9 OP = 28000: Move the item from the current location (location 9) to the destination location (location 12) with an operation of type 28000. * MOVP P = 12 OP = 28000: Move the item from the current location (location 12) to the destination location (location 8) with an operation of type 28000. * ADD #GP(6) 1: Increment the value of #GP(6) by 1.  Please let me know if you have any questions or if you need further assistance!",
+  "answear": "WHILE #GP(6) < 8 MOVP P = 6 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 1 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(6) 1 ENDWHILE"
+ },
+ {
+  "content": "胸科下达任务，将8个外科口罩按照顺序依次运送到儿科，然后送到后勤。",
+  "final_code": "WHILE #GP(8) < 5 MOVP P = 8 OP = 28000 MOVP P = 1 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(8) 1 ENDWHILE Explanation: * MOVP P = 8 OP = 28000: Move the item from the current location (location 8) to the destination location (location 1) with an operation of type 28000. * MOVP P = 1 OP = 28000: Move the item from the current location (location 1) to the destination location (location 1) with an operation of type 28000. * MOVP P = 4 OP = 28000: Move the item from the current location (location 4) to the destination location (location 1) with an operation of type 28000. * MOVP P = 7 OP = 28000: Move the item from the current location (location 7) to the destination location (location 1) with an operation of type 28000. * MOVP P = 11 OP = 28000: Move the item from the current location (location 11) to the destination location (location 1) with an operation of type 28000. * ADD #GP(8) 1: Add 1 to the value of #GP(8) to indicate that 8 items have been transported.  Please let me know if you have any questions or if you need further assistance!",
+  "answear": "WHILE #GP(8) < 8 MOVP P = 8 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(8) 1 ENDWHILE"
+ },
+ {
+  "content": "妇科下达任务，将4个文件按照顺序依次运送到心外科、消化内科、胃肠外科、呼吸科，然后送到后勤。",
+  "final_code": "WHILE #GP(4) < 4 MOVP P = 4 OP = 28000 MOVP P = 1 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(4) 1 ENDWHILE Explanation: * #GP(4) represents the number of items in the gynecology department that need to be transported. * MOVP P = 4 OP = 28000 moves 4 items from the gynecology department to the external respiratory department. * MOVP P = 1 OP = 28000 moves 1 item from the gynecology department to the internal department. * MOVP P = 3 OP = 28000 moves 3 items from the gynecology department to the cardiology department. * MOVP P = 2 OP = 28000 moves 2 items from the gynecology department to the neurology department. * MOVP P = 4 OP = 28000 moves 4 items from the gynecology department to the otolaryngology department. * MOVP P = 11 OP = 28000 moves 11 items from the gynecology department to the urology department.  Please let me know if you have any questions or if you need further assistance!",
+  "answear": "WHILE #GP(3) < 4 MOVP P = 3 OP = 28000 MOVP P = 1 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(3) 1 ENDWHILE"
+ }
+]

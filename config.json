@@ -1,0 +1,10 @@
+{
+    "ckpt_dir": "models/CodeLlama-7b-Instruct/",
+    "tokenizer_path": "models/CodeLlama-7b-Instruct/tokenizer.model",
+    "temperature": 0.1,
+    "top_p": 0.75,
+    "max_seq_len": 5000,
+    "max_batch_size": 1,
+    "max_gen_len": null,
+    "max_tokens":1024
+}

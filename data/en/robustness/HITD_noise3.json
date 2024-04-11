@@ -1,0 +1,1202 @@
+[
+ {
+  "content": "The Internal Medicine department issues a task to transport 6 Stethoscope sequentially to Gastrointestinal Surgery, Respiratory, Surgery, Obstetrics and Gynecology, then to General Services. The Internal Medicine department issues a task to transport 1 Surgical Mask sequentially to Cardiac Surgery, then to Logistics. The Respiratory department(priority) issues a task to transport 2 Documents sequentially to Surgery, then to General Services.",
+  "summary": "WHILE #GP(4) < 2 MOVP P = 4 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(4) 1 ENDWHILE WHILE #GP(2) < 6 MOVP P = 2 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(2) 1 ENDWHILE WHILE #GP(2) < 1 MOVP P = 2 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(2) 1 ENDWHILE",
+  "task": "Multi_department_priority",
+  "code length": 384
+ },
+ {
+  "content": "The Hematology department issues a task to transport 9 Surgical Mask sequentially to Thoracic Surgery, Cardiac Surgery, Gastroenterology, Respiratory, Internal Medicine, Pediatrics, Obstetrics and Gynecology, Surgery, then to Logistics.",
+  "summary": "WHILE #GP(5) < 9 MOVP P = 5 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(5) 1 ENDWHILE",
+  "task": "Single_department",
+  "code length": 260
+ },
+ {
+  "content": "The Internal Medicine department issues a task to transport 8 Stethoscope sequentially to Gastrointestinal Surgery, Surgery, Pediatrics, then to General Services.",
+  "summary": "WHILE #GP(2) < 8 MOVP P = 2 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(2) 1 ENDWHILE",
+  "task": "Single_department",
+  "code length": 149
+ },
+ {
+  "content": "The Gastrointestinal Surgery department(priority) issues a task to transport 5 Tourniquet sequentially to Internal Medicine, Respiratory, Cardiac Surgery, Surgery, Hematology, then to General Services. The Cardiac Surgery department(priority) issues a task to transport 7 Injection sequentially to Gastroenterology, Surgery, Thoracic Surgery, Hematology, Gastrointestinal Surgery, then to Logistics.",
+  "summary": "WHILE #GP(9) < 5 MOVP P = 9 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(9) 1 ENDWHILE WHILE #GP(0) < 7 MOVP P = 0 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(0) 1 ENDWHILE",
+  "task": "Multi_department_priority",
+  "code length": 389
+ },
+ {
+  "content": "The Gastroenterology department issues a task to transport 9 Blood Sample sequentially to Cardiac Surgery, Surgery, Hematology, then to Logistics. The Hematology department issues a task to transport 5 Surgical Mask sequentially to Obstetrics and Gynecology, then to General Services. The Obstetrics and Gynecology department issues a task to transport 5 Blood Sample sequentially to Pediatrics, Internal Medicine, Thoracic Surgery, then to Logistics.",
+  "summary": "WHILE #GP(10) < 9 MOVP P = 10 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(10) 1 ENDWHILE WHILE #GP(5) < 5 MOVP P = 5 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(5) 1 ENDWHILE WHILE #GP(3) < 5 MOVP P = 3 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(3) 1 ENDWHILE",
+  "task": "Multi_department",
+  "code length": 409
+ },
+ {
+  "content": "The Cardiac Surgery department issues a task to transport 6 Thermometer sequentially to Internal Medicine, Gastrointestinal Surgery, Respiratory, Obstetrics and Gynecology, Gastroenterology, then to Logistics.",
+  "summary": "WHILE #GP(0) < 6 MOVP P = 0 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(0) 1 ENDWHILE",
+  "task": "Single_department",
+  "code length": 194
+ },
+ {
+  "content": "The Hematology department issues a task to transport 8 Scalpels sequentially to Obstetrics and Gynecology, Gastrointestinal Surgery, Pediatrics, Internal Medicine, Cardiac Surgery, Thoracic Surgery, Surgery, then to General Services.",
+  "summary": "WHILE #GP(5) < 8 MOVP P = 5 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(5) 1 ENDWHILE",
+  "task": "Single_department",
+  "code length": 237
+ },
+ {
+  "content": "The Gastroenterology department issues a task to transport 7 Surgical Mask sequentially to Hematology, Pediatrics, then to General Services.",
+  "summary": "WHILE #GP(10) < 7 MOVP P = 10 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(10) 1 ENDWHILE",
+  "task": "Multi_department",
+  "code length": 131
+ },
+ {
+  "content": "The Gastrointestinal Surgery department issues a task to transport 1 Injection sequentially to Pediatrics, then to Logistics. The Thoracic Surgery department issues a task to transport 5 Thermometer sequentially to Cardiac Surgery, Respiratory, Gastroenterology, Surgery, Hematology, then to Logistics. The Hematology department issues a task to transport 6 Thermometer sequentially to Gastroenterology, then to General Services. The Gastrointestinal Surgery department issues a task to transport 5 Medication sequentially to Obstetrics and Gynecology, then to Logistics.",
+  "summary": "WHILE #GP(9) < 1 MOVP P = 9 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(9) 1 ENDWHILE WHILE #GP(8) < 5 MOVP P = 8 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(8) 1 ENDWHILE WHILE #GP(5) < 6 MOVP P = 5 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(5) 1 ENDWHILE WHILE #GP(9) < 5 MOVP P = 9 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(9) 1 ENDWHILE",
+  "task": "Multi_department",
+  "code length": 514
+ },
+ {
+  "content": "The Respiratory department issues a task to transport 5 Medication sequentially to Pediatrics, Internal Medicine, Gastroenterology, Obstetrics and Gynecology, then to General Services. The Respiratory department issues a task to transport 4 Injection sequentially to Gastrointestinal Surgery, Surgery, then to Logistics.",
+  "summary": "WHILE #GP(4) < 5 MOVP P = 4 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(4) 1 ENDWHILE WHILE #GP(4) < 4 MOVP P = 4 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(4) 1 ENDWHILE",
+  "task": "Multi_department",
+  "code length": 301
+ },
+ {
+  "content": "The Pediatrics department issues a task to transport 6 Injection sequentially to Obstetrics and Gynecology, Internal Medicine, Gastrointestinal Surgery, Gastroenterology, then to Logistics.",
+  "summary": "WHILE #GP(7) < 6 MOVP P = 7 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(7) 1 ENDWHILE",
+  "task": "Single_department",
+  "code length": 172
+ },
+ {
+  "content": "The Pediatrics department issues a task to transport 7 Tourniquet sequentially to Surgery, then to Logistics. The Hematology department issues a task to transport 9 Documents sequentially to Obstetrics and Gynecology, Gastroenterology, Respiratory, Internal Medicine, Thoracic Surgery, then to Logistics. The Cardiac Surgery department(priority) issues a task to transport 6 Documents sequentially to Surgery, Hematology, then to General Services.",
+  "summary": "WHILE #GP(0) < 6 MOVP P = 0 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(0) 1 ENDWHILE WHILE #GP(7) < 7 MOVP P = 7 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(7) 1 ENDWHILE WHILE #GP(5) < 9 MOVP P = 5 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(5) 1 ENDWHILE",
+  "task": "Multi_department_priority",
+  "code length": 429
+ },
+ {
+  "content": "The Surgery department issues a task to transport 9 Tourniquet sequentially to Thoracic Surgery, Obstetrics and Gynecology, Respiratory, Internal Medicine, Gastroenterology, then to General Services. The Surgery department issues a task to transport 6 Scalpels sequentially to Gastrointestinal Surgery, Cardiac Surgery, Respiratory, Obstetrics and Gynecology, Internal Medicine, then to Logistics.",
+  "summary": "WHILE #GP(6) < 9 MOVP P = 6 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(6) 1 ENDWHILE WHILE #GP(6) < 6 MOVP P = 6 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(6) 1 ENDWHILE",
+  "task": "Multi_department",
+  "code length": 389
+ },
+ {
+  "content": "The Internal Medicine department issues a task to transport 6 Surgical Mask sequentially to Surgery, Hematology, then to General Services. The Respiratory department issues a task to transport 6 Documents sequentially to Internal Medicine, Gastroenterology, Obstetrics and Gynecology, Surgery, Gastrointestinal Surgery, then to Logistics. The Obstetrics and Gynecology department issues a task to transport 6 Medication sequentially to Gastroenterology, Thoracic Surgery, then to Logistics. The Pediatrics department issues a task to transport 3 Documents sequentially to Internal Medicine, then to General Services.",
+  "summary": "WHILE #GP(2) < 6 MOVP P = 2 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(2) 1 ENDWHILE WHILE #GP(4) < 6 MOVP P = 4 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(4) 1 ENDWHILE WHILE #GP(3) < 6 MOVP P = 3 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(3) 1 ENDWHILE WHILE #GP(7) < 3 MOVP P = 7 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(7) 1 ENDWHILE",
+  "task": "Multi_department",
+  "code length": 558
+ },
+ {
+  "content": "The Cardiac Surgery department issues a task to transport 9 Blood Sample sequentially to Internal Medicine, Hematology, Respiratory, Gastrointestinal Surgery, Obstetrics and Gynecology, Gastroenterology, then to General Services.",
+  "summary": "WHILE #GP(0) < 9 MOVP P = 0 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(0) 1 ENDWHILE",
+  "task": "Single_department",
+  "code length": 216
+ },
+ {
+  "content": "The Gastrointestinal Surgery department(priority) issues a task to transport 9 Thermometer sequentially to Obstetrics and Gynecology, Surgery, Thoracic Surgery, Internal Medicine, Respiratory, then to General Services. The Surgery department(priority) issues a task to transport 1 Scalpels sequentially to Respiratory, then to General Services. The Obstetrics and Gynecology department issues a task to transport 6 Injection sequentially to Surgery, Internal Medicine, then to Logistics. The Thoracic Surgery department issues a task to transport 7 Scalpels sequentially to Surgery, Hematology, then to Logistics.",
+  "summary": "WHILE #GP(9) < 9 MOVP P = 9 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(9) 1 ENDWHILE WHILE #GP(6) < 1 MOVP P = 6 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(6) 1 ENDWHILE WHILE #GP(3) < 6 MOVP P = 3 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(3) 1 ENDWHILE WHILE #GP(8) < 7 MOVP P = 8 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(8) 1 ENDWHILE",
+  "task": "Multi_department_priority",
+  "code length": 556
+ },
+ {
+  "content": "The Cardiac Surgery department issues a task to transport 8 Medical Instruments sequentially to Hematology, Gastrointestinal Surgery, Internal Medicine, Surgery, Obstetrics and Gynecology, then to Logistics.",
+  "summary": "WHILE #GP(0) < 8 MOVP P = 0 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(0) 1 ENDWHILE",
+  "task": "Single_department",
+  "code length": 193
+ },
+ {
+  "content": "The Pediatrics department issues a task to transport 8 Tourniquet sequentially to Hematology, Thoracic Surgery, Cardiac Surgery, Gastrointestinal Surgery, then to General Services.",
+  "summary": "WHILE #GP(7) < 8 MOVP P = 7 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(7) 1 ENDWHILE",
+  "task": "Multi_department_priority",
+  "code length": 172
+ },
+ {
+  "content": "The Cardiac Surgery department(priority) issues a task to transport 6 Surgical Mask sequentially to Gastrointestinal Surgery, Hematology, Obstetrics and Gynecology, Surgery, Thoracic Surgery, then to General Services. The Hematology department issues a task to transport 5 Blood Sample sequentially to Surgery, then to Logistics. The Obstetrics and Gynecology department issues a task to transport 9 Tourniquet sequentially to Hematology, then to General Services.",
+  "summary": "WHILE #GP(0) < 6 MOVP P = 0 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(0) 1 ENDWHILE WHILE #GP(5) < 5 MOVP P = 5 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(5) 1 ENDWHILE WHILE #GP(3) < 9 MOVP P = 3 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(3) 1 ENDWHILE",
+  "task": "Multi_department_priority",
+  "code length": 406
+ },
+ {
+  "content": "The Hematology department issues a task to transport 2 Injection sequentially to Gastrointestinal Surgery, Internal Medicine, then to Logistics.",
+  "summary": "WHILE #GP(5) < 2 MOVP P = 5 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(5) 1 ENDWHILE",
+  "task": "Single_department",
+  "code length": 127
+ },
+ {
+  "content": "The Obstetrics and Gynecology department issues a task to transport 9 Surgical Mask sequentially to Gastroenterology, Hematology, Surgery, Respiratory, Gastrointestinal Surgery, Cardiac Surgery, Internal Medicine, Thoracic Surgery, Pediatrics, then to General Services.",
+  "summary": "WHILE #GP(3) < 9 MOVP P = 3 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(3) 1 ENDWHILE",
+  "task": "Single_department",
+  "code length": 282
+ },
+ {
+  "content": "The Pediatrics department issues a task to transport 8 Injection sequentially to Surgery, Thoracic Surgery, Obstetrics and Gynecology, Hematology, then to General Services. The Gastrointestinal Surgery department issues a task to transport 8 Injection sequentially to Surgery, Respiratory, Cardiac Surgery, Obstetrics and Gynecology, then to General Services.",
+  "summary": "WHILE #GP(7) < 8 MOVP P = 7 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(7) 1 ENDWHILE WHILE #GP(9) < 8 MOVP P = 9 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(9) 1 ENDWHILE",
+  "task": "Multi_department",
+  "code length": 344
+ },
+ {
+  "content": "The Gastroenterology department issues a task to transport 9 Blood Sample sequentially to Cardiac Surgery, Obstetrics and Gynecology, Hematology, Gastrointestinal Surgery, then to General Services.",
+  "summary": "WHILE #GP(10) < 9 MOVP P = 10 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(10) 1 ENDWHILE",
+  "task": "Single_department",
+  "code length": 174
+ },
+ {
+  "content": "The Internal Medicine department issues a task to transport 5 Medical Instruments sequentially to Cardiac Surgery, Gastroenterology, Gastrointestinal Surgery, Surgery, then to Logistics. The Obstetrics and Gynecology department issues a task to transport 9 Medical Instruments sequentially to Cardiac Surgery, Thoracic Surgery, Gastrointestinal Surgery, Surgery, Gastroenterology, then to General Services.",
+  "summary": "WHILE #GP(2) < 5 MOVP P = 2 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(2) 1 ENDWHILE WHILE #GP(3) < 9 MOVP P = 3 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(3) 1 ENDWHILE",
+  "task": "Multi_department_priority",
+  "code length": 368
+ },
+ {
+  "content": "The Pediatrics department issues a task to transport 3 Thermometer sequentially to Gastrointestinal Surgery, Gastroenterology, Thoracic Surgery, then to General Services. The Cardiac Surgery department(priority) issues a task to transport 7 Documents sequentially to Pediatrics, Obstetrics and Gynecology, Surgery, then to Logistics.",
+  "summary": "WHILE #GP(0) < 7 MOVP P = 0 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(0) 1 ENDWHILE WHILE #GP(7) < 3 MOVP P = 7 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(7) 1 ENDWHILE",
+  "task": "Multi_department_priority",
+  "code length": 301
+ },
+ {
+  "content": "The Cardiac Surgery department(priority) issues a task to transport 7 Medication sequentially to Surgery, Hematology, then to General Services. The Hematology department issues a task to transport 8 Documents sequentially to Cardiac Surgery, Internal Medicine, Respiratory, Gastroenterology, then to General Services. The Pediatrics department issues a task to transport 8 Thermometer sequentially to Respiratory, Gastrointestinal Surgery, Thoracic Surgery, Gastroenterology, then to General Services.",
+  "summary": "WHILE #GP(0) < 7 MOVP P = 0 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(0) 1 ENDWHILE WHILE #GP(5) < 8 MOVP P = 5 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(5) 1 ENDWHILE WHILE #GP(7) < 8 MOVP P = 7 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(7) 1 ENDWHILE",
+  "task": "Multi_department_priority",
+  "code length": 474
+ },
+ {
+  "content": "The Internal Medicine department issues a task to transport 7 Injection sequentially to Respiratory, Gastroenterology, Surgery, Pediatrics, Hematology, then to Logistics.",
+  "summary": "WHILE #GP(2) < 7 MOVP P = 2 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(2) 1 ENDWHILE",
+  "task": "Single_department",
+  "code length": 194
+ },
+ {
+  "content": "The Hematology department issues a task to transport 8 Surgical Mask sequentially to Obstetrics and Gynecology, Respiratory, Pediatrics, Internal Medicine, Thoracic Surgery, then to General Services.",
+  "summary": "WHILE #GP(5) < 8 MOVP P = 5 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(5) 1 ENDWHILE",
+  "task": "Single_department",
+  "code length": 193
+ },
+ {
+  "content": "The Obstetrics and Gynecology department issues a task to transport 7 Thermometer sequentially to Internal Medicine, Cardiac Surgery, Thoracic Surgery, Respiratory, Surgery, then to General Services. The Internal Medicine department issues a task to transport 4 Medication sequentially to Respiratory, Gastroenterology, Cardiac Surgery, Obstetrics and Gynecology, then to General Services. The Cardiac Surgery department(priority) issues a task to transport 6 Blood Sample sequentially to Internal Medicine, Gastrointestinal Surgery, Obstetrics and Gynecology, Hematology, then to General Services.",
+  "summary": "WHILE #GP(0) < 6 MOVP P = 0 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(0) 1 ENDWHILE WHILE #GP(3) < 7 MOVP P = 3 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(3) 1 ENDWHILE WHILE #GP(2) < 4 MOVP P = 2 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(2) 1 ENDWHILE",
+  "task": "Multi_department_priority",
+  "code length": 539
+ },
+ {
+  "content": "The Respiratory department issues a task to transport 4 Injection sequentially to Internal Medicine, Thoracic Surgery, then to Logistics. The Obstetrics and Gynecology department issues a task to transport 7 Blood Sample sequentially to Cardiac Surgery, Hematology, Surgery, Gastroenterology, then to Logistics. The Pediatrics department issues a task to transport 9 Surgical Mask sequentially to Hematology, Internal Medicine, then to Logistics. The Pediatrics department issues a task to transport 9 Thermometer sequentially to Thoracic Surgery, Cardiac Surgery, Hematology, then to Logistics.",
+  "summary": "WHILE #GP(4) < 4 MOVP P = 4 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(4) 1 ENDWHILE WHILE #GP(3) < 7 MOVP P = 3 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(3) 1 ENDWHILE WHILE #GP(7) < 9 MOVP P = 7 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(7) 1 ENDWHILE WHILE #GP(7) < 9 MOVP P = 7 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(7) 1 ENDWHILE",
+  "task": "Multi_department",
+  "code length": 579
+ },
+ {
+  "content": "The Hematology department issues a task to transport 5 Injection sequentially to Internal Medicine, Gastrointestinal Surgery, then to General Services. The Hematology department issues a task to transport 3 Tourniquet sequentially to Surgery, Pediatrics, Cardiac Surgery, then to Logistics. The Respiratory department(priority) issues a task to transport 4 Medication sequentially to Cardiac Surgery, Thoracic Surgery, Gastrointestinal Surgery, Surgery, then to General Services. The Respiratory department(priority) issues a task to transport 7 Scalpels sequentially to Gastroenterology, then to General Services.",
+  "summary": "WHILE #GP(4) < 4 MOVP P = 4 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(4) 1 ENDWHILE WHILE #GP(4) < 7 MOVP P = 4 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(4) 1 ENDWHILE WHILE #GP(5) < 5 MOVP P = 5 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(5) 1 ENDWHILE WHILE #GP(5) < 3 MOVP P = 5 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(5) 1 ENDWHILE",
+  "task": "Multi_department_priority",
+  "code length": 557
+ },
+ {
+  "content": "The Obstetrics and Gynecology department issues a task to transport 4 Documents sequentially to Cardiac Surgery, Pediatrics, Surgery, Gastroenterology, then to General Services. The Internal Medicine department issues a task to transport 7 Tourniquet sequentially to Obstetrics and Gynecology, then to Logistics. The Surgery department(priority) issues a task to transport 4 Medical Instruments sequentially to Pediatrics, Internal Medicine, then to General Services. The Respiratory department(priority) issues a task to transport 6 Scalpels sequentially to Internal Medicine, Gastroenterology, then to Logistics.",
+  "summary": "WHILE #GP(6) < 4 MOVP P = 6 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(6) 1 ENDWHILE WHILE #GP(4) < 6 MOVP P = 4 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(4) 1 ENDWHILE WHILE #GP(3) < 4 MOVP P = 3 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(3) 1 ENDWHILE WHILE #GP(2) < 7 MOVP P = 2 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(2) 1 ENDWHILE",
+  "task": "Multi_department_priority",
+  "code length": 536
+ },
+ {
+  "content": "The Internal Medicine department issues a task to transport 5 Surgical Mask sequentially to Gastroenterology, Obstetrics and Gynecology, Pediatrics, Gastrointestinal Surgery, Respiratory, then to General Services.",
+  "summary": "WHILE #GP(2) < 5 MOVP P = 2 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(2) 1 ENDWHILE",
+  "task": "Single_department",
+  "code length": 194
+ },
+ {
+  "content": "The Pediatrics department issues a task to transport 9 Medical Instruments sequentially to Hematology, Obstetrics and Gynecology, Gastrointestinal Surgery, Gastroenterology, then to Logistics. The Internal Medicine department issues a task to transport 6 Injection sequentially to Thoracic Surgery, Surgery, Pediatrics, Cardiac Surgery, Respiratory, then to Logistics.",
+  "summary": "WHILE #GP(7) < 9 MOVP P = 7 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(7) 1 ENDWHILE WHILE #GP(2) < 6 MOVP P = 2 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(2) 1 ENDWHILE",
+  "task": "Multi_department_priority",
+  "code length": 367
+ },
+ {
+  "content": "The Gastrointestinal Surgery department issues a task to transport 7 Scalpels sequentially to Cardiac Surgery, Thoracic Surgery, then to General Services. The Surgery department issues a task to transport 7 Blood Sample sequentially to Pediatrics, Gastrointestinal Surgery, Cardiac Surgery, Obstetrics and Gynecology, then to General Services. The Gastrointestinal Surgery department issues a task to transport 6 Documents sequentially to Hematology, Cardiac Surgery, Surgery, Obstetrics and Gynecology, then to Logistics.",
+  "summary": "WHILE #GP(9) < 7 MOVP P = 9 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(9) 1 ENDWHILE WHILE #GP(6) < 7 MOVP P = 6 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(6) 1 ENDWHILE WHILE #GP(9) < 6 MOVP P = 9 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(9) 1 ENDWHILE",
+  "task": "Multi_department",
+  "code length": 472
+ },
+ {
+  "content": "The Gastrointestinal Surgery department issues a task to transport 9 Thermometer sequentially to Gastroenterology, Internal Medicine, Hematology, Thoracic Surgery, then to Logistics. The Gastroenterology department issues a task to transport 6 Medical Instruments sequentially to Hematology, Surgery, Thoracic Surgery, Respiratory, Pediatrics, then to Logistics. The Hematology department issues a task to transport 8 Thermometer sequentially to Pediatrics, then to General Services.",
+  "summary": "WHILE #GP(9) < 9 MOVP P = 9 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(9) 1 ENDWHILE WHILE #GP(10) < 6 MOVP P = 10 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(10) 1 ENDWHILE WHILE #GP(5) < 8 MOVP P = 5 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(5) 1 ENDWHILE",
+  "task": "Multi_department",
+  "code length": 476
+ },
+ {
+  "content": "The Hematology department issues a task to transport 8 Medication sequentially to Internal Medicine, Obstetrics and Gynecology, Thoracic Surgery, Cardiac Surgery, then to Logistics. The Internal Medicine department issues a task to transport 5 Stethoscope sequentially to Thoracic Surgery, Hematology, Gastrointestinal Surgery, Gastroenterology, then to Logistics.",
+  "summary": "WHILE #GP(5) < 8 MOVP P = 5 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(5) 1 ENDWHILE WHILE #GP(2) < 5 MOVP P = 2 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(2) 1 ENDWHILE",
+  "task": "Multi_department",
+  "code length": 345
+ },
+ {
+  "content": "The Thoracic Surgery department issues a task to transport 3 Documents sequentially to Respiratory, Gastroenterology, then to Logistics. The Respiratory department(priority) issues a task to transport 3 Documents sequentially to Gastrointestinal Surgery, then to General Services.",
+  "summary": "WHILE #GP(4) < 3 MOVP P = 4 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(4) 1 ENDWHILE WHILE #GP(8) < 3 MOVP P = 8 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(8) 1 ENDWHILE",
+  "task": "Multi_department_priority",
+  "code length": 235
+ },
+ {
+  "content": "The Gastroenterology department issues a task to transport 7 Medical Instruments sequentially to Internal Medicine, Gastrointestinal Surgery, Cardiac Surgery, Respiratory, Hematology, Thoracic Surgery, then to Logistics.",
+  "summary": "WHILE #GP(10) < 7 MOVP P = 10 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(10) 1 ENDWHILE",
+  "task": "Single_department",
+  "code length": 218
+ },
+ {
+  "content": "The Surgery department(priority) issues a task to transport 7 Medication sequentially to Internal Medicine, Gastroenterology, then to General Services. The Respiratory department(priority) issues a task to transport 5 Medical Instruments sequentially to Gastroenterology, Cardiac Surgery, Obstetrics and Gynecology, Internal Medicine, Surgery, then to General Services. The Obstetrics and Gynecology department issues a task to transport 9 Documents sequentially to Respiratory, Surgery, Cardiac Surgery, Pediatrics, Thoracic Surgery, then to General Services. The Respiratory department(priority) issues a task to transport 8 Scalpels sequentially to Obstetrics and Gynecology, then to General Services.",
+  "summary": "WHILE #GP(6) < 7 MOVP P = 6 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(6) 1 ENDWHILE WHILE #GP(4) < 5 MOVP P = 4 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(4) 1 ENDWHILE WHILE #GP(4) < 8 MOVP P = 4 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(4) 1 ENDWHILE WHILE #GP(3) < 9 MOVP P = 3 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(3) 1 ENDWHILE",
+  "task": "Multi_department_priority",
+  "code length": 624
+ },
+ {
+  "content": "The Thoracic Surgery department issues a task to transport 8 Medication sequentially to Respiratory, Gastroenterology, Obstetrics and Gynecology, Surgery, Gastrointestinal Surgery, then to General Services.",
+  "summary": "WHILE #GP(8) < 8 MOVP P = 8 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(8) 1 ENDWHILE",
+  "task": "Single_department",
+  "code length": 194
+ },
+ {
+  "content": "The Gastroenterology department issues a task to transport 4 Medical Instruments sequentially to Respiratory, Pediatrics, Surgery, Cardiac Surgery, then to General Services. The Cardiac Surgery department issues a task to transport 9 Blood Sample sequentially to Respiratory, Obstetrics and Gynecology, Surgery, Pediatrics, then to General Services.",
+  "summary": "WHILE #GP(10) < 4 MOVP P = 10 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(10) 1 ENDWHILE WHILE #GP(0) < 9 MOVP P = 0 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(0) 1 ENDWHILE",
+  "task": "Multi_department",
+  "code length": 347
+ },
+ {
+  "content": "The Obstetrics and Gynecology department issues a task to transport 9 Stethoscope sequentially to Respiratory, Hematology, Internal Medicine, Cardiac Surgery, then to Logistics.",
+  "summary": "WHILE #GP(3) < 9 MOVP P = 3 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(3) 1 ENDWHILE",
+  "task": "Multi_department",
+  "code length": 172
+ },
+ {
+  "content": "The Internal Medicine department issues a task to transport 7 Stethoscope sequentially to Obstetrics and Gynecology, Respiratory, Hematology, then to Logistics.",
+  "summary": "WHILE #GP(2) < 7 MOVP P = 2 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(2) 1 ENDWHILE",
+  "task": "Multi_department",
+  "code length": 150
+ },
+ {
+  "content": "The Thoracic Surgery department issues a task to transport 7 Injection sequentially to Gastroenterology, Cardiac Surgery, Gastrointestinal Surgery, Hematology, then to General Services. The Thoracic Surgery department issues a task to transport 4 Injection sequentially to Surgery, Pediatrics, then to General Services. The Pediatrics department issues a task to transport 6 Injection sequentially to Hematology, Obstetrics and Gynecology, then to General Services. The Gastrointestinal Surgery department(priority) issues a task to transport 3 Tourniquet sequentially to Gastroenterology, then to General Services.",
+  "summary": "WHILE #GP(9) < 3 MOVP P = 9 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(9) 1 ENDWHILE WHILE #GP(8) < 7 MOVP P = 8 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(8) 1 ENDWHILE WHILE #GP(8) < 4 MOVP P = 8 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(8) 1 ENDWHILE WHILE #GP(7) < 6 MOVP P = 7 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(7) 1 ENDWHILE",
+  "task": "Multi_department_priority",
+  "code length": 536
+ },
+ {
+  "content": "The Hematology department issues a task to transport 3 Medical Instruments sequentially to Gastroenterology, Pediatrics, Obstetrics and Gynecology, then to General Services. The Internal Medicine department issues a task to transport 8 Tourniquet sequentially to Cardiac Surgery, then to Logistics.",
+  "summary": "WHILE #GP(5) < 3 MOVP P = 5 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(5) 1 ENDWHILE WHILE #GP(2) < 8 MOVP P = 2 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(2) 1 ENDWHILE",
+  "task": "Multi_department",
+  "code length": 257
+ },
+ {
+  "content": "The Obstetrics and Gynecology department issues a task to transport 4 Scalpels sequentially to Internal Medicine, Respiratory, Gastrointestinal Surgery, then to Logistics. The Obstetrics and Gynecology department issues a task to transport 9 Scalpels sequentially to Hematology, Cardiac Surgery, Gastrointestinal Surgery, Thoracic Surgery, Gastroenterology, then to General Services. The Thoracic Surgery department issues a task to transport 4 Medical Instruments sequentially to Obstetrics and Gynecology, Hematology, Respiratory, Gastrointestinal Surgery, then to General Services.",
+  "summary": "WHILE #GP(3) < 4 MOVP P = 3 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(3) 1 ENDWHILE WHILE #GP(3) < 9 MOVP P = 3 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(3) 1 ENDWHILE WHILE #GP(8) < 4 MOVP P = 8 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(8) 1 ENDWHILE",
+  "task": "Multi_department",
+  "code length": 517
+ },
+ {
+  "content": "The Gastrointestinal Surgery department issues a task to transport 3 Tourniquet sequentially to Gastroenterology, Internal Medicine, Thoracic Surgery, then to Logistics.",
+  "summary": "WHILE #GP(9) < 3 MOVP P = 9 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(9) 1 ENDWHILE",
+  "task": "Single_department",
+  "code length": 150
+ },
+ {
+  "content": "The Surgery department issues a task to transport 7 Medication sequentially to Thoracic Surgery, Cardiac Surgery, Gastroenterology, then to Logistics.",
+  "summary": "WHILE #GP(6) < 7 MOVP P = 6 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(6) 1 ENDWHILE",
+  "task": "Single_department",
+  "code length": 150
+ },
+ {
+  "content": "The Surgery department(priority) issues a task to transport 8 Scalpels sequentially to Hematology, Obstetrics and Gynecology, Respiratory, Cardiac Surgery, Gastroenterology, then to General Services. The Cardiac Surgery department(priority) issues a task to transport 9 Blood Sample sequentially to Thoracic Surgery, Gastroenterology, Obstetrics and Gynecology, then to Logistics. The Obstetrics and Gynecology department issues a task to transport 9 Documents sequentially to Pediatrics, then to General Services. The Obstetrics and Gynecology department issues a task to transport 4 Scalpels sequentially to Gastrointestinal Surgery, Hematology, Gastroenterology, Thoracic Surgery, then to Logistics.",
+  "summary": "WHILE #GP(6) < 8 MOVP P = 6 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(6) 1 ENDWHILE WHILE #GP(0) < 9 MOVP P = 0 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(0) 1 ENDWHILE WHILE #GP(3) < 9 MOVP P = 3 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(3) 1 ENDWHILE WHILE #GP(3) < 4 MOVP P = 3 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(3) 1 ENDWHILE",
+  "task": "Multi_department_priority",
+  "code length": 625
+ },
+ {
+  "content": "The Respiratory department issues a task to transport 3 Documents sequentially to Pediatrics, then to Logistics.",
+  "summary": "WHILE #GP(4) < 3 MOVP P = 4 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(4) 1 ENDWHILE",
+  "task": "Single_department",
+  "code length": 105
+ },
+ {
+  "content": "The Surgery department issues a task to transport 2 Blood Sample sequentially to Hematology, Respiratory, then to Logistics.",
+  "summary": "WHILE #GP(6) < 2 MOVP P = 6 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(6) 1 ENDWHILE",
+  "task": "Multi_department",
+  "code length": 128
+ },
+ {
+  "content": "The Thoracic Surgery department issues a task to transport 5 Medical Instruments sequentially to Cardiac Surgery, then to General Services.",
+  "summary": "WHILE #GP(8) < 5 MOVP P = 8 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(8) 1 ENDWHILE",
+  "task": "Single_department",
+  "code length": 105
+ },
+ {
+  "content": "The Gastrointestinal Surgery department issues a task to transport 3 Documents sequentially to Thoracic Surgery, then to General Services.",
+  "summary": "WHILE #GP(9) < 3 MOVP P = 9 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(9) 1 ENDWHILE",
+  "task": "Single_department",
+  "code length": 105
+ },
+ {
+  "content": "The Respiratory department(priority) issues a task to transport 8 Blood Sample sequentially to Gastrointestinal Surgery, Obstetrics and Gynecology, Cardiac Surgery, Hematology, Surgery, then to General Services. The Obstetrics and Gynecology department issues a task to transport 5 Scalpels sequentially to Respiratory, Cardiac Surgery, Internal Medicine, then to General Services. The Obstetrics and Gynecology department issues a task to transport 4 Thermometer sequentially to Internal Medicine, Pediatrics, then to Logistics. The Pediatrics department issues a task to transport 8 Tourniquet sequentially to Internal Medicine, Cardiac Surgery, Surgery, then to General Services.",
+  "summary": "WHILE #GP(4) < 8 MOVP P = 4 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(4) 1 ENDWHILE WHILE #GP(3) < 5 MOVP P = 3 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(3) 1 ENDWHILE WHILE #GP(3) < 4 MOVP P = 3 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(3) 1 ENDWHILE WHILE #GP(7) < 8 MOVP P = 7 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(7) 1 ENDWHILE",
+  "task": "Multi_department_priority",
+  "code length": 622
+ },
+ {
+  "content": "The Respiratory department issues a task to transport 5 Tourniquet sequentially to Gastroenterology, Thoracic Surgery, Cardiac Surgery, Internal Medicine, then to Logistics.",
+  "summary": "WHILE #GP(4) < 5 MOVP P = 4 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(4) 1 ENDWHILE",
+  "task": "Single_department",
+  "code length": 172
+ },
+ {
+  "content": "The Surgery department issues a task to transport 8 Thermometer sequentially to Thoracic Surgery, Gastroenterology, then to General Services. The Surgery department issues a task to transport 6 Documents sequentially to Cardiac Surgery, Respiratory, Gastrointestinal Surgery, Internal Medicine, Hematology, then to Logistics.",
+  "summary": "WHILE #GP(6) < 8 MOVP P = 6 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(6) 1 ENDWHILE WHILE #GP(6) < 6 MOVP P = 6 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(6) 1 ENDWHILE",
+  "task": "Multi_department",
+  "code length": 323
+ },
+ {
+  "content": "The Respiratory department issues a task to transport 7 Blood Sample sequentially to Internal Medicine, Surgery, Pediatrics, Gastrointestinal Surgery, then to Logistics. The Gastrointestinal Surgery department issues a task to transport 7 Injection sequentially to Thoracic Surgery, Gastroenterology, then to General Services. The Internal Medicine department issues a task to transport 6 Documents sequentially to Obstetrics and Gynecology, then to Logistics.",
+  "summary": "WHILE #GP(4) < 7 MOVP P = 4 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(4) 1 ENDWHILE WHILE #GP(9) < 7 MOVP P = 9 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(9) 1 ENDWHILE WHILE #GP(2) < 6 MOVP P = 2 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(2) 1 ENDWHILE",
+  "task": "Multi_department",
+  "code length": 407
+ },
+ {
+  "content": "The Internal Medicine department issues a task to transport 9 Medical Instruments sequentially to Obstetrics and Gynecology, then to General Services. The Gastroenterology department(priority) issues a task to transport 8 Documents sequentially to Obstetrics and Gynecology, Internal Medicine, Cardiac Surgery, then to General Services. The Gastroenterology department(priority) issues a task to transport 3 Medical Instruments sequentially to Surgery, Hematology, then to General Services. The Gastroenterology department(priority) issues a task to transport 5 Surgical Mask sequentially to Pediatrics, Respiratory, Hematology, then to Logistics.",
+  "summary": "WHILE #GP(10) < 8 MOVP P = 10 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(10) 1 ENDWHILE WHILE #GP(10) < 3 MOVP P = 10 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(10) 1 ENDWHILE WHILE #GP(10) < 5 MOVP P = 10 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(10) 1 ENDWHILE WHILE #GP(2) < 9 MOVP P = 2 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(2) 1 ENDWHILE",
+  "task": "Multi_department_priority",
+  "code length": 543
+ },
+ {
+  "content": "The Thoracic Surgery department issues a task to transport 7 Tourniquet sequentially to Internal Medicine, Hematology, Obstetrics and Gynecology, Cardiac Surgery, then to General Services.",
+  "summary": "WHILE #GP(8) < 7 MOVP P = 8 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(8) 1 ENDWHILE",
+  "task": "Multi_department",
+  "code length": 172
+ },
+ {
+  "content": "The Gastroenterology department issues a task to transport 1 Surgical Mask sequentially to Surgery, then to General Services. The Pediatrics department issues a task to transport 8 Injection sequentially to Gastroenterology, Gastrointestinal Surgery, Respiratory, then to Logistics. The Gastroenterology department issues a task to transport 6 Medication sequentially to Gastrointestinal Surgery, Respiratory, then to Logistics.",
+  "summary": "WHILE #GP(10) < 1 MOVP P = 10 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(10) 1 ENDWHILE WHILE #GP(7) < 8 MOVP P = 7 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(7) 1 ENDWHILE WHILE #GP(10) < 6 MOVP P = 10 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(10) 1 ENDWHILE",
+  "task": "Multi_department",
+  "code length": 391
+ },
+ {
+  "content": "The Surgery department(priority) issues a task to transport 5 Injection sequentially to Obstetrics and Gynecology, Gastrointestinal Surgery, Thoracic Surgery, Pediatrics, then to General Services. The Gastroenterology department(priority) issues a task to transport 7 Scalpels sequentially to Internal Medicine, Pediatrics, then to General Services.",
+  "summary": "WHILE #GP(6) < 5 MOVP P = 6 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(6) 1 ENDWHILE WHILE #GP(10) < 7 MOVP P = 10 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(10) 1 ENDWHILE",
+  "task": "Multi_department_priority",
+  "code length": 303
+ },
+ {
+  "content": "The Obstetrics and Gynecology department issues a task to transport 9 Surgical Mask sequentially to Cardiac Surgery, Hematology, Internal Medicine, Surgery, Pediatrics, then to Logistics. The Cardiac Surgery department issues a task to transport 2 Blood Sample sequentially to Gastrointestinal Surgery, then to Logistics. The Hematology department issues a task to transport 8 Injection sequentially to Thoracic Surgery, Pediatrics, Cardiac Surgery, then to General Services.",
+  "summary": "WHILE #GP(3) < 9 MOVP P = 3 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(3) 1 ENDWHILE WHILE #GP(0) < 2 MOVP P = 0 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(0) 1 ENDWHILE WHILE #GP(5) < 8 MOVP P = 5 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(5) 1 ENDWHILE",
+  "task": "Multi_department",
+  "code length": 450
+ },
+ {
+  "content": "The Respiratory department(priority) issues a task to transport 6 Thermometer sequentially to Gastrointestinal Surgery, then to Logistics. The Thoracic Surgery department issues a task to transport 5 Documents sequentially to Surgery, Respiratory, then to General Services.",
+  "summary": "WHILE #GP(4) < 6 MOVP P = 4 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(4) 1 ENDWHILE WHILE #GP(8) < 5 MOVP P = 8 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(8) 1 ENDWHILE",
+  "task": "Multi_department_priority",
+  "code length": 234
+ },
+ {
+  "content": "The Thoracic Surgery department issues a task to transport 6 Surgical Mask sequentially to Respiratory, Gastrointestinal Surgery, Hematology, Gastroenterology, Pediatrics, then to General Services.",
+  "summary": "WHILE #GP(8) < 6 MOVP P = 8 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(8) 1 ENDWHILE",
+  "task": "Single_department",
+  "code length": 194
+ },
+ {
+  "content": "The Surgery department issues a task to transport 7 Medication sequentially to Gastrointestinal Surgery, Pediatrics, Cardiac Surgery, then to General Services.",
+  "summary": "WHILE #GP(6) < 7 MOVP P = 6 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(6) 1 ENDWHILE",
+  "task": "Single_department",
+  "code length": 149
+ },
+ {
+  "content": "The Internal Medicine department issues a task to transport 4 Medical Instruments sequentially to Gastroenterology, Pediatrics, Respiratory, then to General Services. The Gastrointestinal Surgery department(priority) issues a task to transport 6 Blood Sample sequentially to Cardiac Surgery, Obstetrics and Gynecology, Internal Medicine, then to Logistics.",
+  "summary": "WHILE #GP(9) < 6 MOVP P = 9 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(9) 1 ENDWHILE WHILE #GP(2) < 4 MOVP P = 2 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(2) 1 ENDWHILE",
+  "task": "Multi_department_priority",
+  "code length": 301
+ },
+ {
+  "content": "The Respiratory department issues a task to transport 6 Medical Instruments sequentially to Cardiac Surgery, Internal Medicine, Gastroenterology, Thoracic Surgery, Pediatrics, then to Logistics.",
+  "summary": "WHILE #GP(4) < 6 MOVP P = 4 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(4) 1 ENDWHILE",
+  "task": "Single_department",
+  "code length": 194
+ },
+ {
+  "content": "The Thoracic Surgery department issues a task to transport 7 Tourniquet sequentially to Pediatrics, Surgery, Obstetrics and Gynecology, then to General Services. The Internal Medicine department issues a task to transport 6 Medication sequentially to Gastroenterology, Obstetrics and Gynecology, then to Logistics.",
+  "summary": "WHILE #GP(8) < 7 MOVP P = 8 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(8) 1 ENDWHILE WHILE #GP(2) < 6 MOVP P = 2 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(2) 1 ENDWHILE",
+  "task": "Multi_department",
+  "code length": 279
+ },
+ {
+  "content": "The Respiratory department issues a task to transport 7 Surgical Mask sequentially to Cardiac Surgery, Surgery, Gastroenterology, then to Logistics. The Pediatrics department issues a task to transport 9 Surgical Mask sequentially to Cardiac Surgery, then to Logistics. The Pediatrics department issues a task to transport 9 Scalpels sequentially to Gastrointestinal Surgery, Surgery, Cardiac Surgery, then to General Services.",
+  "summary": "WHILE #GP(4) < 7 MOVP P = 4 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(4) 1 ENDWHILE WHILE #GP(7) < 9 MOVP P = 7 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(7) 1 ENDWHILE WHILE #GP(7) < 9 MOVP P = 7 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(7) 1 ENDWHILE",
+  "task": "Multi_department",
+  "code length": 407
+ },
+ {
+  "content": "The Respiratory department issues a task to transport 1 Medical Instruments sequentially to Pediatrics, then to General Services.",
+  "summary": "WHILE #GP(4) < 1 MOVP P = 4 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(4) 1 ENDWHILE",
+  "task": "Single_department",
+  "code length": 105
+ },
+ {
+  "content": "The Hematology department issues a task to transport 5 Documents sequentially to Respiratory, Gastroenterology, Cardiac Surgery, Thoracic Surgery, Pediatrics, then to General Services. The Pediatrics department issues a task to transport 6 Surgical Mask sequentially to Gastroenterology, Internal Medicine, Respiratory, Obstetrics and Gynecology, Thoracic Surgery, then to Logistics. The Respiratory department(priority) issues a task to transport 8 Medication sequentially to Cardiac Surgery, Surgery, Gastrointestinal Surgery, Thoracic Surgery, Hematology, then to Logistics. The Gastroenterology department(priority) issues a task to transport 7 Medication sequentially to Thoracic Surgery, Pediatrics, Internal Medicine, then to General Services.",
+  "summary": "WHILE #GP(4) < 8 MOVP P = 4 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(4) 1 ENDWHILE WHILE #GP(10) < 7 MOVP P = 10 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(10) 1 ENDWHILE WHILE #GP(5) < 5 MOVP P = 5 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(5) 1 ENDWHILE WHILE #GP(7) < 6 MOVP P = 7 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(7) 1 ENDWHILE",
+  "task": "Multi_department_priority",
+  "code length": 737
+ },
+ {
+  "content": "The Gastrointestinal Surgery department issues a task to transport 9 Stethoscope sequentially to Respiratory, Obstetrics and Gynecology, then to General Services. The Surgery department issues a task to transport 5 Thermometer sequentially to Gastrointestinal Surgery, Gastroenterology, Hematology, Internal Medicine, then to Logistics. The Gastrointestinal Surgery department issues a task to transport 3 Stethoscope sequentially to Obstetrics and Gynecology, Gastroenterology, then to Logistics. The Pediatrics department issues a task to transport 7 Scalpels sequentially to Obstetrics and Gynecology, then to General Services.",
+  "summary": "WHILE #GP(9) < 9 MOVP P = 9 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(9) 1 ENDWHILE WHILE #GP(6) < 5 MOVP P = 6 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(6) 1 ENDWHILE WHILE #GP(9) < 3 MOVP P = 9 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(9) 1 ENDWHILE WHILE #GP(7) < 7 MOVP P = 7 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(7) 1 ENDWHILE",
+  "task": "Multi_department",
+  "code length": 536
+ },
+ {
+  "content": "The Respiratory department issues a task to transport 8 Scalpels sequentially to Gastroenterology, Thoracic Surgery, Gastrointestinal Surgery, Obstetrics and Gynecology, then to Logistics.",
+  "summary": "WHILE #GP(4) < 8 MOVP P = 4 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(4) 1 ENDWHILE",
+  "task": "Multi_department",
+  "code length": 173
+ },
+ {
+  "content": "The Gastroenterology department issues a task to transport 9 Documents sequentially to Respiratory, Internal Medicine, Hematology, Gastrointestinal Surgery, Cardiac Surgery, Thoracic Surgery, Surgery, Pediatrics, Obstetrics and Gynecology, then to General Services.",
+  "summary": "WHILE #GP(10) < 9 MOVP P = 10 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(10) 1 ENDWHILE",
+  "task": "Single_department",
+  "code length": 284
+ },
+ {
+  "content": "The Respiratory department issues a task to transport 5 Injection sequentially to Hematology, then to General Services.",
+  "summary": "WHILE #GP(4) < 5 MOVP P = 4 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(4) 1 ENDWHILE",
+  "task": "Single_department",
+  "code length": 105
+ },
+ {
+  "content": "The Pediatrics department issues a task to transport 5 Documents sequentially to Cardiac Surgery, Gastrointestinal Surgery, Respiratory, then to Logistics. The Pediatrics department issues a task to transport 7 Thermometer sequentially to Gastrointestinal Surgery, Cardiac Surgery, Respiratory, Obstetrics and Gynecology, Internal Medicine, then to General Services. The Hematology department issues a task to transport 3 Scalpels sequentially to Gastrointestinal Surgery, Pediatrics, then to Logistics.",
+  "summary": "WHILE #GP(7) < 5 MOVP P = 7 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(7) 1 ENDWHILE WHILE #GP(7) < 7 MOVP P = 7 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(7) 1 ENDWHILE WHILE #GP(5) < 3 MOVP P = 5 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(5) 1 ENDWHILE",
+  "task": "Multi_department",
+  "code length": 472
+ },
+ {
+  "content": "The Pediatrics department issues a task to transport 9 Blood Sample sequentially to Internal Medicine, Gastroenterology, then to General Services. The Hematology department issues a task to transport 7 Blood Sample sequentially to Cardiac Surgery, Internal Medicine, Pediatrics, then to General Services. The Surgery department(priority) issues a task to transport 7 Tourniquet sequentially to Obstetrics and Gynecology, Hematology, Internal Medicine, Respiratory, then to General Services. The Obstetrics and Gynecology department issues a task to transport 5 Injection sequentially to Gastroenterology, Cardiac Surgery, Internal Medicine, Surgery, then to Logistics.",
+  "summary": "WHILE #GP(6) < 7 MOVP P = 6 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(6) 1 ENDWHILE WHILE #GP(7) < 9 MOVP P = 7 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(7) 1 ENDWHILE WHILE #GP(5) < 7 MOVP P = 5 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(5) 1 ENDWHILE WHILE #GP(3) < 5 MOVP P = 3 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(3) 1 ENDWHILE",
+  "task": "Multi_department_priority",
+  "code length": 624
+ },
+ {
+  "content": "The Thoracic Surgery department issues a task to transport 2 Scalpels sequentially to Gastrointestinal Surgery, then to Logistics. The Cardiac Surgery department(priority) issues a task to transport 9 Injection sequentially to Gastrointestinal Surgery, Internal Medicine, Surgery, Gastroenterology, Pediatrics, then to General Services.",
+  "summary": "WHILE #GP(0) < 9 MOVP P = 0 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(0) 1 ENDWHILE WHILE #GP(8) < 2 MOVP P = 8 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(8) 1 ENDWHILE",
+  "task": "Multi_department_priority",
+  "code length": 301
+ },
+ {
+  "content": "The Cardiac Surgery department issues a task to transport 9 Blood Sample sequentially to Hematology, Thoracic Surgery, Internal Medicine, Gastroenterology, Surgery, Respiratory, Pediatrics, Obstetrics and Gynecology, Gastrointestinal Surgery, then to General Services.",
+  "summary": "WHILE #GP(0) < 9 MOVP P = 0 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(0) 1 ENDWHILE",
+  "task": "Single_department",
+  "code length": 282
+ },
+ {
+  "content": "The Gastrointestinal Surgery department issues a task to transport 7 Stethoscope sequentially to Hematology, Internal Medicine, Surgery, Pediatrics, Obstetrics and Gynecology, then to Logistics.",
+  "summary": "WHILE #GP(9) < 7 MOVP P = 9 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(9) 1 ENDWHILE",
+  "task": "Multi_department",
+  "code length": 194
+ },
+ {
+  "content": "The Respiratory department(priority) issues a task to transport 9 Thermometer sequentially to Hematology, then to General Services. The Pediatrics department issues a task to transport 6 Blood Sample sequentially to Hematology, Internal Medicine, Obstetrics and Gynecology, Cardiac Surgery, Gastrointestinal Surgery, then to General Services. The Cardiac Surgery department(priority) issues a task to transport 9 Surgical Mask sequentially to Obstetrics and Gynecology, Thoracic Surgery, Hematology, then to Logistics. The Surgery department(priority) issues a task to transport 9 Documents sequentially to Obstetrics and Gynecology, Respiratory, Cardiac Surgery, then to Logistics.",
+  "summary": "WHILE #GP(4) < 9 MOVP P = 4 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(4) 1 ENDWHILE WHILE #GP(0) < 9 MOVP P = 0 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(0) 1 ENDWHILE WHILE #GP(6) < 9 MOVP P = 6 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(6) 1 ENDWHILE WHILE #GP(7) < 6 MOVP P = 7 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(7) 1 ENDWHILE",
+  "task": "Multi_department_priority",
+  "code length": 600
+ },
+ {
+  "content": "The Obstetrics and Gynecology department issues a task to transport 7 Injection sequentially to Thoracic Surgery, Cardiac Surgery, Pediatrics, Gastrointestinal Surgery, Hematology, Gastroenterology, then to General Services.",
+  "summary": "WHILE #GP(3) < 7 MOVP P = 3 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(3) 1 ENDWHILE",
+  "task": "Single_department",
+  "code length": 216
+ },
+ {
+  "content": "The Obstetrics and Gynecology department issues a task to transport 7 Medication sequentially to Internal Medicine, Gastrointestinal Surgery, Surgery, Hematology, Pediatrics, Gastroenterology, then to General Services.",
+  "summary": "WHILE #GP(3) < 7 MOVP P = 3 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(3) 1 ENDWHILE",
+  "task": "Single_department",
+  "code length": 216
+ },
+ {
+  "content": "The Obstetrics and Gynecology department issues a task to transport 7 Thermometer sequentially to Thoracic Surgery, Cardiac Surgery, Internal Medicine, Gastroenterology, then to General Services.",
+  "summary": "WHILE #GP(3) < 7 MOVP P = 3 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(3) 1 ENDWHILE",
+  "task": "Multi_department_priority",
+  "code length": 173
+ },
+ {
+  "content": "The Thoracic Surgery department issues a task to transport 5 Medical Instruments sequentially to Obstetrics and Gynecology, Gastroenterology, Surgery, Respiratory, then to General Services. The Thoracic Surgery department issues a task to transport 9 Stethoscope sequentially to Gastroenterology, then to Logistics. The Respiratory department(priority) issues a task to transport 6 Medication sequentially to Cardiac Surgery, Surgery, Gastrointestinal Surgery, Pediatrics, then to General Services. The Cardiac Surgery department(priority) issues a task to transport 4 Injection sequentially to Internal Medicine, Surgery, Obstetrics and Gynecology, Gastroenterology, then to General Services.",
+  "summary": "WHILE #GP(4) < 6 MOVP P = 4 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(4) 1 ENDWHILE WHILE #GP(0) < 4 MOVP P = 0 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(0) 1 ENDWHILE WHILE #GP(8) < 5 MOVP P = 8 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(8) 1 ENDWHILE WHILE #GP(8) < 9 MOVP P = 8 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(8) 1 ENDWHILE",
+  "task": "Multi_department_priority",
+  "code length": 625
+ },
+ {
+  "content": "The Pediatrics department issues a task to transport 8 Tourniquet sequentially to Respiratory, Surgery, then to General Services. The Gastroenterology department(priority) issues a task to transport 6 Injection sequentially to Surgery, Cardiac Surgery, Hematology, then to Logistics. The Respiratory department(priority) issues a task to transport 5 Scalpels sequentially to Internal Medicine, Pediatrics, Surgery, Hematology, Gastrointestinal Surgery, then to General Services. The Gastrointestinal Surgery department(priority) issues a task to transport 4 Injection sequentially to Respiratory, Surgery, then to General Services.",
+  "summary": "WHILE #GP(10) < 6 MOVP P = 10 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(10) 1 ENDWHILE WHILE #GP(4) < 5 MOVP P = 4 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(4) 1 ENDWHILE WHILE #GP(9) < 4 MOVP P = 9 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(9) 1 ENDWHILE WHILE #GP(7) < 8 MOVP P = 7 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(7) 1 ENDWHILE",
+  "task": "Multi_department_priority",
+  "code length": 603
+ },
+ {
+  "content": "The Pediatrics department issues a task to transport 5 Documents sequentially to Cardiac Surgery, then to General Services.",
+  "summary": "WHILE #GP(7) < 5 MOVP P = 7 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(7) 1 ENDWHILE",
+  "task": "Single_department",
+  "code length": 105
+ },
+ {
+  "content": "The Gastroenterology department issues a task to transport 6 Scalpels sequentially to Internal Medicine, then to Logistics. The Internal Medicine department issues a task to transport 1 Injection sequentially to Pediatrics, then to General Services. The Thoracic Surgery department issues a task to transport 3 Thermometer sequentially to Pediatrics, Surgery, Obstetrics and Gynecology, then to Logistics. The Hematology department issues a task to transport 2 Thermometer sequentially to Internal Medicine, Surgery, then to Logistics.",
+  "summary": "WHILE #GP(10) < 6 MOVP P = 10 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(10) 1 ENDWHILE WHILE #GP(2) < 1 MOVP P = 2 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(2) 1 ENDWHILE WHILE #GP(8) < 3 MOVP P = 8 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(8) 1 ENDWHILE WHILE #GP(5) < 2 MOVP P = 5 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(5) 1 ENDWHILE",
+  "task": "Multi_department",
+  "code length": 493
+ },
+ {
+  "content": "The Cardiac Surgery department(priority) issues a task to transport 6 Surgical Mask sequentially to Internal Medicine, Surgery, Gastrointestinal Surgery, Pediatrics, Gastroenterology, then to Logistics. The Surgery department(priority) issues a task to transport 9 Scalpels sequentially to Cardiac Surgery, Respiratory, then to General Services.",
+  "summary": "WHILE #GP(0) < 6 MOVP P = 0 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(0) 1 ENDWHILE WHILE #GP(6) < 9 MOVP P = 6 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(6) 1 ENDWHILE",
+  "task": "Multi_department_priority",
+  "code length": 323
+ },
+ {
+  "content": "The Internal Medicine department issues a task to transport 7 Medication sequentially to Gastrointestinal Surgery, Thoracic Surgery, Obstetrics and Gynecology, then to Logistics. The Pediatrics department issues a task to transport 6 Medical Instruments sequentially to Surgery, Hematology, Thoracic Surgery, Obstetrics and Gynecology, then to Logistics.",
+  "summary": "WHILE #GP(2) < 7 MOVP P = 2 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(2) 1 ENDWHILE WHILE #GP(7) < 6 MOVP P = 7 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(7) 1 ENDWHILE",
+  "task": "Multi_department_priority",
+  "code length": 322
+ },
+ {
+  "content": "The Surgery department issues a task to transport 6 Scalpels sequentially to Hematology, Gastroenterology, then to Logistics.",
+  "summary": "WHILE #GP(6) < 6 MOVP P = 6 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(6) 1 ENDWHILE",
+  "task": "Single_department",
+  "code length": 128
+ },
+ {
+  "content": "The Internal Medicine department issues a task to transport 5 Thermometer sequentially to Gastroenterology, Cardiac Surgery, Obstetrics and Gynecology, then to General Services. The Gastroenterology department issues a task to transport 4 Stethoscope sequentially to Respiratory, Cardiac Surgery, then to General Services. The Thoracic Surgery department issues a task to transport 3 Surgical Mask sequentially to Pediatrics, then to Logistics. The Gastrointestinal Surgery department issues a task to transport 6 Scalpels sequentially to Pediatrics, Hematology, then to General Services.",
+  "summary": "WHILE #GP(2) < 5 MOVP P = 2 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(2) 1 ENDWHILE WHILE #GP(10) < 4 MOVP P = 10 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(10) 1 ENDWHILE WHILE #GP(8) < 3 MOVP P = 8 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(8) 1 ENDWHILE WHILE #GP(9) < 6 MOVP P = 9 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(9) 1 ENDWHILE",
+  "task": "Multi_department",
+  "code length": 516
+ },
+ {
+  "content": "The Cardiac Surgery department issues a task to transport 7 Thermometer sequentially to Obstetrics and Gynecology, then to General Services.",
+  "summary": "WHILE #GP(0) < 7 MOVP P = 0 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(0) 1 ENDWHILE",
+  "task": "Multi_department",
+  "code length": 106
+ },
+ {
+  "content": "The Gastroenterology department(priority) issues a task to transport 6 Tourniquet sequentially to Pediatrics, Cardiac Surgery, then to General Services. The Respiratory department(priority) issues a task to transport 4 Blood Sample sequentially to Pediatrics, Obstetrics and Gynecology, Internal Medicine, then to General Services.",
+  "summary": "WHILE #GP(10) < 6 MOVP P = 10 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(10) 1 ENDWHILE WHILE #GP(4) < 4 MOVP P = 4 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(4) 1 ENDWHILE",
+  "task": "Multi_department_priority",
+  "code length": 281
+ },
+ {
+  "content": "The Hematology department issues a task to transport 6 Documents sequentially to Thoracic Surgery, Internal Medicine, Respiratory, Obstetrics and Gynecology, Pediatrics, then to Logistics.",
+  "summary": "WHILE #GP(5) < 6 MOVP P = 5 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(5) 1 ENDWHILE",
+  "task": "Single_department",
+  "code length": 193
+ },
+ {
+  "content": "The Thoracic Surgery department issues a task to transport 2 Injection sequentially to Hematology, then to Logistics. The Pediatrics department issues a task to transport 8 Thermometer sequentially to Gastrointestinal Surgery, Obstetrics and Gynecology, Surgery, then to General Services. The Surgery department(priority) issues a task to transport 8 Documents sequentially to Thoracic Surgery, Internal Medicine, Hematology, Obstetrics and Gynecology, Cardiac Surgery, then to General Services. The Internal Medicine department issues a task to transport 8 Medical Instruments sequentially to Gastrointestinal Surgery, Pediatrics, then to General Services.",
+  "summary": "WHILE #GP(6) < 8 MOVP P = 6 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(6) 1 ENDWHILE WHILE #GP(8) < 2 MOVP P = 8 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(8) 1 ENDWHILE WHILE #GP(7) < 8 MOVP P = 7 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(7) 1 ENDWHILE WHILE #GP(2) < 8 MOVP P = 2 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(2) 1 ENDWHILE",
+  "task": "Multi_department_priority",
+  "code length": 578
+ },
+ {
+  "content": "The Hematology department issues a task to transport 4 Medication sequentially to Gastrointestinal Surgery, then to Logistics. The Respiratory department issues a task to transport 3 Thermometer sequentially to Pediatrics, Internal Medicine, Thoracic Surgery, then to Logistics. The Gastrointestinal Surgery department issues a task to transport 4 Medication sequentially to Obstetrics and Gynecology, Gastroenterology, then to Logistics.",
+  "summary": "WHILE #GP(5) < 4 MOVP P = 5 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(5) 1 ENDWHILE WHILE #GP(4) < 3 MOVP P = 4 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(4) 1 ENDWHILE WHILE #GP(9) < 4 MOVP P = 9 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(9) 1 ENDWHILE",
+  "task": "Multi_department",
+  "code length": 385
+ },
+ {
+  "content": "The Obstetrics and Gynecology department issues a task to transport 8 Documents sequentially to Cardiac Surgery, Hematology, Internal Medicine, Respiratory, Surgery, Thoracic Surgery, then to Logistics.",
+  "summary": "WHILE #GP(3) < 8 MOVP P = 3 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(3) 1 ENDWHILE",
+  "task": "Single_department",
+  "code length": 215
+ },
+ {
+  "content": "The Thoracic Surgery department issues a task to transport 6 Medical Instruments sequentially to Internal Medicine, Hematology, then to General Services.",
+  "summary": "WHILE #GP(8) < 6 MOVP P = 8 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(8) 1 ENDWHILE",
+  "task": "Multi_department",
+  "code length": 128
+ },
+ {
+  "content": "The Surgery department(priority) issues a task to transport 6 Medical Instruments sequentially to Internal Medicine, Gastrointestinal Surgery, Hematology, Cardiac Surgery, Obstetrics and Gynecology, then to Logistics. The Gastroenterology department(priority) issues a task to transport 9 Medication sequentially to Cardiac Surgery, Hematology, Internal Medicine, Thoracic Surgery, then to General Services. The Gastrointestinal Surgery department(priority) issues a task to transport 3 Injection sequentially to Internal Medicine, then to General Services.",
+  "summary": "WHILE #GP(6) < 6 MOVP P = 6 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(6) 1 ENDWHILE WHILE #GP(10) < 9 MOVP P = 10 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(10) 1 ENDWHILE WHILE #GP(9) < 3 MOVP P = 9 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(9) 1 ENDWHILE",
+  "task": "Multi_department_priority",
+  "code length": 475
+ },
+ {
+  "content": "The Gastroenterology department issues a task to transport 6 Medical Instruments sequentially to Gastrointestinal Surgery, Cardiac Surgery, then to General Services. The Thoracic Surgery department issues a task to transport 5 Surgical Mask sequentially to Gastrointestinal Surgery, Gastroenterology, Surgery, then to Logistics. The Cardiac Surgery department issues a task to transport 2 Medical Instruments sequentially to Thoracic Surgery, Hematology, then to General Services.",
+  "summary": "WHILE #GP(10) < 6 MOVP P = 10 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(10) 1 ENDWHILE WHILE #GP(8) < 5 MOVP P = 8 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(8) 1 ENDWHILE WHILE #GP(0) < 2 MOVP P = 0 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(0) 1 ENDWHILE",
+  "task": "Multi_department",
+  "code length": 410
+ },
+ {
+  "content": "The Gastrointestinal Surgery department(priority) issues a task to transport 6 Stethoscope sequentially to Hematology, Internal Medicine, Thoracic Surgery, then to Logistics.",
+  "summary": "WHILE #GP(9) < 6 MOVP P = 9 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(9) 1 ENDWHILE",
+  "task": "Multi_department_priority",
+  "code length": 150
+ },
+ {
+  "content": "The Internal Medicine department issues a task to transport 3 Scalpels sequentially to Thoracic Surgery, Obstetrics and Gynecology, Gastrointestinal Surgery, then to Logistics. The Gastrointestinal Surgery department issues a task to transport 6 Surgical Mask sequentially to Pediatrics, Respiratory, Obstetrics and Gynecology, then to Logistics.",
+  "summary": "WHILE #GP(2) < 3 MOVP P = 2 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(2) 1 ENDWHILE WHILE #GP(9) < 6 MOVP P = 9 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(9) 1 ENDWHILE",
+  "task": "Multi_department",
+  "code length": 300
+ },
+ {
+  "content": "The Gastroenterology department issues a task to transport 5 Scalpels sequentially to Respiratory, Pediatrics, Hematology, Internal Medicine, then to General Services. The Cardiac Surgery department issues a task to transport 1 Surgical Mask sequentially to Surgery, then to Logistics. The Thoracic Surgery department issues a task to transport 9 Scalpels sequentially to Gastroenterology, then to Logistics. The Hematology department issues a task to transport 7 Documents sequentially to Gastroenterology, Respiratory, Pediatrics, then to General Services.",
+  "summary": "WHILE #GP(10) < 5 MOVP P = 10 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(10) 1 ENDWHILE WHILE #GP(0) < 1 MOVP P = 0 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(0) 1 ENDWHILE WHILE #GP(8) < 9 MOVP P = 8 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(8) 1 ENDWHILE WHILE #GP(5) < 7 MOVP P = 5 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(5) 1 ENDWHILE",
+  "task": "Multi_department",
+  "code length": 539
+ },
+ {
+  "content": "The Thoracic Surgery department issues a task to transport 5 Tourniquet sequentially to Gastroenterology, Internal Medicine, then to General Services. The Gastrointestinal Surgery department(priority) issues a task to transport 9 Scalpels sequentially to Hematology, Pediatrics, Respiratory, Obstetrics and Gynecology, Internal Medicine, then to Logistics. The Gastroenterology department(priority) issues a task to transport 7 Thermometer sequentially to Respiratory, Obstetrics and Gynecology, Cardiac Surgery, Surgery, then to General Services. The Respiratory department(priority) issues a task to transport 5 Surgical Mask sequentially to Gastrointestinal Surgery, Thoracic Surgery, Cardiac Surgery, Obstetrics and Gynecology, then to Logistics.",
+  "summary": "WHILE #GP(9) < 9 MOVP P = 9 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(9) 1 ENDWHILE WHILE #GP(10) < 7 MOVP P = 10 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(10) 1 ENDWHILE WHILE #GP(4) < 5 MOVP P = 4 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(4) 1 ENDWHILE WHILE #GP(8) < 5 MOVP P = 8 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(8) 1 ENDWHILE",
+  "task": "Multi_department_priority",
+  "code length": 670
+ },
+ {
+  "content": "The Gastroenterology department issues a task to transport 6 Documents sequentially to Respiratory, then to General Services.",
+  "summary": "WHILE #GP(10) < 6 MOVP P = 10 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(10) 1 ENDWHILE",
+  "task": "Single_department",
+  "code length": 108
+ },
+ {
+  "content": "The Gastrointestinal Surgery department issues a task to transport 4 Stethoscope sequentially to Hematology, Cardiac Surgery, then to General Services.",
+  "summary": "WHILE #GP(9) < 4 MOVP P = 9 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(9) 1 ENDWHILE",
+  "task": "Single_department",
+  "code length": 127
+ },
+ {
+  "content": "The Obstetrics and Gynecology department issues a task to transport 4 Surgical Mask sequentially to Internal Medicine, then to General Services.",
+  "summary": "WHILE #GP(3) < 4 MOVP P = 3 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(3) 1 ENDWHILE",
+  "task": "Single_department",
+  "code length": 105
+ },
+ {
+  "content": "The Pediatrics department issues a task to transport 7 Scalpels sequentially to Hematology, Thoracic Surgery, Surgery, Gastroenterology, Internal Medicine, then to Logistics.",
+  "summary": "WHILE #GP(7) < 7 MOVP P = 7 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(7) 1 ENDWHILE",
+  "task": "Single_department",
+  "code length": 194
+ },
+ {
+  "content": "The Internal Medicine department issues a task to transport 9 Tourniquet sequentially to Gastroenterology, Surgery, Thoracic Surgery, then to Logistics. The Surgery department(priority) issues a task to transport 4 Documents sequentially to Thoracic Surgery, Gastrointestinal Surgery, Pediatrics, Internal Medicine, then to General Services. The Gastroenterology department(priority) issues a task to transport 5 Documents sequentially to Hematology, Surgery, then to Logistics. The Thoracic Surgery department issues a task to transport 3 Documents sequentially to Pediatrics, Hematology, Obstetrics and Gynecology, then to Logistics.",
+  "summary": "WHILE #GP(6) < 4 MOVP P = 6 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(6) 1 ENDWHILE WHILE #GP(10) < 5 MOVP P = 10 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(10) 1 ENDWHILE WHILE #GP(2) < 9 MOVP P = 2 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(2) 1 ENDWHILE WHILE #GP(8) < 3 MOVP P = 8 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(8) 1 ENDWHILE",
+  "task": "Multi_department_priority",
+  "code length": 604
+ },
+ {
+  "content": "The Surgery department issues a task to transport 9 Medication sequentially to Respiratory, Thoracic Surgery, Obstetrics and Gynecology, Cardiac Surgery, Pediatrics, Gastrointestinal Surgery, Gastroenterology, Hematology, Internal Medicine, then to General Services.",
+  "summary": "WHILE #GP(6) < 9 MOVP P = 6 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(6) 1 ENDWHILE",
+  "task": "Single_department",
+  "code length": 282
+ },
+ {
+  "content": "The Gastrointestinal Surgery department issues a task to transport 3 Medication sequentially to Internal Medicine, Obstetrics and Gynecology, Thoracic Surgery, then to Logistics. The Hematology department issues a task to transport 8 Scalpels sequentially to Pediatrics, Gastroenterology, Respiratory, Obstetrics and Gynecology, then to General Services. The Thoracic Surgery department issues a task to transport 9 Stethoscope sequentially to Pediatrics, Gastroenterology, Surgery, Obstetrics and Gynecology, then to General Services.",
+  "summary": "WHILE #GP(9) < 3 MOVP P = 9 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(9) 1 ENDWHILE WHILE #GP(5) < 8 MOVP P = 5 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(5) 1 ENDWHILE WHILE #GP(8) < 9 MOVP P = 8 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(8) 1 ENDWHILE",
+  "task": "Multi_department",
+  "code length": 496
+ },
+ {
+  "content": "The Hematology department issues a task to transport 2 Surgical Mask sequentially to Surgery, then to General Services.",
+  "summary": "WHILE #GP(5) < 2 MOVP P = 5 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(5) 1 ENDWHILE",
+  "task": "Single_department",
+  "code length": 105
+ },
+ {
+  "content": "The Thoracic Surgery department issues a task to transport 5 Tourniquet sequentially to Pediatrics, Cardiac Surgery, Gastroenterology, then to General Services.",
+  "summary": "WHILE #GP(8) < 5 MOVP P = 8 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(8) 1 ENDWHILE",
+  "task": "Single_department",
+  "code length": 150
+ },
+ {
+  "content": "The Gastroenterology department issues a task to transport 7 Blood Sample sequentially to Obstetrics and Gynecology, then to General Services.",
+  "summary": "WHILE #GP(10) < 7 MOVP P = 10 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(10) 1 ENDWHILE",
+  "task": "Single_department",
+  "code length": 108
+ },
+ {
+  "content": "The Pediatrics department issues a task to transport 8 Documents sequentially to Cardiac Surgery, Internal Medicine, Gastroenterology, Respiratory, Obstetrics and Gynecology, Thoracic Surgery, then to Logistics.",
+  "summary": "WHILE #GP(7) < 8 MOVP P = 7 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(7) 1 ENDWHILE",
+  "task": "Single_department",
+  "code length": 216
+ },
+ {
+  "content": "The Cardiac Surgery department issues a task to transport 8 Stethoscope sequentially to Obstetrics and Gynecology, then to General Services. The Respiratory department issues a task to transport 5 Blood Sample sequentially to Internal Medicine, Gastrointestinal Surgery, Hematology, Cardiac Surgery, then to General Services. The Gastrointestinal Surgery department issues a task to transport 7 Tourniquet sequentially to Surgery, Thoracic Surgery, Cardiac Surgery, Internal Medicine, then to Logistics.",
+  "summary": "WHILE #GP(0) < 8 MOVP P = 0 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(0) 1 ENDWHILE WHILE #GP(4) < 5 MOVP P = 4 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(4) 1 ENDWHILE WHILE #GP(9) < 7 MOVP P = 9 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(9) 1 ENDWHILE",
+  "task": "Multi_department",
+  "code length": 450
+ },
+ {
+  "content": "The Respiratory department issues a task to transport 3 Tourniquet sequentially to Internal Medicine, Thoracic Surgery, then to General Services. The Respiratory department issues a task to transport 7 Injection sequentially to Gastroenterology, Cardiac Surgery, Hematology, Obstetrics and Gynecology, then to Logistics. The Pediatrics department issues a task to transport 7 Tourniquet sequentially to Hematology, Surgery, Thoracic Surgery, Internal Medicine, Cardiac Surgery, then to General Services. The Respiratory department issues a task to transport 8 Documents sequentially to Obstetrics and Gynecology, then to Logistics.",
+  "summary": "WHILE #GP(4) < 3 MOVP P = 4 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(4) 1 ENDWHILE WHILE #GP(4) < 7 MOVP P = 4 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(4) 1 ENDWHILE WHILE #GP(7) < 7 MOVP P = 7 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(7) 1 ENDWHILE WHILE #GP(4) < 8 MOVP P = 4 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(4) 1 ENDWHILE",
+  "task": "Multi_department",
+  "code length": 601
+ },
+ {
+  "content": "The Thoracic Surgery department issues a task to transport 7 Thermometer sequentially to Respiratory, Cardiac Surgery, Internal Medicine, Gastroenterology, Pediatrics, then to Logistics.",
+  "summary": "WHILE #GP(8) < 7 MOVP P = 8 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(8) 1 ENDWHILE",
+  "task": "Single_department",
+  "code length": 194
+ },
+ {
+  "content": "The Pediatrics department issues a task to transport 9 Injection sequentially to Internal Medicine, Gastroenterology, Cardiac Surgery, Hematology, Gastrointestinal Surgery, Obstetrics and Gynecology, Respiratory, Thoracic Surgery, Surgery, then to Logistics.",
+  "summary": "WHILE #GP(7) < 9 MOVP P = 7 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(7) 1 ENDWHILE",
+  "task": "Single_department",
+  "code length": 282
+ },
+ {
+  "content": "The Surgery department issues a task to transport 9 Documents sequentially to Gastroenterology, Internal Medicine, then to General Services.",
+  "summary": "WHILE #GP(6) < 9 MOVP P = 6 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(6) 1 ENDWHILE",
+  "task": "Single_department",
+  "code length": 128
+ },
+ {
+  "content": "The Respiratory department issues a task to transport 6 Stethoscope sequentially to Gastrointestinal Surgery, Internal Medicine, Gastroenterology, Pediatrics, Hematology, then to Logistics. The Respiratory department issues a task to transport 5 Scalpels sequentially to Thoracic Surgery, Pediatrics, Cardiac Surgery, Gastrointestinal Surgery, then to Logistics. The Obstetrics and Gynecology department issues a task to transport 6 Blood Sample sequentially to Internal Medicine, Respiratory, Pediatrics, then to Logistics. The Respiratory department issues a task to transport 8 Blood Sample sequentially to Hematology, Surgery, Pediatrics, Obstetrics and Gynecology, then to Logistics.",
+  "summary": "WHILE #GP(4) < 6 MOVP P = 4 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(4) 1 ENDWHILE WHILE #GP(4) < 5 MOVP P = 4 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(4) 1 ENDWHILE WHILE #GP(3) < 6 MOVP P = 3 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(3) 1 ENDWHILE WHILE #GP(4) < 8 MOVP P = 4 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(4) 1 ENDWHILE",
+  "task": "Multi_department",
+  "code length": 689
+ },
+ {
+  "content": "The Cardiac Surgery department(priority) issues a task to transport 4 Tourniquet sequentially to Internal Medicine, Thoracic Surgery, Respiratory, Hematology, then to Logistics. The Gastrointestinal Surgery department(priority) issues a task to transport 7 Injection sequentially to Thoracic Surgery, Hematology, then to Logistics.",
+  "summary": "WHILE #GP(0) < 4 MOVP P = 0 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(0) 1 ENDWHILE WHILE #GP(9) < 7 MOVP P = 9 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(9) 1 ENDWHILE",
+  "task": "Multi_department_priority",
+  "code length": 300
+ },
+ {
+  "content": "The Hematology department issues a task to transport 9 Thermometer sequentially to Thoracic Surgery, Respiratory, Cardiac Surgery, Obstetrics and Gynecology, Pediatrics, Internal Medicine, Gastroenterology, Surgery, Gastrointestinal Surgery, then to Logistics.",
+  "summary": "WHILE #GP(5) < 9 MOVP P = 5 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(5) 1 ENDWHILE",
+  "task": "Single_department",
+  "code length": 282
+ },
+ {
+  "content": "The Pediatrics department issues a task to transport 8 Medical Instruments sequentially to Internal Medicine, Obstetrics and Gynecology, Cardiac Surgery, Hematology, Surgery, Gastrointestinal Surgery, Thoracic Surgery, then to General Services.",
+  "summary": "WHILE #GP(7) < 8 MOVP P = 7 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(7) 1 ENDWHILE",
+  "task": "Single_department",
+  "code length": 237
+ },
+ {
+  "content": "The Pediatrics department issues a task to transport 3 Scalpels sequentially to Surgery, Thoracic Surgery, Respiratory, then to Logistics. The Obstetrics and Gynecology department issues a task to transport 5 Stethoscope sequentially to Cardiac Surgery, Internal Medicine, then to Logistics. The Respiratory department(priority) issues a task to transport 3 Medication sequentially to Gastrointestinal Surgery, then to General Services. The Gastrointestinal Surgery department(priority) issues a task to transport 3 Medication sequentially to Hematology, then to General Services.",
+  "summary": "WHILE #GP(4) < 3 MOVP P = 4 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(4) 1 ENDWHILE WHILE #GP(9) < 3 MOVP P = 9 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(9) 1 ENDWHILE WHILE #GP(7) < 3 MOVP P = 7 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(7) 1 ENDWHILE WHILE #GP(3) < 5 MOVP P = 3 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(3) 1 ENDWHILE",
+  "task": "Multi_department_priority",
+  "code length": 490
+ },
+ {
+  "content": "The Gastrointestinal Surgery department issues a task to transport 3 Documents sequentially to Obstetrics and Gynecology, then to General Services. The Gastroenterology department issues a task to transport 3 Injection sequentially to Cardiac Surgery, then to Logistics.",
+  "summary": "WHILE #GP(9) < 3 MOVP P = 9 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(9) 1 ENDWHILE WHILE #GP(10) < 3 MOVP P = 10 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(10) 1 ENDWHILE",
+  "task": "Multi_department",
+  "code length": 215
+ },
+ {
+  "content": "The Internal Medicine department issues a task to transport 9 Medical Instruments sequentially to Gastroenterology, Respiratory, Gastrointestinal Surgery, Hematology, then to General Services. The Thoracic Surgery department issues a task to transport 1 Medication sequentially to Pediatrics, then to General Services. The Pediatrics department issues a task to transport 7 Documents sequentially to Respiratory, Gastrointestinal Surgery, Hematology, then to Logistics. The Thoracic Surgery department issues a task to transport 5 Tourniquet sequentially to Gastroenterology, Surgery, Hematology, Respiratory, then to Logistics.",
+  "summary": "WHILE #GP(2) < 9 MOVP P = 2 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(2) 1 ENDWHILE WHILE #GP(8) < 1 MOVP P = 8 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(8) 1 ENDWHILE WHILE #GP(7) < 7 MOVP P = 7 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(7) 1 ENDWHILE WHILE #GP(8) < 5 MOVP P = 8 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(8) 1 ENDWHILE",
+  "task": "Multi_department_priority",
+  "code length": 602
+ },
+ {
+  "content": "The Obstetrics and Gynecology department issues a task to transport 5 Medication sequentially to Internal Medicine, Pediatrics, Respiratory, then to Logistics.",
+  "summary": "WHILE #GP(3) < 5 MOVP P = 3 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(3) 1 ENDWHILE",
+  "task": "Multi_department",
+  "code length": 150
+ },
+ {
+  "content": "The Internal Medicine department issues a task to transport 7 Scalpels sequentially to Cardiac Surgery, then to General Services.",
+  "summary": "WHILE #GP(2) < 7 MOVP P = 2 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(2) 1 ENDWHILE",
+  "task": "Multi_department",
+  "code length": 106
+ },
+ {
+  "content": "The Pediatrics department issues a task to transport 5 Scalpels sequentially to Thoracic Surgery, Hematology, Cardiac Surgery, Gastroenterology, Obstetrics and Gynecology, then to Logistics. The Thoracic Surgery department issues a task to transport 9 Thermometer sequentially to Internal Medicine, Obstetrics and Gynecology, Gastrointestinal Surgery, Surgery, Hematology, then to Logistics. The Cardiac Surgery department(priority) issues a task to transport 2 Thermometer sequentially to Gastrointestinal Surgery, Internal Medicine, then to Logistics. The Obstetrics and Gynecology department issues a task to transport 2 Thermometer sequentially to Gastroenterology, Cardiac Surgery, then to Logistics.",
+  "summary": "WHILE #GP(0) < 2 MOVP P = 0 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(0) 1 ENDWHILE WHILE #GP(7) < 5 MOVP P = 7 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(7) 1 ENDWHILE WHILE #GP(8) < 9 MOVP P = 8 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(8) 1 ENDWHILE WHILE #GP(3) < 2 MOVP P = 3 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(3) 1 ENDWHILE",
+  "task": "Multi_department_priority",
+  "code length": 646
+ },
+ {
+  "content": "The Thoracic Surgery department issues a task to transport 6 Blood Sample sequentially to Cardiac Surgery, Pediatrics, Surgery, Obstetrics and Gynecology, Gastrointestinal Surgery, then to Logistics.",
+  "summary": "WHILE #GP(8) < 6 MOVP P = 8 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(8) 1 ENDWHILE",
+  "task": "Single_department",
+  "code length": 193
+ },
+ {
+  "content": "The Thoracic Surgery department issues a task to transport 2 Medical Instruments sequentially to Internal Medicine, Gastroenterology, then to General Services.",
+  "summary": "WHILE #GP(8) < 2 MOVP P = 8 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(8) 1 ENDWHILE",
+  "task": "Multi_department",
+  "code length": 129
+ },
+ {
+  "content": "The Obstetrics and Gynecology department issues a task to transport 6 Injection sequentially to Thoracic Surgery, Pediatrics, Gastrointestinal Surgery, Cardiac Surgery, Respiratory, then to Logistics. The Surgery department issues a task to transport 9 Scalpels sequentially to Internal Medicine, Gastroenterology, Obstetrics and Gynecology, Gastrointestinal Surgery, then to General Services.",
+  "summary": "WHILE #GP(3) < 6 MOVP P = 3 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(3) 1 ENDWHILE WHILE #GP(6) < 9 MOVP P = 6 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(6) 1 ENDWHILE",
+  "task": "Multi_department",
+  "code length": 367
+ },
+ {
+  "content": "The Obstetrics and Gynecology department issues a task to transport 8 Scalpels sequentially to Internal Medicine, Cardiac Surgery, Surgery, Gastrointestinal Surgery, Gastroenterology, Hematology, Respiratory, then to General Services.",
+  "summary": "WHILE #GP(3) < 8 MOVP P = 3 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(3) 1 ENDWHILE",
+  "task": "Single_department",
+  "code length": 238
+ },
+ {
+  "content": "The Thoracic Surgery department issues a task to transport 7 Tourniquet sequentially to Internal Medicine, Gastrointestinal Surgery, Gastroenterology, Pediatrics, then to Logistics. The Gastroenterology department issues a task to transport 2 Surgical Mask sequentially to Obstetrics and Gynecology, Thoracic Surgery, then to General Services. The Pediatrics department issues a task to transport 4 Thermometer sequentially to Respiratory, then to General Services.",
+  "summary": "WHILE #GP(8) < 7 MOVP P = 8 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(8) 1 ENDWHILE WHILE #GP(10) < 2 MOVP P = 10 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(10) 1 ENDWHILE WHILE #GP(7) < 4 MOVP P = 7 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(7) 1 ENDWHILE",
+  "task": "Multi_department",
+  "code length": 410
+ },
+ {
+  "content": "The Internal Medicine department issues a task to transport 2 Stethoscope sequentially to Surgery, then to Logistics. The Hematology department issues a task to transport 8 Scalpels sequentially to Surgery, Respiratory, Pediatrics, Cardiac Surgery, then to Logistics. The Hematology department issues a task to transport 6 Thermometer sequentially to Internal Medicine, Gastroenterology, Gastrointestinal Surgery, Cardiac Surgery, Pediatrics, then to General Services. The Obstetrics and Gynecology department issues a task to transport 8 Injection sequentially to Gastrointestinal Surgery, then to General Services.",
+  "summary": "WHILE #GP(2) < 2 MOVP P = 2 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(2) 1 ENDWHILE WHILE #GP(5) < 8 MOVP P = 5 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(5) 1 ENDWHILE WHILE #GP(5) < 6 MOVP P = 5 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(5) 1 ENDWHILE WHILE #GP(3) < 8 MOVP P = 3 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(3) 1 ENDWHILE",
+  "task": "Multi_department",
+  "code length": 579
+ },
+ {
+  "content": "The Obstetrics and Gynecology department issues a task to transport 3 Thermometer sequentially to Thoracic Surgery, Pediatrics, Respiratory, then to General Services. The Obstetrics and Gynecology department issues a task to transport 6 Blood Sample sequentially to Gastroenterology, Surgery, Cardiac Surgery, Pediatrics, then to Logistics. The Thoracic Surgery department issues a task to transport 6 Blood Sample sequentially to Cardiac Surgery, Gastroenterology, then to Logistics.",
+  "summary": "WHILE #GP(3) < 3 MOVP P = 3 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(3) 1 ENDWHILE WHILE #GP(3) < 6 MOVP P = 3 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(3) 1 ENDWHILE WHILE #GP(8) < 6 MOVP P = 8 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(8) 1 ENDWHILE",
+  "task": "Multi_department",
+  "code length": 452
+ },
+ {
+  "content": "The Hematology department issues a task to transport 7 Thermometer sequentially to Respiratory, Internal Medicine, Gastrointestinal Surgery, Surgery, Obstetrics and Gynecology, Gastroenterology, Thoracic Surgery, then to General Services.",
+  "summary": "WHILE #GP(5) < 7 MOVP P = 5 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(5) 1 ENDWHILE",
+  "task": "Single_department",
+  "code length": 238
+ },
+ {
+  "content": "The Surgery department issues a task to transport 7 Tourniquet sequentially to Cardiac Surgery, Gastrointestinal Surgery, Pediatrics, Thoracic Surgery, Gastroenterology, Respiratory, Hematology, then to Logistics.",
+  "summary": "WHILE #GP(6) < 7 MOVP P = 6 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(6) 1 ENDWHILE",
+  "task": "Single_department",
+  "code length": 238
+ },
+ {
+  "content": "The Thoracic Surgery department issues a task to transport 5 Medical Instruments sequentially to Gastroenterology, Hematology, then to Logistics.",
+  "summary": "WHILE #GP(8) < 5 MOVP P = 8 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(8) 1 ENDWHILE",
+  "task": "Single_department",
+  "code length": 128
+ },
+ {
+  "content": "The Gastrointestinal Surgery department(priority) issues a task to transport 2 Injection sequentially to Cardiac Surgery, Pediatrics, then to Logistics.",
+  "summary": "WHILE #GP(9) < 2 MOVP P = 9 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(9) 1 ENDWHILE",
+  "task": "Multi_department_priority",
+  "code length": 128
+ },
+ {
+  "content": "The Surgery department issues a task to transport 8 Medical Instruments sequentially to Gastrointestinal Surgery, Thoracic Surgery, Respiratory, Obstetrics and Gynecology, then to General Services.",
+  "summary": "WHILE #GP(6) < 8 MOVP P = 6 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(6) 1 ENDWHILE",
+  "task": "Single_department",
+  "code length": 171
+ },
+ {
+  "content": "The Respiratory department(priority) issues a task to transport 5 Documents sequentially to Gastrointestinal Surgery, then to General Services. The Surgery department(priority) issues a task to transport 6 Medication sequentially to Obstetrics and Gynecology, then to General Services.",
+  "summary": "WHILE #GP(4) < 5 MOVP P = 4 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(4) 1 ENDWHILE WHILE #GP(6) < 6 MOVP P = 6 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(6) 1 ENDWHILE",
+  "task": "Multi_department_priority",
+  "code length": 212
+ },
+ {
+  "content": "The Hematology department issues a task to transport 3 Medication sequentially to Surgery, Gastrointestinal Surgery, then to General Services. The Surgery department issues a task to transport 9 Tourniquet sequentially to Pediatrics, Gastrointestinal Surgery, Obstetrics and Gynecology, Hematology, then to Logistics. The Obstetrics and Gynecology department issues a task to transport 3 Medical Instruments sequentially to Pediatrics, then to General Services.",
+  "summary": "WHILE #GP(5) < 3 MOVP P = 5 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(5) 1 ENDWHILE WHILE #GP(6) < 9 MOVP P = 6 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(6) 1 ENDWHILE WHILE #GP(3) < 3 MOVP P = 3 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(3) 1 ENDWHILE",
+  "task": "Multi_department",
+  "code length": 406
+ },
+ {
+  "content": "The Cardiac Surgery department issues a task to transport 5 Documents sequentially to Gastrointestinal Surgery, Gastroenterology, Obstetrics and Gynecology, Hematology, then to General Services. The Gastrointestinal Surgery department issues a task to transport 3 Injection sequentially to Gastroenterology, Surgery, Respiratory, then to General Services.",
+  "summary": "WHILE #GP(0) < 5 MOVP P = 0 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(0) 1 ENDWHILE WHILE #GP(9) < 3 MOVP P = 9 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(9) 1 ENDWHILE",
+  "task": "Multi_department",
+  "code length": 324
+ },
+ {
+  "content": "The Pediatrics department issues a task to transport 5 Stethoscope sequentially to Hematology, Respiratory, Gastrointestinal Surgery, then to General Services.",
+  "summary": "WHILE #GP(7) < 5 MOVP P = 7 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(7) 1 ENDWHILE",
+  "task": "Multi_department",
+  "code length": 150
+ },
+ {
+  "content": "The Cardiac Surgery department issues a task to transport 8 Documents sequentially to Pediatrics, Hematology, Internal Medicine, Respiratory, then to General Services. The Obstetrics and Gynecology department issues a task to transport 9 Blood Sample sequentially to Respiratory, Gastrointestinal Surgery, Cardiac Surgery, Internal Medicine, then to General Services. The Surgery department issues a task to transport 6 Scalpels sequentially to Gastrointestinal Surgery, Thoracic Surgery, then to General Services.",
+  "summary": "WHILE #GP(0) < 8 MOVP P = 0 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(0) 1 ENDWHILE WHILE #GP(3) < 9 MOVP P = 3 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(3) 1 ENDWHILE WHILE #GP(6) < 6 MOVP P = 6 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(6) 1 ENDWHILE",
+  "task": "Multi_department",
+  "code length": 472
+ },
+ {
+  "content": "The Internal Medicine department issues a task to transport 3 Documents sequentially to Gastroenterology, Hematology, then to General Services.",
+  "summary": "WHILE #GP(2) < 3 MOVP P = 2 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(2) 1 ENDWHILE",
+  "task": "Multi_department",
+  "code length": 129
+ },
+ {
+  "content": "The Internal Medicine department issues a task to transport 6 Documents sequentially to Hematology, Surgery, then to General Services.",
+  "summary": "WHILE #GP(2) < 6 MOVP P = 2 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(2) 1 ENDWHILE",
+  "task": "Single_department",
+  "code length": 127
+ },
+ {
+  "content": "The Thoracic Surgery department issues a task to transport 2 Medical Instruments sequentially to Surgery, Cardiac Surgery, then to Logistics. The Pediatrics department issues a task to transport 8 Injection sequentially to Gastrointestinal Surgery, Internal Medicine, Thoracic Surgery, then to Logistics.",
+  "summary": "WHILE #GP(8) < 2 MOVP P = 8 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(8) 1 ENDWHILE WHILE #GP(7) < 8 MOVP P = 7 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(7) 1 ENDWHILE",
+  "task": "Multi_department",
+  "code length": 278
+ },
+ {
+  "content": "The Surgery department(priority) issues a task to transport 9 Thermometer sequentially to Internal Medicine, Hematology, Respiratory, Pediatrics, then to Logistics. The Obstetrics and Gynecology department issues a task to transport 9 Tourniquet sequentially to Gastrointestinal Surgery, Hematology, Internal Medicine, Thoracic Surgery, Cardiac Surgery, then to General Services. The Hematology department issues a task to transport 6 Medication sequentially to Respiratory, Obstetrics and Gynecology, Gastrointestinal Surgery, Gastroenterology, Surgery, then to Logistics. The Surgery department(priority) issues a task to transport 7 Medication sequentially to Cardiac Surgery, then to Logistics.",
+  "summary": "WHILE #GP(6) < 9 MOVP P = 6 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(6) 1 ENDWHILE WHILE #GP(6) < 7 MOVP P = 6 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(6) 1 ENDWHILE WHILE #GP(3) < 9 MOVP P = 3 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(3) 1 ENDWHILE WHILE #GP(5) < 6 MOVP P = 5 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(5) 1 ENDWHILE",
+  "task": "Multi_department_priority",
+  "code length": 667
+ },
+ {
+  "content": "The Hematology department issues a task to transport 3 Injection sequentially to Gastrointestinal Surgery, Obstetrics and Gynecology, then to Logistics. The Obstetrics and Gynecology department issues a task to transport 5 Surgical Mask sequentially to Thoracic Surgery, Gastroenterology, Internal Medicine, Hematology, Cardiac Surgery, then to Logistics. The Surgery department issues a task to transport 4 Surgical Mask sequentially to Obstetrics and Gynecology, Pediatrics, Thoracic Surgery, then to Logistics.",
+  "summary": "WHILE #GP(5) < 3 MOVP P = 5 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(5) 1 ENDWHILE WHILE #GP(3) < 5 MOVP P = 3 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(3) 1 ENDWHILE WHILE #GP(6) < 4 MOVP P = 6 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(6) 1 ENDWHILE",
+  "task": "Multi_department",
+  "code length": 473
+ },
+ {
+  "content": "The Hematology department issues a task to transport 7 Injection sequentially to Gastroenterology, Obstetrics and Gynecology, Surgery, Cardiac Surgery, Gastrointestinal Surgery, then to General Services. The Hematology department issues a task to transport 5 Blood Sample sequentially to Internal Medicine, Obstetrics and Gynecology, Gastrointestinal Surgery, Gastroenterology, Thoracic Surgery, then to General Services. The Gastrointestinal Surgery department issues a task to transport 6 Scalpels sequentially to Cardiac Surgery, Hematology, Gastroenterology, Internal Medicine, then to Logistics. The Pediatrics department issues a task to transport 8 Tourniquet sequentially to Hematology, Gastroenterology, then to Logistics.",
+  "summary": "WHILE #GP(5) < 7 MOVP P = 5 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(5) 1 ENDWHILE WHILE #GP(5) < 5 MOVP P = 5 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(5) 1 ENDWHILE WHILE #GP(9) < 6 MOVP P = 9 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(9) 1 ENDWHILE WHILE #GP(7) < 8 MOVP P = 7 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(7) 1 ENDWHILE",
+  "task": "Multi_department",
+  "code length": 692
+ },
+ {
+  "content": "The Hematology department issues a task to transport 5 Tourniquet sequentially to Pediatrics, Thoracic Surgery, Surgery, then to Logistics. The Surgery department issues a task to transport 6 Tourniquet sequentially to Gastroenterology, Hematology, Pediatrics, Gastrointestinal Surgery, Obstetrics and Gynecology, then to General Services. The Hematology department issues a task to transport 4 Injection sequentially to Cardiac Surgery, Thoracic Surgery, Internal Medicine, then to Logistics. The Internal Medicine department issues a task to transport 6 Surgical Mask sequentially to Surgery, then to Logistics.",
+  "summary": "WHILE #GP(5) < 5 MOVP P = 5 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(5) 1 ENDWHILE WHILE #GP(6) < 6 MOVP P = 6 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(6) 1 ENDWHILE WHILE #GP(5) < 4 MOVP P = 5 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(5) 1 ENDWHILE WHILE #GP(2) < 6 MOVP P = 2 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(2) 1 ENDWHILE",
+  "task": "Multi_department",
+  "code length": 601
+ },
+ {
+  "content": "The Gastrointestinal Surgery department issues a task to transport 9 Scalpels sequentially to Hematology, Pediatrics, Cardiac Surgery, Internal Medicine, Thoracic Surgery, then to Logistics. The Gastrointestinal Surgery department issues a task to transport 4 Blood Sample sequentially to Pediatrics, then to Logistics.",
+  "summary": "WHILE #GP(9) < 9 MOVP P = 9 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(9) 1 ENDWHILE WHILE #GP(9) < 4 MOVP P = 9 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(9) 1 ENDWHILE",
+  "task": "Multi_department",
+  "code length": 300
+ },
+ {
+  "content": "The Cardiac Surgery department issues a task to transport 3 Medication sequentially to Thoracic Surgery, Surgery, then to Logistics. The Pediatrics department issues a task to transport 9 Tourniquet sequentially to Cardiac Surgery, Internal Medicine, Hematology, then to Logistics. The Gastroenterology department issues a task to transport 6 Blood Sample sequentially to Surgery, Cardiac Surgery, Thoracic Surgery, then to General Services. The Pediatrics department issues a task to transport 4 Tourniquet sequentially to Respiratory, Internal Medicine, Surgery, Gastroenterology, then to General Services.",
+  "summary": "WHILE #GP(0) < 3 MOVP P = 0 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(0) 1 ENDWHILE WHILE #GP(7) < 9 MOVP P = 7 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(7) 1 ENDWHILE WHILE #GP(10) < 6 MOVP P = 10 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(10) 1 ENDWHILE WHILE #GP(7) < 4 MOVP P = 7 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(7) 1 ENDWHILE",
+  "task": "Multi_department",
+  "code length": 604
+ },
+ {
+  "content": "The Internal Medicine department issues a task to transport 6 Stethoscope sequentially to Cardiac Surgery, Obstetrics and Gynecology, Surgery, Gastroenterology, then to General Services. The Hematology department issues a task to transport 8 Surgical Mask sequentially to Thoracic Surgery, Pediatrics, Cardiac Surgery, Internal Medicine, Gastroenterology, then to General Services. The Pediatrics department issues a task to transport 8 Tourniquet sequentially to Thoracic Surgery, Surgery, Respiratory, Gastrointestinal Surgery, then to Logistics.",
+  "summary": "WHILE #GP(2) < 6 MOVP P = 2 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(2) 1 ENDWHILE WHILE #GP(5) < 8 MOVP P = 5 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(5) 1 ENDWHILE WHILE #GP(7) < 8 MOVP P = 7 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(7) 1 ENDWHILE",
+  "task": "Multi_department_priority",
+  "code length": 540
+ },
+ {
+  "content": "The Gastrointestinal Surgery department issues a task to transport 6 Blood Sample sequentially to Internal Medicine, Obstetrics and Gynecology, Hematology, Respiratory, Cardiac Surgery, then to General Services.",
+  "summary": "WHILE #GP(9) < 6 MOVP P = 9 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(9) 1 ENDWHILE",
+  "task": "Single_department",
+  "code length": 193
+ },
+ {
+  "content": "The Respiratory department issues a task to transport 8 Surgical Mask sequentially to Surgery, Thoracic Surgery, Pediatrics, Internal Medicine, Hematology, Obstetrics and Gynecology, then to Logistics.",
+  "summary": "WHILE #GP(4) < 8 MOVP P = 4 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(4) 1 ENDWHILE",
+  "task": "Single_department",
+  "code length": 215
+ },
+ {
+  "content": "The Internal Medicine department issues a task to transport 9 Documents sequentially to Gastrointestinal Surgery, Gastroenterology, Respiratory, Obstetrics and Gynecology, then to Logistics.",
+  "summary": "WHILE #GP(2) < 9 MOVP P = 2 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(2) 1 ENDWHILE",
+  "task": "Multi_department_priority",
+  "code length": 173
+ },
+ {
+  "content": "The Gastrointestinal Surgery department(priority) issues a task to transport 9 Documents sequentially to Surgery, then to General Services. The Internal Medicine department issues a task to transport 8 Documents sequentially to Surgery, Pediatrics, Obstetrics and Gynecology, Respiratory, then to General Services.",
+  "summary": "WHILE #GP(9) < 9 MOVP P = 9 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(9) 1 ENDWHILE WHILE #GP(2) < 8 MOVP P = 2 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(2) 1 ENDWHILE",
+  "task": "Multi_department_priority",
+  "code length": 278
+ },
+ {
+  "content": "The Internal Medicine department issues a task to transport 5 Documents sequentially to Pediatrics, Gastroenterology, Thoracic Surgery, then to Logistics. The Pediatrics department issues a task to transport 6 Medical Instruments sequentially to Surgery, Cardiac Surgery, Internal Medicine, Hematology, then to General Services. The Gastroenterology department(priority) issues a task to transport 6 Surgical Mask sequentially to Gastrointestinal Surgery, Internal Medicine, Hematology, Respiratory, then to General Services.",
+  "summary": "WHILE #GP(10) < 6 MOVP P = 10 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(10) 1 ENDWHILE WHILE #GP(2) < 5 MOVP P = 2 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(2) 1 ENDWHILE WHILE #GP(7) < 6 MOVP P = 7 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(7) 1 ENDWHILE",
+  "task": "Multi_department_priority",
+  "code length": 498
+ },
+ {
+  "content": "The Internal Medicine department issues a task to transport 9 Injection sequentially to Obstetrics and Gynecology, Gastroenterology, Hematology, Pediatrics, Thoracic Surgery, Gastrointestinal Surgery, Cardiac Surgery, Respiratory, Surgery, then to Logistics.",
+  "summary": "WHILE #GP(2) < 9 MOVP P = 2 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(2) 1 ENDWHILE",
+  "task": "Single_department",
+  "code length": 282
+ },
+ {
+  "content": "The Thoracic Surgery department issues a task to transport 1 Scalpels sequentially to Gastrointestinal Surgery, then to Logistics. The Hematology department issues a task to transport 5 Stethoscope sequentially to Cardiac Surgery, Respiratory, Thoracic Surgery, Obstetrics and Gynecology, Gastrointestinal Surgery, then to General Services. The Hematology department issues a task to transport 3 Medical Instruments sequentially to Pediatrics, then to Logistics. The Gastroenterology department issues a task to transport 7 Tourniquet sequentially to Cardiac Surgery, Thoracic Surgery, Surgery, Hematology, Obstetrics and Gynecology, then to General Services.",
+  "summary": "WHILE #GP(8) < 1 MOVP P = 8 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(8) 1 ENDWHILE WHILE #GP(5) < 5 MOVP P = 5 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(5) 1 ENDWHILE WHILE #GP(5) < 3 MOVP P = 5 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(5) 1 ENDWHILE WHILE #GP(10) < 7 MOVP P = 10 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(10) 1 ENDWHILE",
+  "task": "Multi_department",
+  "code length": 603
+ },
+ {
+  "content": "The Hematology department issues a task to transport 3 Scalpels sequentially to Obstetrics and Gynecology, Gastrointestinal Surgery, Pediatrics, then to General Services.",
+  "summary": "WHILE #GP(5) < 3 MOVP P = 5 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(5) 1 ENDWHILE",
+  "task": "Single_department",
+  "code length": 149
+ },
+ {
+  "content": "The Gastrointestinal Surgery department(priority) issues a task to transport 4 Medication sequentially to Cardiac Surgery, Surgery, then to Logistics. The Respiratory department(priority) issues a task to transport 7 Stethoscope sequentially to Surgery, then to General Services. The Thoracic Surgery department issues a task to transport 7 Documents sequentially to Hematology, Gastroenterology, Respiratory, Obstetrics and Gynecology, Internal Medicine, then to General Services.",
+  "summary": "WHILE #GP(9) < 4 MOVP P = 9 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(9) 1 ENDWHILE WHILE #GP(4) < 7 MOVP P = 4 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(4) 1 ENDWHILE WHILE #GP(8) < 7 MOVP P = 8 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(8) 1 ENDWHILE",
+  "task": "Multi_department_priority",
+  "code length": 429
+ },
+ {
+  "content": "The Gastroenterology department issues a task to transport 1 Documents sequentially to Pediatrics, then to General Services.",
+  "summary": "WHILE #GP(10) < 1 MOVP P = 10 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(10) 1 ENDWHILE",
+  "task": "Single_department",
+  "code length": 108
+ },
+ {
+  "content": "The Obstetrics and Gynecology department issues a task to transport 4 Surgical Mask sequentially to Cardiac Surgery, then to Logistics. The Hematology department issues a task to transport 8 Medication sequentially to Gastroenterology, Gastrointestinal Surgery, Cardiac Surgery, Pediatrics, Obstetrics and Gynecology, then to General Services. The Respiratory department issues a task to transport 1 Stethoscope sequentially to Obstetrics and Gynecology, then to General Services.",
+  "summary": "WHILE #GP(3) < 4 MOVP P = 3 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(3) 1 ENDWHILE WHILE #GP(5) < 8 MOVP P = 5 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(5) 1 ENDWHILE WHILE #GP(4) < 1 MOVP P = 4 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(4) 1 ENDWHILE",
+  "task": "Multi_department",
+  "code length": 407
+ },
+ {
+  "content": "The Internal Medicine department issues a task to transport 8 Thermometer sequentially to Cardiac Surgery, Gastrointestinal Surgery, Pediatrics, Thoracic Surgery, Obstetrics and Gynecology, Respiratory, Gastroenterology, Hematology, then to Logistics.",
+  "summary": "WHILE #GP(2) < 8 MOVP P = 2 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(2) 1 ENDWHILE",
+  "task": "Single_department",
+  "code length": 260
+ },
+ {
+  "content": "The Hematology department issues a task to transport 1 Medication sequentially to Gastroenterology, then to Logistics.",
+  "summary": "WHILE #GP(5) < 1 MOVP P = 5 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(5) 1 ENDWHILE",
+  "task": "Single_department",
+  "code length": 106
+ },
+ {
+  "content": "The Hematology department issues a task to transport 4 Medication sequentially to Cardiac Surgery, Gastrointestinal Surgery, Pediatrics, Respiratory, then to Logistics. The Hematology department issues a task to transport 9 Medical Instruments sequentially to Respiratory, Surgery, Gastrointestinal Surgery, then to Logistics. The Hematology department issues a task to transport 8 Stethoscope sequentially to Gastroenterology, then to General Services. The Surgery department issues a task to transport 9 Documents sequentially to Thoracic Surgery, Gastrointestinal Surgery, then to Logistics.",
+  "summary": "WHILE #GP(5) < 4 MOVP P = 5 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(5) 1 ENDWHILE WHILE #GP(5) < 9 MOVP P = 5 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(5) 1 ENDWHILE WHILE #GP(5) < 8 MOVP P = 5 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(5) 1 ENDWHILE WHILE #GP(6) < 9 MOVP P = 6 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(6) 1 ENDWHILE",
+  "task": "Multi_department",
+  "code length": 557
+ },
+ {
+  "content": "The Respiratory department issues a task to transport 4 Stethoscope sequentially to Internal Medicine, Gastroenterology, then to General Services. The Hematology department issues a task to transport 4 Medical Instruments sequentially to Obstetrics and Gynecology, Cardiac Surgery, Respiratory, Gastrointestinal Surgery, then to General Services. The Internal Medicine department issues a task to transport 8 Thermometer sequentially to Gastrointestinal Surgery, Hematology, Gastroenterology, then to Logistics. The Pediatrics department issues a task to transport 7 Thermometer sequentially to Respiratory, then to Logistics.",
+  "summary": "WHILE #GP(4) < 4 MOVP P = 4 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(4) 1 ENDWHILE WHILE #GP(5) < 4 MOVP P = 5 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(5) 1 ENDWHILE WHILE #GP(2) < 8 MOVP P = 2 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(2) 1 ENDWHILE WHILE #GP(7) < 7 MOVP P = 7 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(7) 1 ENDWHILE",
+  "task": "Multi_department",
+  "code length": 558
+ },
+ {
+  "content": "The Respiratory department(priority) issues a task to transport 7 Blood Sample sequentially to Gastroenterology, Thoracic Surgery, Cardiac Surgery, then to Logistics.",
+  "summary": "WHILE #GP(4) < 7 MOVP P = 4 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(4) 1 ENDWHILE",
+  "task": "Multi_department_priority",
+  "code length": 151
+ },
+ {
+  "content": "The Thoracic Surgery department issues a task to transport 9 Injection sequentially to Internal Medicine, Surgery, Gastrointestinal Surgery, then to General Services. The Hematology department issues a task to transport 9 Documents sequentially to Internal Medicine, then to Logistics. The Cardiac Surgery department(priority) issues a task to transport 8 Tourniquet sequentially to Gastroenterology, Gastrointestinal Surgery, Hematology, Pediatrics, Surgery, then to Logistics. The Hematology department issues a task to transport 6 Medical Instruments sequentially to Pediatrics, Internal Medicine, Obstetrics and Gynecology, Respiratory, then to General Services.",
+  "summary": "WHILE #GP(0) < 8 MOVP P = 0 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(0) 1 ENDWHILE WHILE #GP(8) < 9 MOVP P = 8 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(8) 1 ENDWHILE WHILE #GP(5) < 9 MOVP P = 5 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(5) 1 ENDWHILE WHILE #GP(5) < 6 MOVP P = 5 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(5) 1 ENDWHILE",
+  "task": "Multi_department_priority",
+  "code length": 623
+ },
+ {
+  "content": "The Respiratory department(priority) issues a task to transport 7 Tourniquet sequentially to Internal Medicine, Obstetrics and Gynecology, Surgery, then to Logistics.",
+  "summary": "WHILE #GP(4) < 7 MOVP P = 4 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(4) 1 ENDWHILE",
+  "task": "Multi_department_priority",
+  "code length": 150
+ },
+ {
+  "content": "The Pediatrics department issues a task to transport 8 Injection sequentially to Thoracic Surgery, then to Logistics. The Pediatrics department issues a task to transport 7 Documents sequentially to Cardiac Surgery, then to Logistics.",
+  "summary": "WHILE #GP(7) < 8 MOVP P = 7 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(7) 1 ENDWHILE WHILE #GP(7) < 7 MOVP P = 7 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(7) 1 ENDWHILE",
+  "task": "Multi_department",
+  "code length": 212
+ },
+ {
+  "content": "The Hematology department issues a task to transport 7 Stethoscope sequentially to Internal Medicine, Thoracic Surgery, Gastroenterology, Pediatrics, Respiratory, Obstetrics and Gynecology, Gastrointestinal Surgery, then to General Services.",
+  "summary": "WHILE #GP(5) < 7 MOVP P = 5 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(5) 1 ENDWHILE",
+  "task": "Single_department",
+  "code length": 238
+ },
+ {
+  "content": "The Gastrointestinal Surgery department(priority) issues a task to transport 9 Medication sequentially to Gastroenterology, then to General Services. The Pediatrics department issues a task to transport 6 Blood Sample sequentially to Gastroenterology, Hematology, then to Logistics. The Thoracic Surgery department issues a task to transport 5 Thermometer sequentially to Pediatrics, then to Logistics. The Respiratory department(priority) issues a task to transport 7 Blood Sample sequentially to Pediatrics, Internal Medicine, Cardiac Surgery, Thoracic Surgery, Hematology, then to Logistics.",
+  "summary": "WHILE #GP(9) < 9 MOVP P = 9 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(9) 1 ENDWHILE WHILE #GP(4) < 7 MOVP P = 4 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(4) 1 ENDWHILE WHILE #GP(7) < 6 MOVP P = 7 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(7) 1 ENDWHILE WHILE #GP(8) < 5 MOVP P = 8 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(8) 1 ENDWHILE",
+  "task": "Multi_department_priority",
+  "code length": 536
+ },
+ {
+  "content": "The Pediatrics department issues a task to transport 9 Thermometer sequentially to Thoracic Surgery, Respiratory, Obstetrics and Gynecology, Hematology, Gastroenterology, Surgery, Cardiac Surgery, then to General Services.",
+  "summary": "WHILE #GP(7) < 9 MOVP P = 7 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(7) 1 ENDWHILE",
+  "task": "Single_department",
+  "code length": 238
+ },
+ {
+  "content": "The Hematology department issues a task to transport 7 Documents sequentially to Gastrointestinal Surgery, Internal Medicine, Cardiac Surgery, then to Logistics.",
+  "summary": "WHILE #GP(5) < 7 MOVP P = 5 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(5) 1 ENDWHILE",
+  "task": "Single_department",
+  "code length": 149
+ },
+ {
+  "content": "The Thoracic Surgery department issues a task to transport 4 Tourniquet sequentially to Gastroenterology, Pediatrics, then to General Services. The Respiratory department issues a task to transport 3 Documents sequentially to Gastrointestinal Surgery, Pediatrics, then to Logistics.",
+  "summary": "WHILE #GP(8) < 4 MOVP P = 8 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(8) 1 ENDWHILE WHILE #GP(4) < 3 MOVP P = 4 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(4) 1 ENDWHILE",
+  "task": "Multi_department",
+  "code length": 257
+ },
+ {
+  "content": "The Gastroenterology department issues a task to transport 8 Medical Instruments sequentially to Hematology, Gastrointestinal Surgery, Obstetrics and Gynecology, Cardiac Surgery, Respiratory, Surgery, Thoracic Surgery, then to General Services.",
+  "summary": "WHILE #GP(10) < 8 MOVP P = 10 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(10) 1 ENDWHILE",
+  "task": "Single_department",
+  "code length": 240
+ },
+ {
+  "content": "The Hematology department issues a task to transport 8 Thermometer sequentially to Gastroenterology, Thoracic Surgery, then to Logistics.",
+  "summary": "WHILE #GP(5) < 8 MOVP P = 5 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(5) 1 ENDWHILE",
+  "task": "Multi_department_priority",
+  "code length": 129
+ },
+ {
+  "content": "The Gastroenterology department(priority) issues a task to transport 8 Stethoscope sequentially to Gastrointestinal Surgery, Hematology, Thoracic Surgery, Surgery, Cardiac Surgery, then to General Services. The Hematology department issues a task to transport 8 Tourniquet sequentially to Thoracic Surgery, then to Logistics. The Cardiac Surgery department(priority) issues a task to transport 6 Documents sequentially to Respiratory, then to General Services. The Pediatrics department issues a task to transport 4 Stethoscope sequentially to Thoracic Surgery, then to Logistics.",
+  "summary": "WHILE #GP(10) < 8 MOVP P = 10 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(10) 1 ENDWHILE WHILE #GP(0) < 6 MOVP P = 0 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(0) 1 ENDWHILE WHILE #GP(5) < 8 MOVP P = 5 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(5) 1 ENDWHILE WHILE #GP(7) < 4 MOVP P = 7 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(7) 1 ENDWHILE",
+  "task": "Multi_department_priority",
+  "code length": 515
+ },
+ {
+  "content": "The Cardiac Surgery department issues a task to transport 8 Surgical Mask sequentially to Gastroenterology, Obstetrics and Gynecology, Thoracic Surgery, Respiratory, then to General Services. The Gastrointestinal Surgery department issues a task to transport 7 Tourniquet sequentially to Gastroenterology, Cardiac Surgery, then to General Services. The Surgery department issues a task to transport 5 Surgical Mask sequentially to Obstetrics and Gynecology, Pediatrics, then to General Services. The Obstetrics and Gynecology department issues a task to transport 6 Surgical Mask sequentially to Surgery, Gastrointestinal Surgery, Pediatrics, Internal Medicine, then to Logistics.",
+  "summary": "WHILE #GP(0) < 8 MOVP P = 0 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(0) 1 ENDWHILE WHILE #GP(9) < 7 MOVP P = 9 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(9) 1 ENDWHILE WHILE #GP(6) < 5 MOVP P = 6 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(6) 1 ENDWHILE WHILE #GP(3) < 6 MOVP P = 3 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(3) 1 ENDWHILE",
+  "task": "Multi_department",
+  "code length": 602
+ },
+ {
+  "content": "The Thoracic Surgery department issues a task to transport 7 Surgical Mask sequentially to Surgery, Pediatrics, Cardiac Surgery, Respiratory, Internal Medicine, then to General Services. The Cardiac Surgery department(priority) issues a task to transport 7 Blood Sample sequentially to Surgery, Respiratory, Obstetrics and Gynecology, Internal Medicine, then to Logistics. The Thoracic Surgery department issues a task to transport 4 Thermometer sequentially to Internal Medicine, Surgery, then to Logistics. The Thoracic Surgery department issues a task to transport 8 Documents sequentially to Pediatrics, Surgery, Gastrointestinal Surgery, Cardiac Surgery, then to General Services.",
+  "summary": "WHILE #GP(0) < 7 MOVP P = 0 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(0) 1 ENDWHILE WHILE #GP(8) < 7 MOVP P = 8 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(8) 1 ENDWHILE WHILE #GP(8) < 4 MOVP P = 8 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(8) 1 ENDWHILE WHILE #GP(8) < 8 MOVP P = 8 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(8) 1 ENDWHILE",
+  "task": "Multi_department_priority",
+  "code length": 666
+ },
+ {
+  "content": "The Surgery department issues a task to transport 3 Stethoscope sequentially to Pediatrics, Respiratory, Internal Medicine, then to General Services.",
+  "summary": "WHILE #GP(6) < 3 MOVP P = 6 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(6) 1 ENDWHILE",
+  "task": "Multi_department",
+  "code length": 150
+ },
+ {
+  "content": "The Internal Medicine department issues a task to transport 6 Scalpels sequentially to Surgery, then to Logistics.",
+  "summary": "WHILE #GP(2) < 6 MOVP P = 2 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(2) 1 ENDWHILE",
+  "task": "Multi_department_priority",
+  "code length": 106
+ },
+ {
+  "content": "The Cardiac Surgery department issues a task to transport 8 Medical Instruments sequentially to Obstetrics and Gynecology, Thoracic Surgery, then to General Services.",
+  "summary": "WHILE #GP(0) < 8 MOVP P = 0 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(0) 1 ENDWHILE",
+  "task": "Multi_department",
+  "code length": 128
+ },
+ {
+  "content": "The Obstetrics and Gynecology department issues a task to transport 9 Documents sequentially to Respiratory, then to General Services.",
+  "summary": "WHILE #GP(3) < 9 MOVP P = 3 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(3) 1 ENDWHILE",
+  "task": "Single_department",
+  "code length": 105
+ },
+ {
+  "content": "The Pediatrics department issues a task to transport 3 Tourniquet sequentially to Gastrointestinal Surgery, then to Logistics. The Pediatrics department issues a task to transport 6 Thermometer sequentially to Surgery, Internal Medicine, Gastrointestinal Surgery, Thoracic Surgery, then to Logistics.",
+  "summary": "WHILE #GP(7) < 3 MOVP P = 7 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(7) 1 ENDWHILE WHILE #GP(7) < 6 MOVP P = 7 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(7) 1 ENDWHILE",
+  "task": "Multi_department",
+  "code length": 278
+ },
+ {
+  "content": "The Hematology department issues a task to transport 8 Surgical Mask sequentially to Cardiac Surgery, Surgery, then to General Services.",
+  "summary": "WHILE #GP(5) < 8 MOVP P = 5 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(5) 1 ENDWHILE",
+  "task": "Single_department",
+  "code length": 127
+ },
+ {
+  "content": "The Pediatrics department issues a task to transport 3 Blood Sample sequentially to Obstetrics and Gynecology, Respiratory, Surgery, then to Logistics.",
+  "summary": "WHILE #GP(7) < 3 MOVP P = 7 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(7) 1 ENDWHILE",
+  "task": "Single_department",
+  "code length": 149
+ },
+ {
+  "content": "The Obstetrics and Gynecology department issues a task to transport 8 Thermometer sequentially to Thoracic Surgery, Gastroenterology, Hematology, then to Logistics.",
+  "summary": "WHILE #GP(3) < 8 MOVP P = 3 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 5 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(3) 1 ENDWHILE",
+  "task": "Multi_department_priority",
+  "code length": 151
+ },
+ {
+  "content": "The Surgery department(priority) issues a task to transport 2 Stethoscope sequentially to Respiratory, Pediatrics, then to General Services. The Gastrointestinal Surgery department(priority) issues a task to transport 6 Tourniquet sequentially to Surgery, Thoracic Surgery, Internal Medicine, Gastroenterology, Obstetrics and Gynecology, then to General Services.",
+  "summary": "WHILE #GP(6) < 2 MOVP P = 6 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(6) 1 ENDWHILE WHILE #GP(9) < 6 MOVP P = 9 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(9) 1 ENDWHILE",
+  "task": "Multi_department_priority",
+  "code length": 323
+ },
+ {
+  "content": "The Hematology department issues a task to transport 4 Documents sequentially to Surgery, Obstetrics and Gynecology, then to Logistics. The Internal Medicine department issues a task to transport 6 Medical Instruments sequentially to Gastroenterology, Surgery, then to General Services. The Surgery department issues a task to transport 8 Documents sequentially to Thoracic Surgery, Pediatrics, Obstetrics and Gynecology, Internal Medicine, then to Logistics.",
+  "summary": "WHILE #GP(5) < 4 MOVP P = 5 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(5) 1 ENDWHILE WHILE #GP(2) < 6 MOVP P = 2 OP = 28000 MOVP P = 10 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(2) 1 ENDWHILE WHILE #GP(6) < 8 MOVP P = 6 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(6) 1 ENDWHILE",
+  "task": "Multi_department",
+  "code length": 429
+ },
+ {
+  "content": "The Gastroenterology department issues a task to transport 7 Surgical Mask sequentially to Gastrointestinal Surgery, Cardiac Surgery, then to Logistics. The Gastroenterology department issues a task to transport 4 Tourniquet sequentially to Surgery, Obstetrics and Gynecology, Internal Medicine, then to General Services. The Surgery department issues a task to transport 4 Medical Instruments sequentially to Obstetrics and Gynecology, Respiratory, Thoracic Surgery, then to General Services.",
+  "summary": "WHILE #GP(10) < 7 MOVP P = 10 OP = 28000 MOVP P = 9 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(10) 1 ENDWHILE WHILE #GP(10) < 4 MOVP P = 10 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 2 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(10) 1 ENDWHILE WHILE #GP(6) < 4 MOVP P = 6 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 4 OP = 28000 MOVP P = 8 OP = 28000 MOVP P = 12 OP = 28000 ADD #GP(6) 1 ENDWHILE",
+  "task": "Multi_department",
+  "code length": 434
+ },
+ {
+  "content": "The Internal Medicine department issues a task to transport 8 Surgical Mask sequentially to Cardiac Surgery, Obstetrics and Gynecology, Pediatrics, Surgery, then to Logistics.",
+  "summary": "WHILE #GP(2) < 8 MOVP P = 2 OP = 28000 MOVP P = 0 OP = 28000 MOVP P = 3 OP = 28000 MOVP P = 7 OP = 28000 MOVP P = 6 OP = 28000 MOVP P = 11 OP = 28000 ADD #GP(2) 1 ENDWHILE",
+  "task": "Single_department",
+  "code length": 171
+ }
+]
