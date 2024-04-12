@@ -76,14 +76,14 @@ def calculate_metric_and_output_file_llama(generator, data, config, output_dir, 
                 if config["type"] == "MCP":
                     output_item = {
                         "content": content,
-                        "middle_code": generated_text,  # 这里可能需要修改，根据您的需求
-                        "final_code": predicted_code,  # 使用 predicted_code 替换 answer 或者添加 BLEU 等评估
+                        "middle_code": generated_text, 
+                        "final_code": predicted_code, 
                         "answear": answer
                     }
                 else:
                     output_item = {
                         "content": content,
-                        "final_code": predicted_code,  # 使用 predicted_code 替换 answer 或者添加 BLEU 等评估
+                        "final_code": predicted_code, 
                         "answear": answer
                     }
 
@@ -138,14 +138,13 @@ def calculate_metric_and_output_file_gpt(client, data, config, output_dir, model
 
                 output_item = {
                     "content": content,
-                    "middle_code": generated_text,  # 这里可能需要修改，根据您的需求
-                    "final_code": predicted_code,  # 使用 predicted_code 替换 answer 或者添加 BLEU 等评估
+                    "middle_code": generated_text, 
+                    "final_code": predicted_code, 
                     "answear": answer
                 }
 
                 output_data.append(output_item)
 
-                # 计算准确率和 BLEU 分数
                 if predicted_code == answer:
                     correct_predictions += 1
 
@@ -154,10 +153,10 @@ def calculate_metric_and_output_file_gpt(client, data, config, output_dir, model
                 else:
                     bleu_score_value = 0.5
                 bleu_sum += bleu_score_value
-                # 更新进度条
+
                 pbar.update(1)
 
-        # 将输出数据写入到 JSON 文件中
+
         with open(output_path, 'w', encoding='utf-8') as output_file:
             json.dump(output_data, output_file, indent=1, ensure_ascii=False)
 
@@ -193,23 +192,22 @@ def calculate_metric_and_output_file_ptuning(model, tokenizer, data, output_dir,
 
                 output_item = {
                     "content": content,
-                    "final_code": predict,  # 使用 predicted_code 替换 answer 或者添加 BLEU 等评估
+                    "final_code": predict, 
                     "answear":answer
                 }
 
                 output_data.append(output_item)
 
-                # 计算准确率和 BLEU 分数
                 if predict == answer:
                     correct_predictions += 1
 
                 if predict:
                     bleu_score_value = bleu_score(answer, predict)
                     bleu_sum += bleu_score_value
-                # 更新进度条
+
                 pbar.update(1)
 
-        # 将输出数据写入到 JSON 文件中
+
         with open(output_path, 'w', encoding='utf-8') as output_file:
             json.dump(output_data, output_file, indent=1, ensure_ascii=False)
 
@@ -226,7 +224,7 @@ def calculate_metric_and_output_file_ptuning(model, tokenizer, data, output_dir,
 
 
 def bleu_score(reference, candidate, n=4):
-    # 计算n-gram精确匹配的准确度
+
     precision = 1.0
     for i in range(1, n + 1):
         reference_ngram_counts = Counter(zip(*[reference[j:] for j in range(i)]))
@@ -234,18 +232,15 @@ def bleu_score(reference, candidate, n=4):
         common_ngrams = sum((candidate_ngram_counts & reference_ngram_counts).values())
         total_ngrams = sum(candidate_ngram_counts.values())
         
-        # 避免出现除以零的情况
         if total_ngrams == 0:
             precision *= 0.0
         else:
             precision *= common_ngrams / total_ngrams
 
-    # 计算翻译长度惩罚
     reference_length = len(reference)
     candidate_length = len(candidate)
     length_penalty = min(1, math.exp(1 - reference_length / candidate_length))
 
-    # 计算最终BLEU分数
     bleu = length_penalty * precision ** (1/n)
 
     return bleu
@@ -253,25 +248,18 @@ def bleu_score(reference, candidate, n=4):
 
 def expand_code(short_code):
     try:
-        # 分割输入的缩略版代码
         start_blocks = short_code.split("END")
 
-        # 初始化完整版代码
         full_code = ""
 
         for start_block in start_blocks:
-            # 跳过空字符串
             if not start_block:
                 continue
-
-            # 分割每个START块
             parts = start_block.split()
 
-            # 获取X和Y列表
             X = int(parts[0][6:-1])
             Y_list = parts[1:]
 
-            # 构建完整版代码
             full_code += f'WHILE #GP({Y_list[0]}) < {X}'
 
             for Y in Y_list[:]:
@@ -295,14 +283,11 @@ def extract_code_MCP(text):
 
 
 def extract_code_FCP(generated_text: str) -> str:
-    # 使用 "summary:" 分割文本，并取分割后的最后一部分
     parts = generated_text.split("summary:")
     if len(parts) == 1:
         parts = generated_text.split("Summary:")
     if len(parts) > 1:
-        # 对第二部分再进行一次切分，以获取第一行内容
         code_lines = parts[-1].strip().split('\n')
-        # 将换行符替换为空格，然后与第一部分拼接
         code = " ".join(code_lines)
         return code
     else:

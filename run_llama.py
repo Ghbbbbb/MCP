@@ -8,12 +8,10 @@ import os
 import random
 
 def main():
-    # 加载默认配置参数
     default_config_file = "config.json"
     with open(default_config_file, 'r') as config_file:
         default_config = json.load(config_file)
 
-    # 创建命令行参数解析器
     parser = argparse.ArgumentParser(description="Llama test")
     parser.add_argument("--ckpt_dir", type=str, default="models/CodeLlama-7b-Instruct", help="Path to checkpoint directory")
     parser.add_argument("--tokenizer_path", type=str,default="models/CodeLlama-7b-Instruct/tokenizer.model", help="Path to tokenizer model")
@@ -24,7 +22,6 @@ def main():
     parser.add_argument("--output", type=str, default="outputs", help="Path to output file")
 
     args = parser.parse_args()
-    # 从 args.ckpt_dir 中提取 model_name,method
     model_name = os.path.basename(args.ckpt_dir)
     print("model_name:",model_name)
     if "robustness" in args.input_file:
@@ -32,11 +29,9 @@ def main():
     else:    
         method = os.path.basename(args.prompt)
     print("method:",method)
-    # 加载用户指定的配置文件
     with open(args.prompt, 'r') as config_file:
         user_config = json.load(config_file)
 
-    # 合并默认配置和用户配置
     config = {**default_config, **user_config}
 
     generator = Llama.build(
