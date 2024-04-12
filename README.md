@@ -1,7 +1,7 @@
 # Middle Code Prediction
 This is code repository for the paper **"Middle Code Prediction: a lightweight scheme for Code Generation in the Robotics Domain"**.  
 
-We proposes a lightweight method of Middle Code Prediction(MCP) aimed at addressing the imbalance between prediction accuracy and efficiency in rare data domains with large language models. We validated MCP on a Hospital Item Transport Dataset([HITD])(data/README.md) and found that it achieved a new balance in accuracy and efficiency. Furthermore, it can generalize to different tasks of robot code generation.
+We proposes a lightweight method of Middle Code Prediction(MCP) aimed at addressing the imbalance between prediction accuracy and efficiency in rare data domains with large language models. We validated MCP on a Hospital Item Transport Dataset[(HITD)](data/README.md) and found that it achieved a new balance in accuracy and efficiency. Furthermore, it can generalize to different tasks of robot code generation.
 
 ![Introduction of MCP](https://github.com/Ghbbbbb/MCP/blob/main/assets/MCP.png)
 ## Clone
