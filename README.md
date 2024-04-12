@@ -59,51 +59,38 @@ python compare.py --inputs gpt-3.5-turbo-16k_FCP_5shot_HITD.json
 ## 5-shot Main Results(MCP vs FCP)
 1. Llama-7b
 - Output: outputs/Llama-7b_MCP_5shot_HITD.json
-- Mean Score: 0.278
-
+- Mean Score: 0.278  
 - Output: outputs/Llama-7b_FCP_5shot_HITD.json
-- Mean Score: 0.206
-
+- Mean Score: 0.206  
 2. CodeLlama-7b-Instruct
 - Output: outputs/CodeLlama-7b-Instruct_MCP_5shot_HITD.json
-- Mean Score: 0.733
-
+- Mean Score: 0.733  
 - Output: outputs/CodeLlama-7b-Instruct_FCP_5shot_HITD.json
-- Mean Score: 0.402
-
+- Mean Score: 0.402  
 3. Gpt3.5-turbo-175b
 - Output: outputs/gpt-3.5-turbo-16k_MCP_5shot_HITD.json
-- Mean Score: 0.847
-
+- Mean Score: 0.847  
 - Output: outputs/gpt-3.5-turbo-16k_FCP_5shot_HITD.json
-- Mean Score: 0.640
+- Mean Score: 0.640  
 
-
-## 5-shot Robustness Result(MCP Vs Ptuningv2)
+## 5-shot Robustness Result(MCP vs Ptuningv2)
 1. No noise
 - Output: outputs/CodeLlama-7b-Instruct_MCP_5shot_HITD_no_noise.json
-- Mean Score: 0.695
-
+- Mean Score: 0.695  
 - Output: outputs/chatglm2-6b_ptuning_HITD_no_noise.json
-- Mean Score: 0.938
-
+- Mean Score: 0.938  
 2. Noise1
 - Output: outputs/CodeLlama-7b-Instruct_MCP_5shot_HITD_noise1.json
-- Mean Score: 0.639(**↓8.06%**)
-
+- Mean Score: 0.639(**↓8.06%**)  
 - Output: outputs/chatglm2-6b_ptuning_HITD_noise1.json
-- Mean Score: 0.913(**↓2.67%**)
-
+- Mean Score: 0.913(**↓2.67%**)  
 3. Noise2
 - Output: outputs/CodeLlama-7b-Instruct_MCP_5shot_HITD_noise2.json
-- Mean Score: 0.741(**↑6.62%**)
-
+- Mean Score: 0.741(**↑6.62%**)  
 - Output: outputs/chatglm2-6b_ptuning_HITD_noise2.json
-- Mean Score: 0.629(**↓32.94%**)
-
+- Mean Score: 0.629(**↓32.94%**)  
 4. Noise3
 - Output: outputs/CodeLlama-7b-Instruct_MCP_5shot_HITD_noise3.json
-- Mean Score: 0.703(**↑1.15%**)
-
+- Mean Score: 0.703(**↑1.15%**)  
 - Output: outputs/chatglm2-6b_ptuning_HITD_noise3.json
 - Mean Score: 0.681(**↓27.40%**)
