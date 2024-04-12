@@ -1,11 +1,10 @@
-<div align='center' ><font size='200'>Hospital Item Transport Dataset</font></div>
+<center><big><b>Hospital Item Transport Dataset</b></big></center>
+<center><small>2024.4.12</small></center>
 
 This is a dataset for machine-assisted hospital item transport, known as the Hospital Item Transport Dataset (HITD). It takes natural language instructions as input and generates low-level code to facilitate item transport tasks in a hospital setting. We provide both Chinese(`zh`) and English(`en`) versions of the HITD dataset for research purposes. It is important to note that all results discussed in this document are derived from the Chinese(`zh`) dataset. Additionally, within this project, we offer 1-shot English prompt (`prompt/en`) for researchers to validate results.
 
 Each natural language instruction consists of three components: [*originating department*,*intermediate transport department*,*final destination department*]. The *originating department* and *intermediate transport department* are selected from a list of 10 common hospital departments, and the *final destination department* is chosen from "Logistics" or "General Services".
-
 ![Introduction of HITD](https://github.com/Ghbbbbb/MCP/blob/main/assets/HITD.png)
-
 ## 1.Explanation of low-level code parameters:
 
 **MOVP P="parameter1" OP="parameter2"**: This is a command for controlling the movement of the robot. *Parameter1* indicates the location to which movement is possible (type=init), and *parameter2* specifies the static operation to be executed (usually inputting the value 28000 to indicate a pickup operation). Example usage: *MOVP P = 1 OP = 28000* # Move to Cardiac Surgery and execute pickup operation.
