@@ -1,7 +1,8 @@
-# Middle Code Prediction(MCP)
-The code for the paper "Middle Code Prediction: a lightweight scheme for Code Generation in the Robotics Domain", which proposes a lightweight method of Middle Code Prediction (MCP) aimed at addressing the imbalance between prediction accuracy and efficiency in rare data domains with large language models. We validated MCP on a Hospital Item Transport Dataset[HITD](data/README.md) and found that it achieved a new balance in accuracy and efficiency. Furthermore, it can generalize to different tasks of robot code generation.
+# Middle Code Prediction
+The code for the paper **"Middle Code Prediction: a lightweight scheme for Code Generation in the Robotics Domain"**.  
+We proposes a lightweight method of Middle Code Prediction(MCP) aimed at addressing the imbalance between prediction accuracy and efficiency in rare data domains with large language models. We validated MCP on a Hospital Item Transport Dataset([HITD])(data/README.md) and found that it achieved a new balance in accuracy and efficiency. Furthermore, it can generalize to different tasks of robot code generation.
 
-![Introduction of HITD](https://github.com/Ghbbbbb/MCP/blob/main/assets/MCP.png)
+![Introduction of MCP](https://github.com/Ghbbbbb/MCP/blob/main/assets/MCP.png)
 ## Clone
 Clone this repo and install requirements. 
 
@@ -41,12 +42,6 @@ torchrun run_gpt.py  [--model *** --input_file *** --prompt ***]
 - P-tuning v2
 ```
 torchrun run_ptuning.py  [--ckpt_dir *** --ptuning_dir *** --input_file ***]
-```
--  Zero-shot
-```
-python run_gsm8k_zs.py
-python run_aqua_zs.py
-...
 ```
 
 The prediction file will be dumped in the outputs/ folder, let's say gsm8K_s0_e-1_11_17_10_20.jsonl, or gsm8K_sc_s0_e-1_11_08_21_14.jsonl, or  gsm8K_zs_s0_e-1_11_19_09_55.jsonl.
