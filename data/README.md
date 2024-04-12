@@ -4,7 +4,7 @@ Hospital Item Transport Dataset
 
 This is a dataset for machine-assisted hospital item transport, known as the Hospital Item Transport Dataset (HITD). It takes natural language instructions as input and generates low-level code to facilitate item transport tasks in a hospital setting. We provide both Chinese(`zh`) and English(`en`) versions of the HITD dataset for research purposes. It is important to note that all results discussed in this document are derived from the Chinese(`zh`) dataset. Additionally, within this project, we offer 1-shot English prompt (`prompt/en`) for researchers to validate results.
 
-Each natural language instruction consists of three components: [*originating department*,*intermediate transport department*,*final destination department*]. The *originating department* and *intermediate transport department* are selected from a list of 10 common hospital departments, and the *final destination department* is chosen from "Logistics" or "General Services".
+Each natural language instruction consists of three components: [*originating department*, *intermediate transport department*, *final destination department*]. The *originating department* and *intermediate transport department* are selected from a list of 10 common hospital departments, and the *final destination department* is chosen from "Logistics" or "General Services".
 ![Introduction of HITD](https://github.com/Ghbbbbb/MCP/blob/main/assets/HITD.png)
 ## 1.Explanation of low-level code parameters:
 
@@ -45,16 +45,12 @@ Each natural language instruction consists of three components: [*originating de
 - **HITD.json**: Contains the complete HITD dataset with 1000 samples. Each sample is structured as follows:
 ```
 {
-    "content": str,
-    "summary": str,
-    "task": str,
-    "code length": int
+    "content": str,     # User-inputted instruction
+    "summary": str,     # Corresponding low-level code
+    "task": str,        # Type of task, categorized as Single_department, Multi_department, or Multi_department_priority
+    "code length": int  # Length of the generated code
 }
 ```
-**"content"**: User-inputted instruction.  
-**"summary"**: Corresponding low-level code.  
-**"task"**: Type of task, categorized as Single_department, Multi_department, or Multi_department_priority, indicating increasing task difficulty and code complexity.  
-**"code length"**: Length of the generated code.
 
 - **HITD_MD.json**: Subset of HITD dataset containing samples with "task" as "Multi_department" (325 samples). Average code length is 399 characters, with 1-4 *originating departments* and 1-5 *intermediate transport departments*, without priority.
 
