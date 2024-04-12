@@ -1,4 +1,8 @@
-## Middle Code Prediction(MCP)
+# Middle Code Prediction(MCP)
+
+The code for the paper "Middle Code Prediction: a lightweight scheme for Code Generation in the Robotics Domain", which proposes a lightweight method of Middle Code Prediction (MCP) aimed at addressing the imbalance between prediction accuracy and efficiency in rare data domains with large language models. We validated MCP on a Hospital Item Transport Dataset[HITD](data/README.md) and found that it achieved a new balance in accuracy and efficiency. Furthermore, it can generalize to different tasks of robot code generation.
+
+![Introduction of HITD](https://github.com/Ghbbbbb/MCP/main/assets/MCP.png)
 
 ## Clone
 Clone this repo and install requirements. 
@@ -15,12 +19,14 @@ Then download the P-tuning v2 weight file:
 
 Put all models in the `models`  directory and the structure of the file directory tree is shown below:
 
+```
 ├── models
 │   ├── chatglm-6b
 │   ├── CodeLlama-7b-Instruct
 │   ├── llama
 │   ├── Llama-7b
 │   └── ptuning
+```
 
 ## Run
 
