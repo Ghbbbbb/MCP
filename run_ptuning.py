@@ -39,7 +39,6 @@ def main():
     data_name = os.path.basename(args.input_file)
     print("data name",data_name)
 
-    # 加载模型和checkpoint
     model, tokenizer = load_model_and_checkpoint(args.ckpt_dir, args.ptuning_dir)
 
     with open(args.input_file, 'r') as file:

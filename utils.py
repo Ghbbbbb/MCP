@@ -89,7 +89,6 @@ def calculate_metric_and_output_file_llama(generator, data, config, output_dir, 
 
                 output_data.append(output_item)
 
-                # 计算准确率和 BLEU 分数
                 if predicted_code == answer:
                     correct_predictions += 1
 
@@ -99,10 +98,8 @@ def calculate_metric_and_output_file_llama(generator, data, config, output_dir, 
                     bleu_score_value = 0.5
                 bleu_sum += bleu_score_value
 
-                # 更新进度条
                 pbar.update(1)
 
-        # 将输出数据写入到 JSON 文件中
         with open(output_path, 'w', encoding='utf-8') as output_file:
             json.dump(output_data, output_file, indent=1, ensure_ascii=False)
 
