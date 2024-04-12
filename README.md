@@ -45,7 +45,7 @@ torchrun run_gpt.py  [--model *** --input_file *** --prompt ***]
 torchrun run_ptuning.py  [--ckpt_dir *** --ptuning_dir *** --input_file ***]
 ```
 
-The prediction file will be dumped in the outputs/ folder, let's say gsm8K_s0_e-1_11_17_10_20.jsonl, or gsm8K_sc_s0_e-1_11_08_21_14.jsonl, or  gsm8K_zs_s0_e-1_11_19_09_55.jsonl.
+The prediction file will be dumped in the outputs/ folder, let's say CodeLlama-7b-Instruct_FCP_5shot_HITD.json, CodeLlama-7b-Instruct_MCP_5shot_HITD.json
 
 - Evaluation
 ```
@@ -89,21 +89,21 @@ python compare.py --inputs gpt-3.5-turbo-16k_FCP_5shot_HITD.json
 
 2. Noise1
 - Output: outputs/CodeLlama-7b-Instruct_MCP_5shot_HITD_noise1.json
-- Mean Score: 0.639(↓0.056)
+- Mean Score: 0.639(**↓8.06%**)
 
 - Output: outputs/chatglm2-6b_ptuning_HITD_noise1.json
-- Mean Score: 0.913(↓0.025)
+- Mean Score: 0.913(**↓2.67%**)
 
 3. Noise2
 - Output: outputs/CodeLlama-7b-Instruct_MCP_5shot_HITD_noise2.json
-- Mean Score: 0.741(↑0.046)
+- Mean Score: 0.741(**↑6.62%**)
 
 - Output: outputs/chatglm2-6b_ptuning_HITD_noise2.json
-- Mean Score: 0.629(↓0.309)
+- Mean Score: 0.629(**↓32.94%**)
 
 4. Noise3
 - Output: outputs/CodeLlama-7b-Instruct_MCP_5shot_HITD_noise3.json
-- Mean Score: 0.703(↑0.008)
+- Mean Score: 0.703(**↑1.15%**)
 
 - Output: outputs/chatglm2-6b_ptuning_HITD_noise3.json
-- Mean Score: 0.681(↓0.257)
+- Mean Score: 0.681(**↓27.40%**)
