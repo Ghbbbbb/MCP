@@ -1,9 +1,9 @@
 # Middle Code Prediction
-This is code repository for the paper **"Middle Code Prediction: a lightweight scheme for Code Generation in the Robotics Domain"**.  
+This is code repository for the paper **" Middle Code Prediction: Enhancing Code Generation for Uncommon Programming Languages in Robotics"**.  
 
-We proposes a lightweight method of Middle Code Prediction(MCP) aimed at addressing the imbalance between prediction accuracy and efficiency in rare data domains with large language models. We validated MCP on a Hospital Item Transport Dataset[(HITD)](data/README.md) and found that it achieved a new balance in accuracy and efficiency. Furthermore, it can generalize to different tasks of robot code generation.
+We introduce Middle Code Prediction (MCP), a scheme that allows LLMs to adapt to various low-level code prediction tasks through the injection of prompts at different stages. We validated MCP on a Hospital Item Transport Dataset[(HITD)](data/README.md) and found that it can improve the task mean accuracy of various baseline models to varying degrees, with an overall improvement of 32%.
 
-![Introduction of MCP](https://github.com/Ghbbbbb/MCP/blob/main/assets/MCP.png)
+![Three-stage Framework of MCP](https://github.com/Ghbbbbb/MCP/blob/main/assets/MCP.png)
 ## Clone
 Clone this repo and install requirements. 
 
@@ -14,7 +14,7 @@ Clone this repo and install requirements.
 ## Models
 Download Llama2 series models（provided by [codellama Project](https://github.com/meta-llama/codellama)）and ChatGLM2 models（provided by [ChatGLM2-6B Project](https://github.com/THUDM/ChatGLM2-6B)）
 
-Then download the P-tuning v2 weight file:
+Then download the P-tuning v2 weight file(fine-tuned on final code):
 - [BaiDu Cloud Drive](https://pan.baidu.com/s/1cuTCQmiQzp33NFfk682jFA) with code: 78wk
 
 Put all models in the `models`  directory and the structure of the file directory tree is shown below:
@@ -67,13 +67,13 @@ python compare.py --inputs gpt-3.5-turbo-16k_FCP_5shot_HITD.json
 - Mean Score: 0.733  
 - Output: outputs/CodeLlama-7b-Instruct_FCP_5shot_HITD.json
 - Mean Score: 0.402  
-3. Gpt3.5-turbo-175b
+3. Gpt3.5-turbo-16k
 - Output: outputs/gpt-3.5-turbo-16k_MCP_5shot_HITD.json
 - Mean Score: 0.847  
 - Output: outputs/gpt-3.5-turbo-16k_FCP_5shot_HITD.json
 - Mean Score: 0.640  
 
-## 5-shot Robustness Result(MCP vs Ptuningv2)
+## 5-shot Robustness Result(MCP vs P-tuningv2)
 1. No noise
 - Output: outputs/CodeLlama-7b-Instruct_MCP_5shot_HITD_no_noise.json
 - Mean Score: 0.695  
