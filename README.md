@@ -3,9 +3,11 @@ This is code repository for the paper **" Middle Code Prediction: Enhancing Code
 
 We introduce Middle Code Prediction (MCP), a scheme that allows LLMs to adapt to various low-level code prediction tasks through the injection of prompts at different stages. We validated MCP on a Hospital Item Transport Dataset[(HITD)](data/README.md) and found that it can improve the task mean accuracy of various baseline models to varying degrees, with an overall improvement of 32%.
 
+In the following experiments, we evaluated the ability of MCP, FCP, and P-tuningv2 to generate low-level code using LLMs. To ensure a fair comparison with fine-tuning methods, we assessed the single-round code generation performance of each method.
+
+
 ![Three-stage Framework of MCP](https://github.com/Ghbbbbb/MCP/blob/main/assets/MCP.png)
 
-In the following experiments, we evaluated the ability of MCP, FCP, and P-tuningv2 to generate low-level code using LLMs. To ensure a fair comparison with fine-tuning methods, we assessed the single-round code generation performance of each method.
 
 
 ## Clone
